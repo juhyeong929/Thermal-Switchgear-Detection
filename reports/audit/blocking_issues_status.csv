@@ -1,0 +1,14 @@
+﻿audit_id,status_as_of,status,evidence,next_step
+# blocking_issues.csv (2026-09-02 독립 감사) 의 후속 상태만 기록한다,,,,
+# **원본 감사 문서는 고치지 않는다.** practical_independent_audit.md 와,,,,
+#   blocking_issues.csv 는 감사 수행 당시 관찰된 상태 그 자체이므로 그대로 둔다.,,,,
+#   낡은 수치(25 labelable · 6 UNKNOWN · vcb_contact UNKNOWN)도 손대지 않는다.,,,,
+#   무엇이 어떻게 변했는지는 이 표가 연결한다. 상태가 바뀌면 이 파일만 갱신한다.,,,,
+# status_as_of = 이 판정을 내린 시점의 날짜 / 커밋. 어느 시점의 상태표인지 남긴다.,,,,
+# 400장 시드 판정: NO 유지. BLK-1 이 닫혔다고 전체 readiness 를 소급해,,,,
+#   PASS 로 바꾸지 않는다. BLK-3 · BLK-4 · BLK-5 가 남아 있다.,,,,
+BLK-1,2026-09-02 / 54603f3,CLOSED,DEC-024 (vcb_contact = CONTACT_POINT · 표본 15장 육안 판정 CONTACT_POINT 10 / PARTIAL_LABELING 5 / TERMINAL_GROUP 0) · 관련 산출물 전부 재생성 (class_evidence.csv · seed_policy.json · 반별 CVAT 라벨 정의 · 지침서 v2 · classes.txt) · 감사가 지목한 세 산출물이 같은 기준을 본다 · status_check 확인이 필요한 항목 0건 · seed_regen_diff change_kind = NO_CHANGE,없음 — 닫힘. 재발은 status_check [2] · [5-1] 이 FAIL 로 막는다
+BLK-2,2026-09-02 / 54603f3,PARTIAL,"annotation unit UNKNOWN 6종 -> 5종. VCB 접촉부 -> CONTACT_POINT 확정 (DEC-024) · 분기 접촉부 -> RETIRED (DEC-025, 개정 가이드가 케이블헤드로 명칭 통일). 잔여 5종(LBS 1차측 · LBS 2차측 · 변압기 접촉부 · 인입선로 접촉부 · CT 접촉부)은 **EXCLUDED 가 아니다** — label_status 는 가공이고 unit_confirmed=false 여서 deployable() 에서 빠지는 **비배포** 상태다. 제외 3종(부스바 · 케이블 · ACB 접촉부)과 성격이 다르므로 코드에서도 EXCLUDED 와 집합을 나눠 둔다",잔여 5종은 정본·참고 통틀어 라벨 실적 0건이라 좌표 근거가 없다. 시드 라벨링에서 사례가 쌓인 뒤 단위 판정 (NQ-13). 최초 발생 사례만으로 확정하지 않는다 (DEC-027 절차 원칙)
+BLK-3,2026-09-02 / 54603f3,OPEN,C-2 v1 baseline Kappa 0.902 (3인 · 반 정보 비공개 · round 1 CLOSED). round 2 = guide v2.0 · annotator_D · annotator_E · PENDING — D/E 결과 미확보. 배포 입력판은 deploy_manifest_round2.csv 로 고정 (28개 항목 SHA-256),D/E 배포·회수 후 Skip 포함 metrics · 반별 matched coverage · count agreement · omission/commission 산출. v1 과 합산하지 않고 전후 비교로 읽는다
+BLK-4,2026-09-02 / 54603f3,OPEN,"변동 없음. C-1 은 확정 오류 19박스 + 시험 지적 2건 / 정본 4,177박스 = 0.50% 로 단일 시점 수치다. recall · semantic · boundary 전수 검증은 여전히 없다. NQ-17 로 접근 경로만 확보했다 — 개정 가이드 p6 '몰드변압기 접촉부는 4개 달려있음' 대비 실측 장당 중앙 3개",실제 recall audit 미실행. 층화표본 설계 시 (기대 4 - 실제 n) 을 바로 오류로 세지 않고 frame visibility / occlusion / crop 을 먼저 가른다
+BLK-5,2026-09-02 / 54603f3,OPEN,변동 없음. DEC-023 으로 현행 cluster split 유지 + 잔여 위험을 known limitation 으로 관리한다. cluster 교차 0건이나 근접 후보군의 동일 시야 잔여 가능성은 남는다,최종 모델 성능 보고 전 보수적 holdout(반/세션/카메라) 평가셋과 대조하고 residual risk 를 병기한다
