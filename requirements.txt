@@ -1,0 +1,14 @@
+# Python 3.11 또는 3.12 권장
+# torch/torchvision은 CPU/GPU 환경에 맞는 조합으로 설치하세요.
+
+numpy
+Pillow
+opencv-python
+PyYAML
+torch
+torchvision
+ultralytics
+PyQt5
+
+# pilot/verify_labelimg.py 및 labelImg 작업에 필요
+labelImg
