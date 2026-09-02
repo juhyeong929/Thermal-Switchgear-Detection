@@ -63,6 +63,27 @@ def main():
     note("배포본", "CVAT 라벨 정의", "있음" if labels_json.exists() else "없음",
          "OK" if labels_json.exists() else "배포 전 필수")
 
+    # 아직 시작하지 않은 회차의 라벨러 폴더가 비어 있는가.
+    # 기존 라벨을 pre-annotation 으로 넣으면 측정이 무의미해진다.
+    #
+    # **이 검사가 확인하는 것은 "파일이 없다" 까지다.** CVAT 프로젝트 화면에 라벨이
+    # 미리 주입됐는지는 파일시스템에서 알 수 없다. 화면 확인은 사람이 한다
+    # (deploy_checklist_D_E.md 의 [사람 확인] 절).
+    pend = [r for r in (data_rows(TRIAL / "trial_versions.csv", "round") or [])
+            if (r.get("status") or "").strip() == "PENDING"]
+    for r in pend:
+        who = (r.get("annotators") or "").split()
+        dirty = []
+        for w in who:
+            d = TRIAL / w
+            n = len(list((d / "yolo").glob("*.txt"))) + len(list((d / "cvat").glob("*.xml")))
+            if n:
+                dirty.append(f"{w} {n}건")
+        note("배포본", f"round {r.get('round','?')} 배포 전 라벨 파일 없음",
+             "없음 (pre-annotation 미주입)" if not dirty
+             else f"**있음 — {', '.join(dirty)}**",
+             "OK" if not dirty else "FAIL")
+
     # ---- 2 스키마 ----
     print("\n[2] 스키마 일관성 — 어긋나면 회수가 전부 틀어진다")
     names = [n.strip() for n in (TRIAL / "classes.txt").read_text(

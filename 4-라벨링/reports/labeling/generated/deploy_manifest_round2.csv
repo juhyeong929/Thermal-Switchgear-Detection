@@ -2,7 +2,7 @@
 # round 2 배포 입력판 고정 — guide v2.0,,,
 # 대상 반: P1-TR반 P3-MOF반 P4-MOF&PT반 P6-VCB반 P9-MCCB반 (P5 없음 — NQ-18 무관),,,
 # 검증: python scripts/lock_deploy_manifest.py --verify,,,
-# manifest_sha256,,,457a48bf048fcf7860940d4f09a4148738471f56e6c381103bfa210b82314c33
+# manifest_sha256,,,aa3833b606bb22f2ffde248e879eb6e66eaa83008d5985de2a8ddeab4033e577
 정책 원본,schemas/classes_v2.py,22652,c3a8795feff8833c0e4aeaca393408f129a25a922ef8cfa1d94a08e45a69961d
 정책 원본,schemas/labeling_rules.py,8348,bb05103dba77ed2aaeaffacaf642991c2e57f08cc19b1fd6aeb888baf6bad6b7
 라벨러 배포,reports/labeling/annotator_guide_v2.md,21558,2ba5bf36037d434533695cb483a0c8434d2b231c26e7aa6b77ae88ba6ddfa47c
@@ -27,7 +27,7 @@ CVAT 설정,reports/labeling/generated/cvat_labels/P9.names,22,5ffe982c617e8cfb5
 CVAT 설정,data/labeling/draft/trial/cvat_labels.json,14621,7e96e5ddba8d50c35cd9c10e0eec20e66f613877a8af66d0183f9c593d2bdf55
 CVAT 설정,data/labeling/draft/trial/classes.txt,452,23d763eb98be61df95a6935500e21ca465d3dd37c11dc48fdf96952917ef9f15
 배포본,data/labeling/draft/trial/manifest.csv,9252,fae7a7e23cf32ac2ad8b84ba3f26834ef299443ac19f623bd5f4d8b79012a677
-검수자,reports/labeling/deploy_checklist_D_E.md,6766,7d6a118f50e62affdd62f5825006b06ba09a4bf5bbeb07e4f8c9dee0acdccade
+검수자,reports/labeling/deploy_checklist_D_E.md,10512,15c98395a4c69810f1c609608bca514d7b65ab5a03bf3d6615587c824c0b3247
 검수자,reports/labeling/escalation.txt,533,f0cd7abc82df627f7972815bd9a28a25bef505d7276a005b64539024835cc42a
 배포본,data/labeling/draft/trial/images/ (30개),3000146,002fbe2a3f51dc8c7117e70aa6ccd819ddea30152da2ed8f31c397a0c81e4c27
 배포본,data/labeling/draft/trial/reference_rgb/ (22개),1039328,344a2aad8159047b8430aa65614ce20529200173c36c40bb84620094604a7bc5

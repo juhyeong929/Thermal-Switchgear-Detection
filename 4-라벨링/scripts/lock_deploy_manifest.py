@@ -141,6 +141,22 @@ def verify(rows):
     return 1
 
 
+def started():
+    """이 회차가 이미 시작됐는가. 등록부의 status 로 판단한다.
+
+    PENDING 인 동안에는 아직 아무도 받지 않았으므로 다시 잠글 수 있다.
+    그 뒤에는 --force 로도 막는다.
+    """
+    f = TRIAL / "trial_versions.csv"
+    if not f.exists():
+        return True                       # 알 수 없으면 보수적으로 '시작됨'
+    with f.open(encoding="utf-8-sig") as fh:
+        for r in csv.DictReader(fh):
+            if (r.get("round") or "").strip() == str(ROUND):
+                return (r.get("status") or "").strip() != "PENDING"
+    return True
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--verify", action="store_true",
@@ -158,6 +174,13 @@ def main():
         return 1
 
     if a.verify:
+        return verify(rows)
+
+    # 회차가 이미 시작됐으면 --force 로도 덮어쓰지 않는다.
+    # 잠금의 뜻은 "D·E 가 실제로 받은 것" 이다. 받은 뒤에 바꾸면 그 뜻이 사라진다.
+    if OUT.exists() and started():
+        print(f"round {ROUND} 는 이미 시작됐다 — 입력판을 다시 잠그지 않는다.")
+        print("정책이 바뀌어야 한다면 이 회차를 그대로 두고 새 판본으로 회차를 나눈다.")
         return verify(rows)
 
     if OUT.exists() and not a.force:
