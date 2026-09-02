@@ -1,0 +1,12 @@
+area,score,max_score,judgement,evidence
+데이터 무결성,7,10,WARN,"image_inventory 109359/109359 paths; fingerprints 106685 SHA-256; external raw data/checksum manifest not evidenced"
+클래스/스키마,5,10,FAIL,"28 classes and 25 labelable; 6 UNKNOWN units; code/generated artifacts disagree on vcb_contact"
+라벨링 규칙,6,15,FAIL,"v1 divergence; v2 exists but final deployment lock not evidenced"
+라벨러 작업 가능성,4,15,FAIL,"3 annotators only; Skip 2/12/12; time 22/60/44 minutes"
+annotation 품질관리,5,15,FAIL,"independent trial exists; recall/adjudication/independent QA not evidenced"
+중복/누수/분할,5,10,WARN,"cluster cross-split 0 but REV-005 SAME/NEAR 22/101 and residual risk"
+재현성/자동화,5,10,FAIL,"relative paths and seeds exist; data external, unpinned requirements, stale outputs, no dry-run evidenced"
+실무 운영성,2,5,FAIL,"basic logs exist; vendor assignment/SLA/rework/reviewer independence not evidenced"
+교수님 보고/추적성,3,5,WARN,"decision logs and caveats exist; status/artifact wording can overstate readiness"
+연구 방법론,5,5,WARN,"failed experiments and reversals preserved; metric threshold rationale remains unevidenced"
+TOTAL,47,100,RED_NOT_READY,"external five-or-more annotator handoff is not approved"
