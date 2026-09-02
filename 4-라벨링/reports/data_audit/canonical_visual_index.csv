@@ -1,0 +1,15 @@
+﻿case_type,file,image,highlight_boxes,note
+dup_FAIL,dup_FAIL_01_A1_B3_P1_2022-05-24_IR1_00067.png,A1_B3_P1_2022-05-24_IR1_00067,5 6,몰드변압기 접촉부 IoU 0.845
+dup_FAIL,dup_FAIL_02_A1_B3_P1_2022-05-24_IR1_00038.png,A1_B3_P1_2022-05-24_IR1_00038,3 5,철심부 IoU 0.780
+dup_FAIL,dup_FAIL_03_A1_B3_P1_2022-05-24_IR1_00069.png,A1_B3_P1_2022-05-24_IR1_00069,4 5,몰드변압기 접촉부 IoU 0.695
+dup_SUSPECT,dup_SUSPECT_04_A1_B2_P1_2022-05-12_IR1_00038.png,A1_B2_P1_2022-05-12_IR1_00038,3 5,소음기부착형 전력퓨즈 나란한 동종 부품이 겹쳐 보이는 경우일 수 있다
+dup_SUSPECT,dup_SUSPECT_05_A3_B4_P1_2022-06-17_IR1_00024.png,A3_B4_P1_2022-06-17_IR1_00024,0 2,철심부 나란한 동종 부품이 겹쳐 보이는 경우일 수 있다
+tiny,tiny_06_A1_B3_P1_2022-05-24_IR1_00031.png,A1_B3_P1_2022-05-24_IR1_00031,1,몰드변압기 접촉부 정규화 면적 0.00069 < candidate_threshold 0.003
+tiny,tiny_07_A1_B3_P1_2022-05-24_IR1_00084.png,A1_B3_P1_2022-05-24_IR1_00084,5,몰드변압기 접촉부 정규화 면적 0.00075 < candidate_threshold 0.003
+tiny,tiny_08_A1_B3_P1_2022-05-24_IR1_00039.png,A1_B3_P1_2022-05-24_IR1_00039,5,몰드변압기 접촉부 정규화 면적 0.00085 < candidate_threshold 0.003
+truncated,truncated_09_A1_B1_P4_2022-05-12_IR1_00001.png,A1_B1_P4_2022-05-12_IR1_00001,4,변압기 bottom left
+truncated,truncated_10_A1_B1_P4_2022-05-12_IR1_00015.png,A1_B1_P4_2022-05-12_IR1_00015,0,변류기 bottom left
+contactpoint_P1,contactpoint_P1_11_A1_B3_P1_2022-05-24_IR1_00088.png,A1_B3_P1_2022-05-24_IR1_00088,3 4 5 6 7,몰드변압기 접촉부 5개 — CONTACT_POINT 대표 사례
+contactpoint_P1,contactpoint_P1_12_A2_B1_P1_2022-06-03_IR1_00014.png,A2_B1_P1_2022-06-03_IR1_00014,0 1 3,몰드변압기 접촉부 3개 — CONTACT_POINT 대표 사례
+contactpoint_P3P4,contactpoint_P3P4_13_A2_B1_P3_2022-06-03_IR1_00008.png,A2_B1_P3_2022-06-03_IR1_00008,0 1 2,변류기 접촉부 3개 — CONTACT_POINT 대표 사례
+contactpoint_P3P4,contactpoint_P3P4_14_A2_B1_P3_2022-06-03_IR1_00049.png,A2_B1_P3_2022-06-03_IR1_00049,0 1 2 3,변류기 접촉부 4개 — CONTACT_POINT 대표 사례

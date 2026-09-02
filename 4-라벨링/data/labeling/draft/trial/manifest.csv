@@ -1,0 +1,31 @@
+﻿case_id,group,delivered_as,original_image_id,panel,camera,source,target_class_for_review,difficulty_flags,existing_label,reference_rgb,selection_reason,provenance
+A01,A_본대상,A01.jpg,P1/A1_B1_P1_2022-07-19_IR3_00004,P1-TR반,IR3,3-가공,몰드변압기 접촉부,,없음,없음,몰드변압기 접촉부 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+A02,A_본대상,A02.jpg,P1/A1_B1_P1_2022-07-25_IR2_00001,P1-TR반,IR2,3-가공,몰드변압기 접촉부,,없음,없음,몰드변압기 접촉부 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+A03,A_본대상,A03.jpg,P1/A1_B2_P1_2022-07-19_IR2_00085,P1-TR반,IR2,3-가공,몰드변압기 접촉부,,없음,없음,몰드변압기 접촉부 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+A04,A_본대상,A04.jpg,P1/A1_B2_P1_2022-07-19_IR3_00104,P1-TR반,IR3,3-가공,몰드변압기 접촉부,,없음,없음,몰드변압기 접촉부 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+A05,A_본대상,A05.jpg,P3/A2_B1_P3_2022-06-03_IR1_00001,P3-MOF반,IR1,3-가공,변류기 접촉부,,없음,A05_rgb.jpg,변류기 접촉부 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+A06,A_본대상,A06.jpg,P3/A2_B1_P3_2022-07-11_IR2_00001,P3-MOF반,IR2,3-가공,변류기 접촉부,,없음,A06_rgb.jpg,변류기 접촉부 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+A07,A_본대상,A07.jpg,P3/A3_B1_P3_2022-07-01_IR2_00004,P3-MOF반,IR2,3-가공,변류기 접촉부,,없음,A07_rgb.jpg,변류기 접촉부 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+A08,A_본대상,A08.jpg,P4/A1_B1_P4_2022-05-12_IR1_00001,P4-MOF&PT반,IR1,3-가공,변류기 접촉부,,없음,A08_rgb.jpg,변류기 접촉부 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+A09,A_본대상,A09.jpg,P4/A1_B1_P4_2022-06-03_IR1_00002,P4-MOF&PT반,IR1,3-가공,변류기 접촉부,,없음,A09_rgb.jpg,변류기 접촉부 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+A10,A_본대상,A10.jpg,P4/A1_B1_P4_2022-06-17_IR1_00001,P4-MOF&PT반,IR1,3-가공,변류기 접촉부,,없음,A10_rgb.jpg,변류기 접촉부 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+A11,A_본대상,A11.jpg,P6/A1_B1_P6_2022-05-12_IR1_00002,P6-VCB반,IR1,3-가공,케이블헤드,,없음,A11_rgb.jpg,케이블헤드 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+A12,A_본대상,A12.jpg,P6/A1_B1_P6_2022-06-17_IR1_00001,P6-VCB반,IR1,3-가공,케이블헤드,,없음,A12_rgb.jpg,케이블헤드 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+A13,A_본대상,A13.jpg,P6/A1_B2_P6_2022-05-12_IR1_00001,P6-VCB반,IR1,3-가공,케이블헤드,,없음,A13_rgb.jpg,케이블헤드 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+A14,A_본대상,A14.jpg,P6/A1_B3_P6_2022-05-24_IR1_00001,P6-VCB반,IR1,3-가공,케이블헤드,,없음,A14_rgb.jpg,케이블헤드 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+A15,A_본대상,A15.jpg,P9/A1_B1_P9_2022-07-19_IR2_00000,P9-MCCB반,IR2,3-가공,MCCB 접촉부,,없음,없음,MCCB 접촉부 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+A16,A_본대상,A16.jpg,P9/A1_B2_P9_2022-07-19_IR2_00001,P9-MCCB반,IR2,3-가공,MCCB 접촉부,,없음,없음,MCCB 접촉부 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+A17,A_본대상,A17.jpg,P9/A1_B2_P9_2022-07-19_IR3_00001,P9-MCCB반,IR3,3-가공,MCCB 접촉부,,없음,없음,MCCB 접촉부 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+A18,A_본대상,A18.jpg,P9/A1_B3_P9_2022-07-19_IR2_00001,P9-MCCB반,IR2,3-가공,MCCB 접촉부,,없음,없음,MCCB 접촉부 단위 검증 · 시드 후보,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+B01_잘림-2변이상,B_난이도,B01_잘림-2변이상.jpg,A1_B1_P4_2022-05-12_IR1_00001,P4-MOF&PT반,IR1,3-가공(정본),변압기 / 변압기 접촉부 / 비한류형 전력퓨즈,잘림-2변이상 다른클래스겹침,canonical 7박스 (라벨러에게 비공개),B01_잘림-2변이상_rgb.jpg,실패 유형 잘림-2변이상 이 측정으로 확인된 이미지,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+B02_잘림-2변이상,B_난이도,B02_잘림-2변이상.jpg,A1_B1_P4_2022-05-12_IR1_00015,P4-MOF&PT반,IR1,3-가공(정본),변류기,잘림-2변이상,canonical 1박스 (라벨러에게 비공개),B02_잘림-2변이상_rgb.jpg,실패 유형 잘림-2변이상 이 측정으로 확인된 이미지,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+B03_잘림-2변이상,B_난이도,B03_잘림-2변이상.jpg,A1_B1_P4_2022-05-12_IR1_00021,P4-MOF&PT반,IR1,3-가공(정본),변류기,잘림-2변이상 같은클래스겹침,canonical 2박스 (라벨러에게 비공개),B03_잘림-2변이상_rgb.jpg,실패 유형 잘림-2변이상 이 측정으로 확인된 이미지,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+B01_작은객체,B_난이도,B01_작은객체.jpg,A1_B1_P9_2022-05-12_IR1_00002,P9-MCCB반,IR1,pilot(참고),MCCB / MCCB 접촉부,잘림-1변다수 작은객체 다른클래스겹침 같은클래스밀집,reference 10박스 (라벨러에게 비공개),B01_작은객체_rgb.jpg,실패 유형 작은객체 이 측정으로 확인된 이미지,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+B02_작은객체,B_난이도,B02_작은객체.jpg,A1_B1_P9_2022-05-12_IR1_00050,P9-MCCB반,IR1,pilot(참고),MCCB / MCCB 접촉부,잘림-1변다수 작은객체 다른클래스겹침 같은클래스밀집,reference 13박스 (라벨러에게 비공개),B02_작은객체_rgb.jpg,실패 유형 작은객체 이 측정으로 확인된 이미지,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+B03_작은객체,B_난이도,B03_작은객체.jpg,A1_B2_P9_2022-05-12_IR1_00003,P9-MCCB반,IR1,pilot(참고),MCCB / MCCB 접촉부,잘림-1변다수 작은객체 다른클래스겹침 같은클래스밀집,reference 31박스 (라벨러에게 비공개),B03_작은객체_rgb.jpg,실패 유형 작은객체 이 측정으로 확인된 이미지,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+B01_다른클래스겹침,B_난이도,B01_다른클래스겹침.jpg,A1_B1_P4_2022-05-12_IR1_00080,P4-MOF&PT반,IR1,3-가공(정본),변류기 접촉부 / 비한류형 전력퓨즈,다른클래스겹침,canonical 6박스 (라벨러에게 비공개),B01_다른클래스겹침_rgb.jpg,실패 유형 다른클래스겹침 이 측정으로 확인된 이미지,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+B02_다른클래스겹침,B_난이도,B02_다른클래스겹침.jpg,A1_B1_P4_2022-05-12_IR1_00088,P4-MOF&PT반,IR1,3-가공(정본),변류기 접촉부 / 비한류형 전력퓨즈,다른클래스겹침,canonical 5박스 (라벨러에게 비공개),B02_다른클래스겹침_rgb.jpg,실패 유형 다른클래스겹침 이 측정으로 확인된 이미지,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+B03_다른클래스겹침,B_난이도,B03_다른클래스겹침.jpg,A1_B1_P6_2022-05-12_IR1_00012,P6-VCB반,IR1,pilot(참고),VCB 접촉부 / 케이블헤드,다른클래스겹침,reference 3박스 (라벨러에게 비공개),B03_다른클래스겹침_rgb.jpg,실패 유형 다른클래스겹침 이 측정으로 확인된 이미지,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+B01_같은클래스겹침,B_난이도,B01_같은클래스겹침.jpg,A1_B1_P1_2022-05-12_IR1_00090,P1-TR반,IR1,3-가공(정본),몰드변압기 접촉부 / 철심부,잘림-1변다수 같은클래스겹침,canonical 5박스 (라벨러에게 비공개),B01_같은클래스겹침_rgb.jpg,실패 유형 같은클래스겹침 이 측정으로 확인된 이미지,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+B01_같은클래스밀집,B_난이도,B01_같은클래스밀집.jpg,A1_B1_P9_2022-05-12_IR1_00003,P9-MCCB반,IR1,pilot(참고),MCCB / MCCB 접촉부,잘림-1변다수 다른클래스겹침 같은클래스밀집,reference 23박스 (라벨러에게 비공개),B01_같은클래스밀집_rgb.jpg,실패 유형 같은클래스밀집 이 측정으로 확인된 이미지,reports/data_audit/trial_provenance.csv 의 같은 case_id 행
+B02_같은클래스밀집,B_난이도,B02_같은클래스밀집.jpg,A1_B1_P9_2022-05-12_IR1_00030,P9-MCCB반,IR1,pilot(참고),MCCB / MCCB 접촉부,잘림-1변다수 다른클래스겹침 같은클래스밀집,reference 8박스 (라벨러에게 비공개),B02_같은클래스밀집_rgb.jpg,실패 유형 같은클래스밀집 이 측정으로 확인된 이미지,reports/data_audit/trial_provenance.csv 의 같은 case_id 행

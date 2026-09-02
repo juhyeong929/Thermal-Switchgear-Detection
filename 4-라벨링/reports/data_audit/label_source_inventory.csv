@@ -1,0 +1,14 @@
+﻿source,rel_path,schema,role,exists,label_files,empty_files,boxes,panels,distinct_classes
+IR1_1반_1차,IR1_1반,26,primary,1,786,607,750,P1:786,4
+IR1_1반_A1검수,IR1_1반_A1검수,26,primary,1,786,430,1772,P1:786,4
+IR1_1반_A2검수,IR1_1반_A2검수,26,primary,1,786,266,2586,P1:786,4
+A3검수완료,A3 검수완료,26,primary,1,786,29,3574,P1:786,4
+_p1only,_p1only,26,primary,1,757,0,3574,P1:757,4
+_p3,_p3,26,primary,1,66,0,227,P3:66,2
+_p4,_p4,26,primary,1,184,0,376,P4:184,5
+IR1_3반,IR1_3반,26,primary,1,66,0,227,P3:66,2
+data_labels_ir,data/labels_ir,26,derived,1,856,3,3870,P1:757 P10:3 P2:4 P3:66 P4:5 P5:8 P6:7 P9:6,12
+data_labels_rgb,data/labels_rgb,26,derived,1,47,3,114,P1:14 P10:3 P2:4 P4:5 P5:8 P6:7 P9:6,9
+data_labels_pred,data/labels_pred,26,derived,1,323,219,201,P1:28 P10:32 P11:11 P13:19 P2:37 P3:33 P4:33 P5:25 P6:29 P7:31 P8:20 P9:25,6
+dataset_contact1,dataset/contact_stage1,nc1,derived,1,65,0,222,P3:48 P4:17,1
+dataset_contact2,dataset/contact_stage2,nc1,derived,1,65,0,222,P3:48 P4:17,1

@@ -1,0 +1,10 @@
+﻿class_id,class_name,boxes_total,touched,touched_pct,ratio_gt_10pct,threshold
+1,epoxy_surface,1448,1323,0.9137,0,0.3
+0,core_iron,634,595,0.9385,0,0.3
+2,mold_tr_contact,1365,572,0.4190,4,0.3
+8,ct_transformer,189,183,0.9683,0,0.3
+9,ncl_power_fuse,191,151,0.7906,1,0.3
+10,silencer_power_fuse,127,119,0.9370,0,0.3
+24,ct_transformer_contact,219,47,0.2146,3,0.3
+23,transformer_contact,3,3,1.0000,0,0.3
+7,transformer,1,1,1.0000,0,0.3

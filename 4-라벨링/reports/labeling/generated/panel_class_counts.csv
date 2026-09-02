@@ -1,0 +1,11 @@
+﻿panel,panel_id,candidate_n,deployable_n,held_n,deployable,held,provisional
+P1-TR반,P1,4,4,0,철심부 * 에폭시 표면 몰드변압기 접촉부 소음기부착형 전력퓨즈,,0
+P2-LBS&LA반,P2,6,4,2,LBS 한류형 전력퓨즈 LA 케이블헤드,LBS 1차측 접촉부 LBS 2차측 접촉부,0
+P3-MOF반,P3,3,3,0,변류기 비한류형 전력퓨즈 변류기 접촉부,,1
+P4-MOF&PT반,P4,6,5,1,변압기 변류기 비한류형 전력퓨즈 변류기 접촉부 몰드타입 PT,변압기 접촉부,0
+P5-PF&PT반,P5,4,2,2,소음기부착형 전력퓨즈 몰드타입 PT,분기 접촉부 인입선로 접촉부,0
+P6-VCB반,P6,4,3,1,케이블헤드 CT SA,VCB 접촉부,0
+P7-VCB&CT반,P7,3,1,2,CT,VCB 접촉부 CT 접촉부,0
+P8-ACB반,P8,3,3,0,콘덴서 MCCB MCCB 접촉부 *,,0
+P9-MCCB반,P9,2,2,0,MCCB MCCB 접촉부 *,,1
+P10-ACB&MCCB반,P10,3,3,0,콘덴서 MCCB MCCB 접촉부 *,,0

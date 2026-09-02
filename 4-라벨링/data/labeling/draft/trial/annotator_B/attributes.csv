@@ -1,0 +1,143 @@
+﻿image_name,bbox_id,class_id,class_name,yolo_line,match_method,iou,cx,cy,w,h,attr_truncated,attr_occluded,attr_ignore,image_shot_type
+A02,A02#0,2,몰드변압기 접촉부,0,exact_same_class,1.0,0.885844,0.485167,0.122063,0.378,false,false,false,클로즈업
+A02,A02#1,2,몰드변압기 접촉부,1,exact_same_class,1.0,0.316734,0.491708,0.120969,0.3485,false,false,false,클로즈업
+A03,A03#0,2,몰드변압기 접촉부,0,exact_same_class,1.0,0.780641,0.621,0.059969,0.183833,false,true,false,클로즈업
+A03,A03#1,2,몰드변압기 접촉부,1,exact_same_class,1.0,0.515656,0.617042,0.062437,0.17575,false,false,false,클로즈업
+A04,A04#0,1,에폭시 표면,0,exact_same_class,1.0,0.546781,0.39875,0.186875,0.485333,false,false,false,전체
+A04,A04#1,1,에폭시 표면,1,exact_same_class,1.0,0.939484,0.349917,0.121031,0.5635,true,false,false,전체
+A04,A04#2,1,에폭시 표면,2,exact_same_class,1.0,0.759938,0.374271,0.23825,0.540625,false,false,false,전체
+A05,A05#0,8,변류기,0,exact_same_class,1.0,0.483797,0.646271,0.212656,0.387542,false,true,false,클로즈업
+A06,A06#0,8,변류기,0,exact_same_class,1.0,0.528484,0.483333,0.548656,0.856667,false,true,false,클로즈업
+A07,A07#0,11,몰드타입 PT,0,exact_same_class,1.0,0.807656,0.551104,0.277812,0.724625,false,true,false,클로즈업
+A07,A07#1,11,몰드타입 PT,1,exact_same_class,1.0,0.177219,0.578583,0.256625,0.682167,false,true,false,클로즈업
+A07,A07#2,11,몰드타입 PT,2,exact_same_class,1.0,0.492969,0.553271,0.240938,0.739458,false,true,false,클로즈업
+A08,A08#0,8,변류기,0,exact_same_class,1.0,0.350703,0.667292,0.604844,0.661667,true,true,false,클로즈업
+A09,A09#0,5,한류형 전력퓨즈,0,exact_same_class,1.0,0.311359,0.519792,0.063719,0.299583,false,false,false,중거리
+A09,A09#1,5,한류형 전력퓨즈,1,exact_same_class,1.0,0.695156,0.510333,0.037188,0.335167,false,false,false,중거리
+A09,A09#2,5,한류형 전력퓨즈,2,exact_same_class,1.0,0.503594,0.505625,0.054063,0.322083,false,false,false,중거리
+A10,A10#0,8,변류기,0,exact_same_class,1.0,0.489422,0.516979,0.428344,0.870625,false,true,false,클로즈업
+A11,A11#0,5,한류형 전력퓨즈,0,exact_same_class,1.0,0.483063,0.766417,0.04825,0.46475,true,false,false,중거리
+A11,A11#1,5,한류형 전력퓨즈,1,exact_same_class,1.0,0.292469,0.767646,0.074812,0.464708,true,false,false,중거리
+A11,A11#2,5,한류형 전력퓨즈,2,exact_same_class,1.0,0.663438,0.763979,0.055625,0.472042,true,false,false,중거리
+A12,A12#0,11,몰드타입 PT,0,exact_same_class,1.0,0.802484,0.437354,0.079406,0.205542,true,true,false,중거리
+A12,A12#1,11,몰드타입 PT,1,exact_same_class,1.0,0.5255,0.442875,0.13775,0.211667,false,true,false,중거리
+A13,A13#0,5,한류형 전력퓨즈,0,exact_same_class,1.0,0.676094,0.074521,0.051438,0.149042,true,false,false,중거리
+A13,A13#1,11,몰드타입 PT,1,exact_same_class,1.0,0.072719,0.734833,0.145437,0.347833,true,false,false,중거리
+A13,A13#2,11,몰드타입 PT,2,exact_same_class,1.0,0.388563,0.769958,0.176187,0.338083,false,true,false,중거리
+A13,A13#3,11,몰드타입 PT,3,exact_same_class,1.0,0.714375,0.805333,0.19875,0.358917,false,false,false,중거리
+A14,A14#0,5,한류형 전력퓨즈,0,exact_same_class,1.0,0.715234,0.815521,0.067281,0.223125,false,false,false,중거리
+A14,A14#1,5,한류형 전력퓨즈,1,exact_same_class,1.0,0.486812,0.824354,0.067313,0.226292,false,false,false,중거리
+A14,A14#2,5,한류형 전력퓨즈,2,exact_same_class,1.0,0.245531,0.856083,0.067313,0.260583,false,false,false,중거리
+A15,A15#0,27,MCCB 접촉부,0,exact_same_class,1.0,0.427094,0.938021,0.055187,0.123958,false,false,false,클로즈업
+A15,A15#1,27,MCCB 접촉부,1,exact_same_class,1.0,0.208453,0.936396,0.046719,0.127208,false,false,false,클로즈업
+A15,A15#2,27,MCCB 접촉부,2,exact_same_class,1.0,0.787047,0.638417,0.061344,0.2435,false,false,false,클로즈업
+A15,A15#3,27,MCCB 접촉부,3,exact_same_class,1.0,0.568516,0.635604,0.061344,0.243542,false,false,false,클로즈업
+A15,A15#4,27,MCCB 접촉부,4,exact_same_class,1.0,0.422844,0.697542,0.061313,0.2435,false,false,false,클로즈업
+A15,A15#5,27,MCCB 접촉부,5,exact_same_class,1.0,0.202172,0.694021,0.061344,0.243542,false,false,false,클로즈업
+A15,A15#6,18,MCCB,6,exact_same_class,1.0,0.67675,0.909333,0.319,0.181333,false,false,false,클로즈업
+A15,A15#7,18,MCCB,7,exact_same_class,1.0,0.677813,0.635604,0.32,0.242125,false,false,false,클로즈업
+A15,A15#8,18,MCCB,8,exact_same_class,1.0,0.319359,0.698937,0.321031,0.253375,false,false,false,클로즈업
+A15,A15#9,27,MCCB 접촉부,9,exact_same_class,1.0,0.790219,0.912125,0.055187,0.17575,false,false,false,클로즈업
+A15,A15#10,18,MCCB,10,exact_same_class,1.0,0.3225,0.936271,0.303125,0.127458,true,false,false,클로즈업
+A15,A15#11,27,MCCB 접촉부,11,exact_same_class,1.0,0.570641,0.909979,0.055219,0.180042,false,false,false,클로즈업
+A16,A16#0,27,MCCB 접촉부,0,exact_same_class,1.0,0.317297,0.590583,0.097281,0.3505,false,false,false,클로즈업
+A16,A16#1,27,MCCB 접촉부,1,exact_same_class,1.0,0.656687,0.596187,0.111,0.350542,false,false,false,클로즈업
+A16,A16#2,18,MCCB,2,exact_same_class,1.0,0.487266,0.591938,0.491094,0.357458,false,false,false,클로즈업
+A18,A18#0,27,MCCB 접촉부,0,exact_same_class,1.0,0.696203,0.568042,0.148031,0.3505,false,false,false,클로즈업
+A18,A18#1,27,MCCB 접촉부,1,exact_same_class,1.0,0.272969,0.877271,0.129062,0.245458,false,false,false,클로즈업
+A18,A18#2,18,MCCB,2,exact_same_class,1.0,0.489344,0.571708,0.571313,0.364583,false,false,false,클로즈업
+A18,A18#3,27,MCCB 접촉부,3,exact_same_class,1.0,0.271844,0.576479,0.122562,0.350542,false,false,false,클로즈업
+A18,A18#4,27,MCCB 접촉부,4,exact_same_class,1.0,0.709469,0.878896,0.166062,0.242208,false,false,false,클로즈업
+A18,A18#5,18,MCCB,5,exact_same_class,1.0,0.504578,0.875146,0.593344,0.249708,true,false,false,클로즈업
+B01_같은클래스겹침,B01_같은클래스겹침#0,2,몰드변압기 접촉부,0,exact_same_class,1.0,0.786312,0.548583,0.153625,0.583667,false,false,false,중거리
+B01_같은클래스겹침,B01_같은클래스겹침#1,2,몰드변압기 접촉부,1,exact_same_class,1.0,0.495094,0.556625,0.189187,0.788417,false,false,false,중거리
+B01_같은클래스겹침,B01_같은클래스겹침#2,2,몰드변압기 접촉부,2,exact_same_class,1.0,0.096406,0.514333,0.192812,0.806333,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#0,27,MCCB 접촉부,0,exact_same_class,1.0,0.534109,0.81375,0.045719,0.21,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#1,27,MCCB 접촉부,1,exact_same_class,1.0,0.717953,0.830958,0.045719,0.21,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#2,27,MCCB 접촉부,2,exact_same_class,1.0,0.144469,0.280458,0.052938,0.23325,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#3,27,MCCB 접촉부,3,exact_same_class,1.0,0.551234,0.244625,0.051844,0.23325,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#4,27,MCCB 접촉부,4,exact_same_class,1.0,0.750922,0.263479,0.051844,0.244458,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#5,27,MCCB 접촉부,5,exact_same_class,1.0,0.15175,0.571104,0.035875,0.236125,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#6,27,MCCB 접촉부,6,exact_same_class,1.0,0.3375,0.560625,0.049375,0.197083,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#7,27,MCCB 접촉부,7,exact_same_class,1.0,0.543281,0.540146,0.049375,0.221375,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#8,27,MCCB 접촉부,8,exact_same_class,1.0,0.733797,0.554813,0.051781,0.229625,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#9,27,MCCB 접촉부,9,exact_same_class,1.0,0.154875,0.822771,0.039625,0.193875,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#10,27,MCCB 접촉부,10,exact_same_class,1.0,0.334391,0.833417,0.049344,0.189,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#11,18,MCCB,11,exact_same_class,1.0,0.250109,0.282958,0.261031,0.24575,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#12,18,MCCB,12,exact_same_class,1.0,0.649609,0.256854,0.251406,0.260458,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#13,18,MCCB,13,exact_same_class,1.0,0.251281,0.567187,0.239063,0.241042,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#14,18,MCCB,14,exact_same_class,1.0,0.640953,0.545875,0.251219,0.24575,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#15,18,MCCB,15,exact_same_class,1.0,0.251344,0.839,0.234187,0.227833,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#16,18,MCCB,16,exact_same_class,1.0,0.6245,0.825271,0.235375,0.232792,false,false,false,중거리
+B01_같은클래스밀집,B01_같은클래스밀집#17,27,MCCB 접촉부,17,exact_same_class,1.0,0.344266,0.288625,0.062844,0.23325,false,false,false,중거리
+B01_다른클래스겹침,B01_다른클래스겹침#0,24,변류기 접촉부,0,exact_same_class,1.0,0.153,0.45725,0.072063,0.200333,false,false,false,중거리
+B01_다른클래스겹침,B01_다른클래스겹침#1,5,한류형 전력퓨즈,1,exact_same_class,1.0,0.341703,0.662458,0.068406,0.252417,false,false,false,중거리
+B01_다른클래스겹침,B01_다른클래스겹침#2,5,한류형 전력퓨즈,2,exact_same_class,1.0,0.537172,0.628812,0.068406,0.179458,false,true,false,중거리
+B01_다른클래스겹침,B01_다른클래스겹침#3,5,한류형 전력퓨즈,3,exact_same_class,1.0,0.137766,0.654312,0.068406,0.270542,false,true,false,중거리
+B01_다른클래스겹침,B01_다른클래스겹침#4,24,변류기 접촉부,4,exact_same_class,1.0,0.432109,0.500292,0.046406,0.116917,false,false,false,중거리
+B01_다른클래스겹침,B01_다른클래스겹침#5,24,변류기 접촉부,5,exact_same_class,1.0,0.692969,0.529604,0.041563,0.133292,false,false,false,중거리
+B01_다른클래스겹침,B01_다른클래스겹침#6,24,변류기 접촉부,6,exact_same_class,1.0,0.851016,0.496979,0.054844,0.162708,false,false,false,중거리
+B01_다른클래스겹침,B01_다른클래스겹침#7,24,변류기 접촉부,7,exact_same_class,1.0,0.533516,0.476708,0.062344,0.182417,false,false,false,중거리
+B01_작은객체,B01_작은객체#0,27,MCCB 접촉부,0,exact_same_class,1.0,0.436391,0.598042,0.074094,0.288083,false,false,false,클로즈업
+B01_작은객체,B01_작은객체#1,18,MCCB,1,exact_same_class,1.0,0.562188,0.569521,0.31625,0.336792,false,false,false,클로즈업
+B01_작은객체,B01_작은객체#2,18,MCCB,2,exact_same_class,1.0,0.578125,0.876042,0.293125,0.247917,false,false,false,클로즈업
+B01_작은객체,B01_작은객체#3,27,MCCB 접촉부,3,exact_same_class,1.0,0.407031,0.211208,0.070312,0.343417,false,false,false,클로즈업
+B01_작은객체,B01_작은객체#4,27,MCCB 접촉부,4,exact_same_class,1.0,0.68625,0.171396,0.063125,0.327208,false,false,false,클로즈업
+B01_작은객체,B01_작은객체#5,27,MCCB 접촉부,5,exact_same_class,1.0,0.694203,0.552542,0.053469,0.28825,false,false,false,클로즈업
+B01_작은객체,B01_작은객체#6,27,MCCB 접촉부,6,exact_same_class,1.0,0.461484,0.889,0.065781,0.21875,false,false,false,클로즈업
+B01_작은객체,B01_작은객체#7,27,MCCB 접촉부,7,exact_same_class,1.0,0.699062,0.874146,0.05,0.236708,false,false,false,클로즈업
+B01_작은객체,B01_작은객체#8,18,MCCB,8,exact_same_class,1.0,0.543344,0.190812,0.33675,0.377542,false,false,false,클로즈업
+B01_잘림-2변이상,B01_잘림-2변이상#0,8,변류기,0,exact_same_class,1.0,0.346594,0.696583,0.586313,0.606833,true,false,false,클로즈업
+B01_잘림-2변이상,B01_잘림-2변이상#1,8,변류기,1,exact_same_class,1.0,0.719125,0.799938,0.188,0.400125,false,false,false,클로즈업
+B02_같은클래스밀집,B02_같은클래스밀집#0,27,MCCB 접촉부,0,exact_same_class,1.0,0.253234,0.427812,0.149594,0.406875,false,false,false,클로즈업
+B02_같은클래스밀집,B02_같은클래스밀집#1,27,MCCB 접촉부,1,exact_same_class,1.0,0.641,0.379062,0.218,0.376042,false,false,false,클로즈업
+B02_같은클래스밀집,B02_같은클래스밀집#2,18,MCCB,2,exact_same_class,1.0,0.460891,0.840229,0.621344,0.319542,true,false,false,클로즈업
+B02_같은클래스밀집,B02_같은클래스밀집#3,27,MCCB 접촉부,3,exact_same_class,1.0,0.645297,0.844104,0.241281,0.311792,false,false,false,클로즈업
+B02_같은클래스밀집,B02_같은클래스밀집#4,27,MCCB 접촉부,4,exact_same_class,1.0,0.220812,0.854042,0.14225,0.291917,false,false,false,클로즈업
+B02_같은클래스밀집,B02_같은클래스밀집#5,18,MCCB,5,exact_same_class,1.0,0.463953,0.4425,0.576031,0.519167,false,false,false,클로즈업
+B02_다른클래스겹침,B02_다른클래스겹침#0,24,변류기 접촉부,0,exact_same_class,1.0,0.155516,0.292646,0.078344,0.223042,false,false,false,중거리
+B02_다른클래스겹침,B02_다른클래스겹침#1,24,변류기 접촉부,1,exact_same_class,1.0,0.524219,0.311396,0.072188,0.223042,false,false,false,중거리
+B02_작은객체,B02_작은객체#0,27,MCCB 접촉부,0,exact_same_class,1.0,0.455344,0.795104,0.049437,0.133375,false,false,false,전체
+B02_작은객체,B02_작은객체#1,27,MCCB 접촉부,1,exact_same_class,1.0,0.648328,0.9375,0.054156,0.125,false,false,false,전체
+B02_작은객체,B02_작은객체#2,27,MCCB 접촉부,2,exact_same_class,1.0,0.505359,0.948896,0.044281,0.102208,false,false,false,전체
+B02_작은객체,B02_작은객체#3,27,MCCB 접촉부,3,exact_same_class,1.0,0.450453,0.945646,0.054156,0.108708,false,false,false,전체
+B02_작은객체,B02_작은객체#4,27,MCCB 접촉부,4,exact_same_class,1.0,0.320969,0.946458,0.054187,0.107083,false,false,false,전체
+B02_작은객체,B02_작은객체#5,27,MCCB 접촉부,5,exact_same_class,1.0,0.643969,0.782083,0.057688,0.133333,false,false,false,전체
+B02_작은객체,B02_작은객체#6,27,MCCB 접촉부,6,exact_same_class,1.0,0.515109,0.780438,0.054156,0.133375,false,false,false,전체
+B02_작은객체,B02_작은객체#7,27,MCCB 접촉부,7,exact_same_class,1.0,0.323406,0.796687,0.049438,0.133375,false,false,false,전체
+B02_작은객체,B02_작은객체#8,18,MCCB,8,exact_same_class,1.0,0.575625,0.9375,0.18625,0.125,false,false,false,전체
+B02_작은객체,B02_작은객체#9,18,MCCB,9,exact_same_class,1.0,0.385719,0.944625,0.182625,0.11075,false,false,false,전체
+B02_작은객체,B02_작은객체#10,18,MCCB,10,exact_same_class,1.0,0.578703,0.784375,0.182656,0.150417,false,false,false,전체
+B02_작은객체,B02_작은객체#11,18,MCCB,11,exact_same_class,1.0,0.390562,0.795521,0.182625,0.135625,false,false,false,전체
+B02_잘림-2변이상,B02_잘림-2변이상#0,8,변류기,0,exact_same_class,1.0,0.456516,0.685875,0.803719,0.62825,true,false,false,클로즈업
+B03_다른클래스겹침,B03_다른클래스겹침#0,5,한류형 전력퓨즈,0,exact_same_class,1.0,0.490656,0.499063,0.209937,0.998125,true,false,false,중거리
+B03_다른클래스겹침,B03_다른클래스겹침#1,5,한류형 전력퓨즈,1,exact_same_class,1.0,0.859578,0.5,0.173344,1.0,true,false,false,중거리
+B03_작은객체,B03_작은객체#0,27,MCCB 접촉부,0,exact_same_class,1.0,0.285,0.182646,0.02875,0.139708,false,false,false,전체
+B03_작은객체,B03_작은객체#1,18,MCCB,1,exact_same_class,1.0,0.338141,0.183604,0.141219,0.153625,false,false,false,전체
+B03_작은객체,B03_작은객체#2,27,MCCB 접촉부,2,exact_same_class,1.0,0.281875,0.373375,0.031062,0.133333,false,false,false,전체
+B03_작은객체,B03_작은객체#3,27,MCCB 접촉부,3,exact_same_class,1.0,0.622672,0.158333,0.029719,0.150917,false,false,false,전체
+B03_작은객체,B03_작은객체#4,18,MCCB,4,exact_same_class,1.0,0.330687,0.546021,0.139875,0.118042,false,false,false,전체
+B03_작은객체,B03_작은객체#5,18,MCCB,5,exact_same_class,1.0,0.334359,0.371729,0.138781,0.137375,false,false,false,전체
+B03_작은객체,B03_작은객체#6,18,MCCB,6,exact_same_class,1.0,0.560406,0.156667,0.151063,0.163333,false,false,false,전체
+B03_작은객체,B03_작은객체#7,18,MCCB,7,exact_same_class,1.0,0.550594,0.535396,0.130063,0.142542,false,false,false,전체
+B03_작은객체,B03_작은객체#8,18,MCCB,8,exact_same_class,1.0,0.559766,0.34725,0.144844,0.137417,false,false,false,전체
+B03_작은객체,B03_작은객체#9,18,MCCB,9,exact_same_class,1.0,0.325875,0.670438,0.130125,0.101625,false,false,false,전체
+B03_작은객체,B03_작은객체#10,27,MCCB 접촉부,10,exact_same_class,1.0,0.499844,0.155792,0.029687,0.150917,false,false,false,전체
+B03_작은객체,B03_작은객체#11,27,MCCB 접촉부,11,exact_same_class,1.0,0.395406,0.184417,0.031062,0.1495,false,false,false,전체
+B03_작은객체,B03_작은객체#12,18,MCCB,12,exact_same_class,1.0,0.335625,0.789333,0.127812,0.114667,false,false,false,전체
+B03_작은객체,B03_작은객체#13,18,MCCB,13,exact_same_class,1.0,0.545781,0.686875,0.127813,0.122917,false,false,false,전체
+B03_작은객체,B03_작은객체#14,27,MCCB 접촉부,14,exact_same_class,1.0,0.278219,0.544333,0.031062,0.113833,false,false,false,전체
+B03_작은객체,B03_작은객체#15,27,MCCB 접촉부,15,exact_same_class,1.0,0.618984,0.35375,0.031094,0.133333,false,false,false,전체
+B03_작은객체,B03_작은객체#16,27,MCCB 접촉부,16,exact_same_class,1.0,0.504188,0.352125,0.031062,0.133333,false,false,false,전체
+B03_작은객체,B03_작은객체#17,27,MCCB 접촉부,17,exact_same_class,1.0,0.388156,0.376563,0.031063,0.133375,false,false,false,전체
+B03_작은객체,B03_작은객체#18,27,MCCB 접촉부,18,exact_same_class,1.0,0.389375,0.549292,0.031062,0.11725,false,false,false,전체
+B03_작은객체,B03_작은객체#19,27,MCCB 접촉부,19,exact_same_class,1.0,0.498094,0.532896,0.031063,0.133375,false,false,false,전체
+B03_작은객체,B03_작은객체#20,27,MCCB 접촉부,20,exact_same_class,1.0,0.608,0.534542,0.031062,0.133333,false,false,false,전체
+B03_작은객체,B03_작은객체#21,27,MCCB 접촉부,21,exact_same_class,1.0,0.277,0.669625,0.031062,0.094083,false,false,false,전체
+B03_작은객체,B03_작은객체#22,27,MCCB 접촉부,22,exact_same_class,1.0,0.385672,0.672104,0.023656,0.095792,false,false,false,전체
+B03_작은객체,B03_작은객체#23,27,MCCB 접촉부,23,exact_same_class,1.0,0.500531,0.687708,0.031062,0.12375,false,false,false,전체
+B03_작은객체,B03_작은객체#24,27,MCCB 접촉부,24,exact_same_class,1.0,0.600688,0.690146,0.031062,0.118875,false,false,false,전체
+B03_작은객체,B03_작은객체#25,27,MCCB 접촉부,25,exact_same_class,1.0,0.280625,0.790187,0.02625,0.110458,false,false,false,전체
+B03_작은객체,B03_작은객체#26,27,MCCB 접촉부,26,exact_same_class,1.0,0.386937,0.784417,0.031062,0.112,false,false,false,전체
+B03_잘림-2변이상,B03_잘림-2변이상#0,8,변류기,0,exact_same_class,1.0,0.314375,0.641896,0.62875,0.716208,true,false,false,중거리
+B03_잘림-2변이상,B03_잘림-2변이상#1,8,변류기,1,exact_same_class,1.0,0.484625,0.517979,0.382,0.709708,true,true,false,중거리

@@ -1,0 +1,301 @@
+﻿panel_id,camera,rel_path,exists,status,raw_shape,visual_shape,model,temp_min,temp_max,error
+P1,IR1,P1-TR반/New Folder With Items/A2_B1_P1_2022-06-03_IR1_00015.jpg,True,OK,320x240,640x480,FLIR E8,29.7,96.7,
+P1,IR1,P1-TR반/New Folder With Items/A1_B3_P1_2022-05-24_IR1_00107.jpg,True,OK,320x240,640x480,FLIR E8,26.7,74.4,
+P1,IR1,P1-TR반/New Folder With Items/A1_B2_P1_2022-05-12_IR1_00079.jpg,True,OK,320x240,640x480,FLIR E8,23.2,31.4,
+P1,IR1,P1-TR반/New Folder With Items/A1_B3_P1_2022-05-24_IR1_00050.jpg,True,OK,320x240,640x480,FLIR E8,23.4,71.5,
+P1,IR1,P1-TR반/New Folder With Items/A2_B1_P1_2022-06-03_IR1_00109.jpg,True,OK,320x240,640x480,FLIR E8,29.0,81.4,
+P1,IR1,P1-TR반/New Folder With Items/A3_B3_P1_2022-06-17_IR1_00091.jpg,True,OK,320x240,640x480,FLIR E8,29.0,90.5,
+P1,IR1,P1-TR반/New Folder With Items/A3_B2_P1_2022-06-17_IR1_00062.jpg,True,OK,320x240,640x480,FLIR E8,29.3,76.5,
+P1,IR1,P1-TR반/New Folder With Items/A3_B3_P1_2022-06-17_IR1_00049.jpg,True,OK,320x240,640x480,FLIR E8,28.1,92.3,
+P1,IR1,P1-TR반/New Folder With Items/A1_B2_P1_2022-05-12_IR1_00093.jpg,True,OK,320x240,640x480,FLIR E8,21.4,62.3,
+P1,IR1,P1-TR반/New Folder With Items/A1_B1_P1_2022-05-12_IR1_00030.jpg,True,OK,320x240,640x480,FLIR E8,20.6,62.8,
+P1,IR2,P1-TR반/New Folder With Items/A2_B1_P1_2022-07-11_IR2_7_02652.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR2,P1-TR반/New Folder With Items/A2_B1_P1_2022-07-11_IR2_1_01930.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR2,P1-TR반/New Folder With Items/A2_B1_P1_2022-07-11_IR2_5_00520.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR2,P1-TR반/New Folder With Items/A2_B1_P1_2022-07-11_IR2_4_00946.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR2,P1-TR반/New Folder With Items/A3_B3_P1_2022-07-15_IR2_01439.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR2,P1-TR반/New Folder With Items/A1_B2_P1_2022-07-19_IR2_03061.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR2,P1-TR반/New Folder With Items/A3_B3_P1_2022-07-15_IR2_02303.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR2,P1-TR반/New Folder With Items/A3_B2_P1_2022-07-15_IR2_02861.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR2,P1-TR반/New Folder With Items/A1_B2_P1_2022-07-19_IR2_00449.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR2,P1-TR반/New Folder With Items/A3_B3_P1_2022-07-15_IR2_02862.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR3,P1-TR반/New Folder With Items/A1_B2_P1_2022-07-19_IR3_01589.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR3,P1-TR반/New Folder With Items/A3_B2_P1_2022-07-15_IR3_01843.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR3,P1-TR반/A3_B5_P1_2022-07-01_IR3_02596.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR3,P1-TR반/New Folder With Items/A3_B3_P1_2022-07-15_IR3_01948.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR3,P1-TR반/New Folder With Items/A2_B1_P1_2022-07-11_IR3_06980.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR3,P1-TR반/New Folder With Items/A2_B1_P1_2022-07-11_IR3_03436.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR3,P1-TR반/New Folder With Items/A1_B2_P1_2022-07-19_IR3_03327.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR3,P1-TR반/New Folder With Items/A1_B2_P1_2022-07-19_IR3_03608.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR3,P1-TR반/New Folder With Items/A1_B3_P1_2022-07-19_IR3_04050.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P1,IR3,P1-TR반/New Folder With Items/A3_B3_P1_2022-07-15_IR3_05265.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR1,P10-ACB&MCCB반/A1_B1_P10_2022-05-12_IR1_00024.jpg,True,OK,320x240,640x480,FLIR E8,19.5,36.3,
+P10,IR1,P10-ACB&MCCB반/A1_B1_P10_2022-05-12_IR1_00015.jpg,True,OK,320x240,640x480,FLIR E8,20.2,37.8,
+P10,IR1,P10-ACB&MCCB반/A1_B1_P10_2022-05-12_IR1_00005.jpg,True,OK,320x240,640x480,FLIR E8,20.1,35.6,
+P10,IR1,P10-ACB&MCCB반/A1_B1_P10_2022-06-17_IR1_00009.jpg,True,OK,320x240,640x480,FLIR E8,22.1,29.9,
+P10,IR1,P10-ACB&MCCB반/A1_B1_P10_2022-05-12_IR1_00044.jpg,True,OK,320x240,640x480,FLIR E8,19.7,41.3,
+P10,IR1,P10-ACB&MCCB반/A1_B1_P10_2022-05-12_IR1_00043.jpg,True,OK,320x240,640x480,FLIR E8,19.6,40.6,
+P10,IR1,P10-ACB&MCCB반/A1_B1_P10_2022-05-12_IR1_00006.jpg,True,OK,320x240,640x480,FLIR E8,20.1,36.1,
+P10,IR1,P10-ACB&MCCB반/A1_B1_P10_2022-05-12_IR1_00014.jpg,True,OK,320x240,640x480,FLIR E8,20.4,36.9,
+P10,IR1,P10-ACB&MCCB반/A1_B1_P10_2022-05-12_IR1_00025.jpg,True,OK,320x240,640x480,FLIR E8,20.0,37.7,
+P10,IR1,P10-ACB&MCCB반/A1_B1_P10_2022-05-12_IR1_00007.jpg,True,OK,320x240,640x480,FLIR E8,19.6,33.3,
+P10,IR2,P10-ACB&MCCB반/A1_B1_P10_2022-07-19_IR2_00480.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR2,P10-ACB&MCCB반/A1_B1_P10_2022-07-19_IR2_00841.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR2,P10-ACB&MCCB반/A1_B1_P10_2022-07-19_IR2_02049.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR2,P10-ACB&MCCB반/A3_B2_P10_2022-07-15_IR2_02338.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR2,P10-ACB&MCCB반/A2_B1_P10_2022-07-11_IR2_5_01701.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR2,P10-ACB&MCCB반/A1_B3_P10_2022-07-19_IR2_00977.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR2,P10-ACB&MCCB반/A3_B2_P10_2022-07-15_IR2_00278.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR2,P10-ACB&MCCB반/A2_B1_P10_2022-07-11_IR2_4_00254.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR2,P10-ACB&MCCB반/A2_B1_P10_2022-07-11_IR2_2_00240.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR2,P10-ACB&MCCB반/A1_B3_P10_2022-07-19_IR2_03395.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR3,P10-ACB&MCCB반/A1_B1_P10_2022-07-19_IR3_01492.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR3,P10-ACB&MCCB반/A2_B1_P10_2022-07-11_IR3_00906.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR3,P10-ACB&MCCB반/A3_B2_P10_2022-07-15_IR3_00238.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR3,P10-ACB&MCCB반/A2_B1_P10_2022-07-11_IR3_02149.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR3,P10-ACB&MCCB반/A2_B1_P10_2022-07-11_IR3_02194.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR3,P10-ACB&MCCB반/A3_B2_P10_2022-07-15_IR3_01159.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR3,P10-ACB&MCCB반/A1_B1_P10_2022-07-19_IR3_00731.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR3,P10-ACB&MCCB반/A3_B2_P10_2022-07-15_IR3_01393.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR3,P10-ACB&MCCB반/A3_B2_P10_2022-07-15_IR3_00117.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P10,IR3,P10-ACB&MCCB반/A3_B2_P10_2022-07-15_IR3_00950.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR1,P2-LBS&LA반/A1_B1_P2_2022-05-12_IR1_00029.jpg,True,OK,320x240,640x480,FLIR E8,20.0,22.3,
+P2,IR1,P2-LBS&LA반/A1_B1_P2_2022-06-17_IR1_00034.jpg,True,OK,320x240,640x480,FLIR E8,23.7,25.6,
+P2,IR1,P2-LBS&LA반/A2_B1_P2_2022-06-03_IR1_00073.jpg,True,OK,320x240,640x480,FLIR E8,24.2,29.2,
+P2,IR1,P2-LBS&LA반/A1_B1_P2_2022-05-12_IR1_00062.jpg,True,OK,320x240,640x480,FLIR E8,20.3,23.4,
+P2,IR1,P2-LBS&LA반/A2_B1_P2_2022-06-03_IR1_00032.jpg,True,OK,320x240,640x480,FLIR E8,26.0,29.0,
+P2,IR1,P2-LBS&LA반/A1_B1_P2_2022-06-17_IR1_00002.jpg,True,OK,320x240,640x480,FLIR E8,20.8,24.0,
+P2,IR1,P2-LBS&LA반/A1_B1_P2_2022-06-03_IR1_00020.jpg,True,OK,320x240,640x480,FLIR E8,21.6,24.0,
+P2,IR1,P2-LBS&LA반/A1_B1_P2_2022-05-12_IR1_00015.jpg,True,OK,320x240,640x480,FLIR E8,19.5,77.9,
+P2,IR1,P2-LBS&LA반/A2_B1_P2_2022-06-03_IR1_00038.jpg,True,OK,320x240,640x480,FLIR E8,24.9,28.4,
+P2,IR1,P2-LBS&LA반/A1_B1_P2_2022-05-12_IR1_00040.jpg,True,OK,320x240,640x480,FLIR E8,18.6,43.8,
+P2,IR2,P2-LBS&LA반/A1_B1_P2_2022-07-19_IR2_00772.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR2,P2-LBS&LA반/A1_B1_P2_2022-07-19_IR2_01669.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR2,P2-LBS&LA반/A1_B1_P2_2022-07-19_IR2_01505.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR2,P2-LBS&LA반/A1_B1_P2_2022-07-19_IR2_00327.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR2,P2-LBS&LA반/A2_B1_P2_2022-07-11_IR2_1_00455.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR2,P2-LBS&LA반/A1_B1_P2_2022-07-19_IR2_01704.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR2,P2-LBS&LA반/A1_B1_P2_2022-07-19_IR2_00181.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR2,P2-LBS&LA반/A1_B1_P2_2022-07-19_IR2_01370.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR2,P2-LBS&LA반/A1_B1_P2_2022-07-25_IR2_00827.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR2,P2-LBS&LA반/A1_B1_P2_2022-07-19_IR2_00776.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR3,P2-LBS&LA반/A1_B1_P2_2022-07-19_IR3_00366.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR3,P2-LBS&LA반/A1_B1_P2_2022-07-19_IR3_02042.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR3,P2-LBS&LA반/A1_B1_P2_2022-07-19_IR3_02355.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR3,P2-LBS&LA반/A1_B1_P2_2022-07-19_IR3_02774.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR3,P2-LBS&LA반/A2_B1_P2_2022-07-11_IR3_00097.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR3,P2-LBS&LA반/A1_B1_P2_2022-07-19_IR3_01388.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR3,P2-LBS&LA반/A1_B1_P2_2022-07-19_IR3_00980.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR3,P2-LBS&LA반/A2_B1_P2_2022-07-11_IR3_00983.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR3,P2-LBS&LA반/A1_B1_P2_2022-07-19_IR3_01990.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P2,IR3,P2-LBS&LA반/A1_B1_P2_2022-07-19_IR3_02478.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR1,P3-MOF반/A2_B1_P3_2022-06-03_IR1_00021.jpg,True,OK,320x240,640x480,FLIR E8,25.5,31.4,
+P3,IR1,P3-MOF반/A2_B1_P3_2022-06-03_IR1_00004.jpg,True,OK,320x240,640x480,FLIR E8,25.9,27.1,
+P3,IR1,P3-MOF반/A2_B1_P3_2022-06-03_IR1_00018.jpg,True,OK,320x240,640x480,FLIR E8,25.0,28.9,
+P3,IR1,P3-MOF반/A2_B1_P3_2022-06-03_IR1_00030.jpg,True,OK,320x240,640x480,FLIR E8,25.4,31.4,
+P3,IR1,P3-MOF반/A2_B1_P3_2022-06-03_IR1_00014.jpg,True,OK,320x240,640x480,FLIR E8,25.9,28.3,
+P3,IR1,P3-MOF반/A2_B1_P3_2022-06-03_IR1_00011.jpg,True,OK,320x240,640x480,FLIR E8,25.8,27.3,
+P3,IR1,P3-MOF반/A2_B1_P3_2022-06-03_IR1_00005.jpg,True,OK,320x240,640x480,FLIR E8,26.1,27.2,
+P3,IR1,P3-MOF반/A2_B1_P3_2022-06-03_IR1_00066.jpg,True,OK,320x240,640x480,FLIR E8,26.6,34.8,
+P3,IR1,P3-MOF반/A2_B1_P3_2022-06-03_IR1_00013.jpg,True,OK,320x240,640x480,FLIR E8,25.9,27.1,
+P3,IR1,P3-MOF반/A2_B1_P3_2022-06-03_IR1_00053.jpg,True,OK,320x240,640x480,FLIR E8,26.2,37.7,
+P3,IR2,P3-MOF반/A2_B1_P3_2022-07-11_IR2_2_00850.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR2,P3-MOF반/A2_B1_P3_2022-07-11_IR2_1_00418.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR2,P3-MOF반/A2_B1_P3_2022-07-11_IR2_2_00794.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR2,P3-MOF반/A2_B1_P3_2022-07-11_IR2_2_00778.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR2,P3-MOF반/A2_B1_P3_2022-07-11_IR2_2_00732.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR2,P3-MOF반/A2_B1_P3_2022-07-11_IR2_2_00642.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR2,P3-MOF반/A2_B1_P3_2022-07-11_IR2_1_00537.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR2,P3-MOF반/A2_B1_P3_2022-07-11_IR2_1_00390.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR2,P3-MOF반/A3_B1_P3_2022-07-01_IR2_00007.jpg,True,FAIL,,,,,,KeyError: 42
+P3,IR2,P3-MOF반/A2_B1_P3_2022-07-11_IR2_1_00245.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR3,P3-MOF반/A2_B1_P3_2022-07-11_IR3_02338.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR3,P3-MOF반/A2_B1_P3_2022-07-11_IR3_02143.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR3,P3-MOF반/A2_B1_P3_2022-07-11_IR3_01032.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR3,P3-MOF반/A3_B1_P3_2022-07-01_IR3_00252.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR3,P3-MOF반/A3_B1_P3_2022-07-01_IR3_01532.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR3,P3-MOF반/A2_B1_P3_2022-07-11_IR3_00120.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR3,P3-MOF반/A2_B1_P3_2022-07-11_IR3_01295.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR3,P3-MOF반/A3_B1_P3_2022-07-01_IR3_00939.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR3,P3-MOF반/A3_B1_P3_2022-07-01_IR3_01480.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P3,IR3,P3-MOF반/A3_B1_P3_2022-07-01_IR3_00775.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR1,P4-MOF&PT반/A1_B1_P4_2022-06-03_IR1_00014.jpg,True,OK,320x240,640x480,FLIR E8,23.1,25.1,
+P4,IR1,P4-MOF&PT반/A1_B1_P4_2022-05-12_IR1_00098.jpg,True,OK,320x240,640x480,FLIR E8,20.1,26.8,
+P4,IR1,P4-MOF&PT반/A1_B1_P4_2022-06-17_IR1_00001.jpg,True,OK,320x240,640x480,FLIR E8,22.7,48.5,
+P4,IR1,P4-MOF&PT반/A1_B1_P4_2022-05-12_IR1_00010.jpg,True,OK,320x240,640x480,FLIR E8,20.3,23.4,
+P4,IR1,P4-MOF&PT반/A1_B1_P4_2022-06-03_IR1_00033.jpg,True,OK,320x240,640x480,FLIR E8,22.1,27.2,
+P4,IR1,P4-MOF&PT반/A1_B1_P4_2022-05-12_IR1_00054.jpg,True,OK,320x240,640x480,FLIR E8,21.0,23.5,
+P4,IR1,P4-MOF&PT반/A1_B1_P4_2022-06-03_IR1_00017.jpg,True,OK,320x240,640x480,FLIR E8,23.1,28.1,
+P4,IR1,P4-MOF&PT반/A1_B1_P4_2022-05-12_IR1_00034.jpg,True,OK,320x240,640x480,FLIR E8,20.6,22.6,
+P4,IR1,P4-MOF&PT반/A1_B1_P4_2022-06-03_IR1_00050.jpg,True,OK,320x240,640x480,FLIR E8,22.6,29.9,
+P4,IR1,P4-MOF&PT반/A1_B1_P4_2022-05-12_IR1_00061.jpg,True,OK,320x240,640x480,FLIR E8,20.6,23.0,
+P4,IR2,P4-MOF&PT반/A1_B1_P4_2022-07-19_IR2_01460.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR2,P4-MOF&PT반/A1_B1_P4_2022-07-27_IR2_00081.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR2,P4-MOF&PT반/A1_B1_P4_2022-07-19_IR2_00473.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR2,P4-MOF&PT반/A1_B1_P4_2022-07-19_IR2_00451.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR2,P4-MOF&PT반/A1_B1_P4_2022-07-25_IR2_00499.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR2,P4-MOF&PT반/A1_B1_P4_2022-07-25_IR2_00867.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR2,P4-MOF&PT반/A1_B1_P4_2022-07-27_IR2_00394.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR2,P4-MOF&PT반/A1_B1_P4_2022-07-19_IR2_01135.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR2,P4-MOF&PT반/A1_B1_P4_2022-07-27_IR2_00455.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR2,P4-MOF&PT반/A1_B1_P4_2022-07-25_IR2_00154.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR3,P4-MOF&PT반/A1_B1_P4_2022-07-19_IR3_02474.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR3,P4-MOF&PT반/A1_B1_P4_2022-07-19_IR3_00863.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR3,P4-MOF&PT반/A1_B1_P4_2022-07-19_IR3_01415.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR3,P4-MOF&PT반/A1_B1_P4_2022-07-19_IR3_01623.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR3,P4-MOF&PT반/A1_B1_P4_2022-07-19_IR3_02249.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR3,P4-MOF&PT반/A1_B1_P4_2022-07-19_IR3_02162.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR3,P4-MOF&PT반/A1_B1_P4_2022-07-19_IR3_02359.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR3,P4-MOF&PT반/A1_B1_P4_2022-07-19_IR3_02313.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR3,P4-MOF&PT반/A1_B1_P4_2022-07-19_IR3_01873.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P4,IR3,P4-MOF&PT반/A1_B1_P4_2022-07-19_IR3_02118.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR1,P5-PF&PT반/A2_B1_P5_2022-06-03_IR1_00022.jpg,True,OK,320x240,640x480,FLIR E8,25.3,30.5,
+P5,IR1,P5-PF&PT반/A2_B1_P5_2022-06-03_IR1_00025.jpg,True,OK,320x240,640x480,FLIR E8,25.2,30.5,
+P5,IR1,P5-PF&PT반/A1_B2_P5_2022-05-12_IR1_00059.jpg,True,OK,320x240,640x480,FLIR E8,21.4,27.9,
+P5,IR1,P5-PF&PT반/A2_B1_P5_2022-06-03_IR1_00035.jpg,True,OK,320x240,640x480,FLIR E8,26.1,31.2,
+P5,IR1,P5-PF&PT반/A1_B2_P5_2022-05-12_IR1_00021.jpg,True,OK,320x240,640x480,FLIR E8,19.2,34.6,
+P5,IR1,P5-PF&PT반/A1_B2_P5_2022-05-12_IR1_00063.jpg,True,OK,320x240,640x480,FLIR E8,21.2,31.2,
+P5,IR1,P5-PF&PT반/A1_B2_P5_2022-05-12_IR1_00076.jpg,True,OK,320x240,640x480,FLIR E8,20.7,32.6,
+P5,IR1,P5-PF&PT반/A1_B2_P5_2022-05-12_IR1_00027.jpg,True,OK,320x240,640x480,FLIR E8,19.7,24.6,
+P5,IR1,P5-PF&PT반/A2_B1_P5_2022-06-03_IR1_00043.jpg,True,OK,320x240,640x480,FLIR E8,26.2,34.3,
+P5,IR1,P5-PF&PT반/A1_B2_P5_2022-05-12_IR1_00095.jpg,True,OK,320x240,640x480,FLIR E8,22.2,29.0,
+P5,IR2,P5-PF&PT반/A2_B1_P5_2022-07-11_IR2_2_00535.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR2,P5-PF&PT반/A1_B2_P5_2022-07-19_IR2_01320.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR2,P5-PF&PT반/A1_B2_P5_2022-07-19_IR2_04873.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR2,P5-PF&PT반/A1_B2_P5_2022-07-19_IR2_00551.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR2,P5-PF&PT반/A1_B2_P5_2022-07-19_IR2_04877.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR2,P5-PF&PT반/A1_B2_P5_2022-07-19_IR2_05829.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR2,P5-PF&PT반/A1_B2_P5_2022-07-19_IR2_04423.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR2,P5-PF&PT반/A1_B2_P5_2022-07-19_IR2_04921.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR2,P5-PF&PT반/A2_B1_P5_2022-07-11_IR2_1_00482.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR2,P5-PF&PT반/A1_B2_P5_2022-07-19_IR2_05198.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR3,P5-PF&PT반/A1_B2_P5_2022-07-19_IR3_03257.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR3,P5-PF&PT반/A1_B2_P5_2022-07-19_IR3_03675.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR3,P5-PF&PT반/A1_B2_P5_2022-07-19_IR3_00083.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR3,P5-PF&PT반/A2_B1_P5_2022-07-11_IR3_01060.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR3,P5-PF&PT반/A2_B1_P5_2022-07-11_IR3_00842.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR3,P5-PF&PT반/A1_B2_P5_2022-07-19_IR3_00104.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR3,P5-PF&PT반/A1_B2_P5_2022-07-19_IR3_00127.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR3,P5-PF&PT반/A2_B1_P5_2022-07-11_IR3_01403.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR3,P5-PF&PT반/A1_B2_P5_2022-07-19_IR3_03624.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P5,IR3,P5-PF&PT반/A3_B1_P5_2022-07-01_IR3_01009.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR1,P6-VCB반/A2_B1_P6_2022-06-03_IR1_00058.jpg,True,OK,320x240,640x480,FLIR E8,27.6,29.7,
+P6,IR1,P6-VCB반/A2_B1_P6_2022-06-03_IR1_00039.jpg,True,OK,320x240,640x480,FLIR E8,26.4,28.7,
+P6,IR1,P6-VCB반/A1_B3_P6_2022-05-24_IR1_00007.jpg,True,OK,320x240,640x480,FLIR E8,24.2,38.7,
+P6,IR1,P6-VCB반/A3_B4_P6_2022-06-17_IR1_00004.jpg,True,OK,320x240,640x480,FLIR E8,25.7,29.7,
+P6,IR1,P6-VCB반/A1_B1_P6_2022-05-12_IR1_00076.jpg,True,OK,320x240,640x480,FLIR E8,20.1,28.9,
+P6,IR1,P6-VCB반/A2_B1_P6_2022-06-03_IR1_00014.jpg,True,OK,320x240,640x480,FLIR E8,26.1,29.0,
+P6,IR1,P6-VCB반/A3_B3_P6_2022-06-17_IR1_00024.jpg,True,OK,320x240,640x480,FLIR E8,28.6,41.0,
+P6,IR1,P6-VCB반/A3_B3_P6_2022-06-17_IR1_00037.jpg,True,OK,320x240,640x480,FLIR E8,28.2,40.9,
+P6,IR1,P6-VCB반/A2_B1_P6_2022-06-03_IR1_00032.jpg,True,OK,320x240,640x480,FLIR E8,26.6,28.7,
+P6,IR1,P6-VCB반/A1_B1_P6_2022-06-17_IR1_00002.jpg,True,OK,320x240,640x480,FLIR E8,22.6,30.0,
+P6,IR2,P6-VCB반/A1_B2_P6_2022-07-19_IR2_01247.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR2,P6-VCB반/A1_B3_P6_2022-07-19_IR2_03496.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR2,P6-VCB반/A1_B1_P6_2022-07-27_IR2_2_00515.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR2,P6-VCB반/A1_B2_P6_2022-07-19_IR2_01474.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR2,P6-VCB반/A1_B3_P6_2022-07-19_IR2_02578.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR2,P6-VCB반/A1_B1_P6_2022-07-25_IR2_02502.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR2,P6-VCB반/A1_B3_P6_2022-07-19_IR2_01317.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR2,P6-VCB반/A1_B1_P6_2022-07-25_IR2_02897.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR2,P6-VCB반/A1_B3_P6_2022-07-19_IR2_02541.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR2,P6-VCB반/A1_B1_P6_2022-07-25_IR2_02812.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR3,P6-VCB반/A2_B1_P6_2022-07-11_IR3_00768.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR3,P6-VCB반/A2_B1_P6_2022-07-11_IR3_02762.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR3,P6-VCB반/A1_B2_P6_2022-07-19_IR3_00806.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR3,P6-VCB반/A3_B1_P6_2022-07-01_IR3_00861.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR3,P6-VCB반/A2_B1_P6_2022-07-11_IR3_02616.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR3,P6-VCB반/A1_B1_P6_2022-07-19_IR3_00333.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR3,P6-VCB반/A3_B1_P6_2022-07-01_IR3_00868.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR3,P6-VCB반/A2_B1_P6_2022-07-11_IR3_02338.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR3,P6-VCB반/A1_B3_P6_2022-07-19_IR3_01830.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P6,IR3,P6-VCB반/A2_B1_P6_2022-07-11_IR3_02983.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR1,P7-VCB&CT반/A1_B1_P7_2022-06-17_IR1_00014.jpg,True,OK,320x240,640x480,FLIR E8,21.9,25.4,
+P7,IR1,P7-VCB&CT반/A1_B1_P7_2022-05-12_IR1_00002.jpg,True,OK,320x240,640x480,FLIR E8,20.6,24.9,
+P7,IR1,P7-VCB&CT반/A1_B1_P7_2022-06-17_IR1_00011.jpg,True,OK,320x240,640x480,FLIR E8,21.8,25.2,
+P7,IR1,P7-VCB&CT반/A1_B1_P7_2022-06-17_IR1_00006.jpg,True,OK,320x240,640x480,FLIR E8,23.5,27.5,
+P7,IR1,P7-VCB&CT반/A1_B1_P7_2022-05-12_IR1_00008.jpg,True,OK,320x240,640x480,FLIR E8,17.7,21.9,
+P7,IR1,P7-VCB&CT반/A1_B1_P7_2022-05-12_IR1_00011.jpg,True,OK,320x240,640x480,FLIR E8,17.7,21.0,
+P7,IR1,P7-VCB&CT반/A1_B1_P7_2022-05-12_IR1_00016.jpg,True,OK,320x240,640x480,FLIR E8,20.8,27.3,
+P7,IR1,P7-VCB&CT반/A1_B1_P7_2022-05-12_IR1_00019.jpg,True,OK,320x240,640x480,FLIR E8,20.0,24.4,
+P7,IR1,P7-VCB&CT반/A1_B1_P7_2022-06-17_IR1_00010.jpg,True,OK,320x240,640x480,FLIR E8,21.9,24.8,
+P7,IR1,P7-VCB&CT반/A1_B1_P7_2022-05-12_IR1_00017.jpg,True,OK,320x240,640x480,FLIR E8,18.8,23.5,
+P7,IR2,P7-VCB&CT반/A1_B1_P7_2022-07-27_IR2_00562.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR2,P7-VCB&CT반/A1_B1_P7_2022-07-27_IR2_00170.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR2,P7-VCB&CT반/A1_B1_P7_2022-07-27_IR2_00876.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR2,P7-VCB&CT반/A1_B1_P7_2022-07-25_IR2_01036.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR2,P7-VCB&CT반/A1_B1_P7_2022-07-27_IR2_00808.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR2,P7-VCB&CT반/A1_B1_P7_2022-07-25_IR2_01391.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR2,P7-VCB&CT반/A1_B1_P7_2022-07-25_IR2_00375.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR2,P7-VCB&CT반/A1_B1_P7_2022-07-25_IR2_00240.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR2,P7-VCB&CT반/A1_B1_P7_2022-07-27_IR2_00893.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR2,P7-VCB&CT반/A1_B1_P7_2022-07-25_IR2_00362.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR3,P7-VCB&CT반/A1_B1_P7_2022-07-19_IR3_00253.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR3,P7-VCB&CT반/A3_B1_P7_2022-07-01_IR3_00822.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR3,P7-VCB&CT반/A3_B1_P7_2022-07-01_IR3_00110.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR3,P7-VCB&CT반/A3_B1_P7_2022-07-01_IR3_00184.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR3,P7-VCB&CT반/A3_B1_P7_2022-07-01_IR3_00759.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR3,P7-VCB&CT반/A3_B1_P7_2022-07-01_IR3_00588.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR3,P7-VCB&CT반/A3_B1_P7_2022-07-01_IR3_00056.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR3,P7-VCB&CT반/A3_B1_P7_2022-07-01_IR3_00170.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR3,P7-VCB&CT반/A3_B1_P7_2022-07-01_IR3_00511.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P7,IR3,P7-VCB&CT반/A3_B1_P7_2022-07-01_IR3_00132.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR1,P8-ACB반/A2_B1_P8_2022-06-03_IR1_00026.jpg,True,OK,320x240,640x480,FLIR E8,28.0,34.3,
+P8,IR1,P8-ACB반/A1_B3_P8_2022-05-24_IR1_00030.jpg,True,OK,320x240,640x480,FLIR E8,24.5,28.9,
+P8,IR1,P8-ACB반/A3_B2_P8_2022-06-17_IR1_00025.jpg,True,OK,320x240,640x480,FLIR E8,25.4,37.6,
+P8,IR1,P8-ACB반/A1_B3_P8_2022-05-24_IR1_00019.jpg,True,OK,320x240,640x480,FLIR E8,24.6,29.7,
+P8,IR1,P8-ACB반/A2_B1_P8_2022-06-03_IR1_00012.jpg,True,OK,320x240,640x480,FLIR E8,27.3,30.7,
+P8,IR1,P8-ACB반/A1_B2_P8_2022-05-12_IR1_00003.jpg,True,OK,320x240,640x480,FLIR E8,21.4,30.1,
+P8,IR1,P8-ACB반/A3_B4_P8_2022-06-17_IR1_00012.jpg,True,OK,320x240,640x480,FLIR E8,26.3,31.3,
+P8,IR1,P8-ACB반/A3_B2_P8_2022-06-17_IR1_00022.jpg,True,OK,320x240,640x480,FLIR E8,25.8,37.6,
+P8,IR1,P8-ACB반/A3_B2_P8_2022-06-17_IR1_00020.jpg,True,OK,320x240,640x480,FLIR E8,28.6,39.7,
+P8,IR1,P8-ACB반/A1_B3_P8_2022-05-24_IR1_00003.jpg,True,OK,320x240,640x480,FLIR E8,23.6,27.8,
+P8,IR2,P8-ACB반/A1_B2_P8_2022-07-19_IR2_00061.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR2,P8-ACB반/A1_B2_P8_2022-07-19_IR2_01068.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR2,P8-ACB반/A2_B1_P8_2022-07-11_IR2_3_00818.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR2,P8-ACB반/A2_B1_P8_2022-07-11_IR2_4_00622.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR2,P8-ACB반/A2_B1_P8_2022-07-11_IR2_3_00731.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR2,P8-ACB반/A1_B2_P8_2022-07-19_IR2_00154.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR2,P8-ACB반/A2_B1_P8_2022-07-11_IR2_4_00800.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR2,P8-ACB반/A2_B1_P8_2022-07-11_IR2_2_01284.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR2,P8-ACB반/A1_B2_P8_2022-07-19_IR2_00108.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR2,P8-ACB반/A2_B1_P8_2022-07-11_IR2_2_01300.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR3,P8-ACB반/A3_B2_P8_2022-07-15_IR3_00497.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR3,P8-ACB반/A2_B1_P8_2022-07-11_IR3_00785.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR3,P8-ACB반/A2_B1_P8_2022-07-11_IR3_01216.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR3,P8-ACB반/A2_B1_P8_2022-07-11_IR3_03124.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR3,P8-ACB반/A3_B2_P8_2022-07-15_IR3_00705.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR3,P8-ACB반/A3_B2_P8_2022-07-15_IR3_00794.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR3,P8-ACB반/A2_B1_P8_2022-07-11_IR3_00777.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR3,P8-ACB반/A3_B3_P8_2022-07-15_IR3_00156.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR3,P8-ACB반/A2_B1_P8_2022-07-11_IR3_00495.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P8,IR3,P8-ACB반/A2_B1_P8_2022-07-11_IR3_00257.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR1,P9-MCCB반/A3_B2_P9_2022-06-17_IR1_00084.jpg,True,OK,320x240,640x480,FLIR E8,25.7,32.0,
+P9,IR1,P9-MCCB반/A1_B1_P9_2022-06-17_IR1_00023.jpg,True,OK,320x240,640x480,FLIR E8,24.4,25.9,
+P9,IR1,P9-MCCB반/A2_B1_P9_2022-06-03_IR1_00005.jpg,True,OK,320x240,640x480,FLIR E8,26.4,29.8,
+P9,IR1,P9-MCCB반/A2_B1_P9_2022-06-03_IR1_00064.jpg,True,OK,320x240,640x480,FLIR E8,26.9,34.4,
+P9,IR1,P9-MCCB반/A3_B2_P9_2022-06-17_IR1_00065.jpg,True,OK,320x240,640x480,FLIR E8,25.9,31.2,
+P9,IR1,P9-MCCB반/A1_B1_P9_2022-06-17_IR1_00013.jpg,True,OK,320x240,640x480,FLIR E8,23.0,27.2,
+P9,IR1,P9-MCCB반/A1_B3_P9_2022-05-24_IR1_00014.jpg,True,OK,320x240,640x480,FLIR E8,23.9,30.0,
+P9,IR1,P9-MCCB반/A1_B3_P9_2022-05-24_IR1_00012.jpg,True,OK,320x240,640x480,FLIR E8,25.0,27.9,
+P9,IR1,P9-MCCB반/A1_B3_P9_2022-05-24_IR1_00056.jpg,True,OK,320x240,640x480,FLIR E8,25.8,28.8,
+P9,IR1,P9-MCCB반/A1_B1_P9_2022-06-17_IR1_00007.jpg,True,OK,320x240,640x480,FLIR E8,22.6,25.2,
+P9,IR2,P9-MCCB반/A3_B2_P9_2022-07-15_IR2_02003.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR2,P9-MCCB반/A3_B2_P9_2022-07-15_IR2_01908.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR2,P9-MCCB반/A3_B2_P9_2022-07-15_IR2_05319.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR2,P9-MCCB반/A3_B2_P9_2022-07-15_IR2_05932.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR2,P9-MCCB반/A2_B1_P9_2022-07-11_IR2_2_00884.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR2,P9-MCCB반/A2_B1_P9_2022-07-11_IR2_8_01564.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR2,P9-MCCB반/A2_B1_P9_2022-07-11_IR2_6_01988.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR2,P9-MCCB반/A1_B2_P9_2022-07-19_IR2_02097.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR2,P9-MCCB반/A2_B1_P9_2022-07-11_IR2_5_00302.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR2,P9-MCCB반/A1_B1_P9_2022-07-19_IR2_01593.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR3,P9-MCCB반/A2_B1_P9_2022-07-11_IR3_00216.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR3,P9-MCCB반/A2_B1_P9_2022-07-11_IR3_00634.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR3,P9-MCCB반/A2_B1_P9_2022-07-11_IR3_03041.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR3,P9-MCCB반/A3_B2_P9_2022-07-15_IR3_00102.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR3,P9-MCCB반/A2_B1_P9_2022-07-11_IR3_01163.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR3,P9-MCCB반/A3_B5_P9_2022-07-01_IR3_00506.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR3,P9-MCCB반/A2_B1_P9_2022-07-11_IR3_00631.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR3,P9-MCCB반/A3_B1_P9_2022-07-01_IR3_01358.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR3,P9-MCCB반/A3_B2_P9_2022-07-15_IR3_02232.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)
+P9,IR3,P9-MCCB반/A1_B2_P9_2022-07-19_IR3_00426.jpg,True,FAIL,,,,,,ValueError: FLIR APP1 세그먼트 없음 (방사 데이터 미포함 파일)

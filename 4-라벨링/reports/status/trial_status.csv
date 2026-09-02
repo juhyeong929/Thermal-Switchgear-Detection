@@ -1,0 +1,41 @@
+﻿group,item,value,verdict
+배포본,시험 이미지,30장,OK
+배포본,식별용 실화상,22장,
+배포본,CVAT 라벨 정의,있음,OK
+스키마,classes.txt 줄 수,28 (v2 28),OK
+스키마,줄 번호 == v2 class_id,일치,OK
+스키마,자리표시자,10개 · 사용 18종,
+제출,annotator_A,yolo 30 · 박스 122 · 빈 12 · XML O · Skip 12 · 22분 · 속성 O,제출
+제출,annotator_B,yolo 30 · 박스 142 · 빈 2 · XML O · Skip 2 · 60분 · 속성 O,제출
+제출,annotator_C,yolo 30 · 박스 128 · 빈 12 · XML O · Skip 12 · 44분 · 속성 O,제출
+제출,annotator_D,yolo 0 · 박스 0 · 빈 0 · XML - · Skip 0 · 0분 · 속성 -,미제출
+제출,annotator_E,yolo 0 · 박스 0 · 빈 0 · XML - · Skip 0 · 0분 · 속성 -,미제출
+제출,제출한 라벨러,3/5,일치도 계산 가능
+위생,annotator_A Skip 로그 정합성,일치,OK
+위생,annotator_B Skip 로그 정합성,일치,OK
+위생,annotator_C Skip 로그 정합성,일치,OK
+위생,yolo/ 밖 라벨 txt,없음,OK
+위생,원본 export 보존,"3명분 (annotator_A, annotator_B, annotator_C)",OK
+위생,annotator_A XML↔YOLO 대응 실패,0건,OK
+위생,annotator_B XML↔YOLO 대응 실패,0건,OK
+위생,annotator_C XML↔YOLO 대응 실패,0건,OK
+산출물,이미지 인벤토리,있음,OK
+산출물,중복 제거 결과,있음,OK
+산출물,시드 후보 400장,있음,OK
+산출물,시험셋 30장,있음,OK
+산출물,정본 격리 목록,있음,OK
+산출물,학습셋 분할,있음,OK
+산출물,라벨러 지침서,있음,OK
+산출물,회수 전달문,있음,OK
+시드,정책 지문 일치,일치,OK
+시드,이미지 목록 지문,400장 · 일치,OK
+시드,생성 시점,2026-09-02,
+시드,시험셋 A군 계보,18/18장이 시드에 남아 있음,OK
+임계값,0.003 배포 문서 유출,없음,OK
+임계값,승격 상태,EVIDENCE_STRONG / PENDING_MULTI_ANNOTATOR,
+지침서,v2 생성,있음,OK
+지침서,escalation 연락처,**미기입 3곳 — 배포 금지**,FAIL
+지침서,v2 §1 표 ↔ 스키마,일치,OK
+미해소,OPEN QUESTION,열림 21 / 닫힘 12,
+미해소,지금 라벨링을 막는 항목,0건,OK
+미해소,결정 문서,23건,

@@ -1,0 +1,9 @@
+﻿case,grade,panel,stem,bodies,contacts,note
+p9_mccb_1,reference,P9,A1_B1_P9_2022-05-12_IR1_00027,2,4,본체 1개 + 좌우 단자군 각 1개 패턴 확인용
+p9_mccb_2,reference,P9,A1_B1_P9_2022-05-12_IR1_00028,1,2,본체 1개 + 좌우 단자군 각 1개 패턴 확인용
+p9_mccb_3,reference,P9,A1_B1_P9_2022-05-12_IR1_00039,2,4,본체 1개 + 좌우 단자군 각 1개 패턴 확인용
+p1_mold_1,canonical,P1,A1_B3_P1_2022-05-24_IR1_00067,3,7,정본 접촉부 관행 확인용
+p1_mold_2,canonical,P1,A1_B3_P1_2022-05-24_IR1_00086,3,7,정본 접촉부 관행 확인용
+p1_mold_3,canonical,P1,A1_B3_P1_2022-05-24_IR1_00026,3,6,정본 접촉부 관행 확인용
+p3_ct_1,canonical,P3,A2_B1_P3_2022-06-03_IR1_00002,,6,정본 변류기 접촉부 관행 확인용
+p3_ct_2,canonical,P3,A2_B1_P3_2022-06-03_IR1_00050,,6,정본 변류기 접촉부 관행 확인용

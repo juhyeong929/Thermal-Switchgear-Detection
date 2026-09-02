@@ -1,0 +1,5 @@
+﻿annotator,case_id,scope,skip_reason,class_if_known,note
+# scope: image = 이 장 전체를 못 하겠다(비교에서 제외) / object = 일부만 못 하겠다(나머지는 그대로 비교),,,,,
+# skip_reason: rule_unclear / not_visible / unknown_part / other,,,,,
+# rule_unclear=규칙이 애매 · not_visible=안 보임 · unknown_part=무슨 부품인지 모름 · other=그 밖,,,,,
+# 예,A08,object,unknown_part,,왼쪽 원통이 변압기인지 PT인지 모르겠음

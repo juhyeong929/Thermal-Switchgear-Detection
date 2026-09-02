@@ -1,0 +1,543 @@
+[
+  {
+    "name": "철심부",
+    "color": "#ff5555",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "에폭시 표면",
+    "color": "#ffaa00",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "몰드변압기 접촉부",
+    "color": "#ffee33",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "LBS",
+    "color": "#66dd44",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "한류형 전력퓨즈",
+    "color": "#33aaff",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "LA",
+    "color": "#5566ff",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "변압기",
+    "color": "#aa66ff",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "변류기",
+    "color": "#ff66cc",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "비한류형 전력퓨즈",
+    "color": "#cc8855",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "소음기부착형 전력퓨즈",
+    "color": "#88aa99",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "몰드타입 PT",
+    "color": "#dd4477",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "케이블헤드",
+    "color": "#ffaa00",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "CT",
+    "color": "#66dd44",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "SA",
+    "color": "#33ccaa",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "콘덴서",
+    "color": "#33aaff",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "MCCB",
+    "color": "#5566ff",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "변류기 접촉부",
+    "color": "#ff5555",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "MCCB 접촉부",
+    "color": "#66dd44",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "촬영유형",
+    "color": "#999999",
+    "type": "tag",
+    "attributes": [
+      {
+        "name": "shot_type",
+        "mutable": true,
+        "input_type": "select",
+        "default_value": "클로즈업",
+        "values": [
+          "클로즈업",
+          "중거리",
+          "전체"
+        ],
+        "description": "이미지 단위 메타데이터 — 샷 타입별 성능 편차를 보려면 필요하다"
+      }
+    ]
+  }
+]

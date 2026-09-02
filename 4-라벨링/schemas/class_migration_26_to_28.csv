@@ -1,0 +1,31 @@
+﻿old_class_id,old_class_name,old_class_ko,new_class_id,new_class_name,new_class_ko,new_guide_no,migration_type,applies_to_panel,basis
+0,core_iron,철심부,0,core_iron,철심부,1,same,전체,
+1,epoxy_surface,에폭시 표면,1,epoxy_surface,에폭시 표면,2,same,전체,
+2,mold_tr_contact,몰드변압기 접촉부,2,mold_tr_contact,몰드변압기 접촉부,3,same,전체,
+3,power_fuse,전력퓨즈,10,silencer_power_fuse,소음기부착형 전력퓨즈,11,renamed,전체,가이드 개정 2번: TR 반 전력퓨즈 -> 소음기부착형 전력퓨즈
+4,lbs,LBS,3,lbs,LBS,4,same,전체,
+5,lbs_primary,LBS 1차측 접촉부,4,lbs_primary,LBS 1차측 접촉부,5,status,전체,가이드 개정 3번: LBS 1차측 접촉부 보류 -> 가공
+6,lbs_secondary,LBS 2차측 접촉부,22,lbs_secondary,LBS 2차측 접촉부,23,status,전체,가이드 개정 3번: LBS 2차측 접촉부 보류 -> 가공
+7,cl_power_fuse,한류형 전력퓨즈,5,cl_power_fuse,한류형 전력퓨즈,6,same,전체,가이드 개정 1번: 한류형 전력퓨즈로 명칭 확정
+8,la,LA,6,la,LA,7,same,전체,
+9,transformer,변압기,7,transformer,변압기,8,same,전체,
+10,transformer_contact,변압기 접촉부,23,transformer_contact,변압기 접촉부,24,status,전체,가이드 개정 4번: 변압기 접촉부 보류 -> 가공
+11,ct_transformer,변류기,8,ct_transformer,변류기,9,same,전체,가이드 개정 4번: '분류기' -> '변류기' 명칭 정정
+12,mof_fuse,MOF 1차측 전력퓨즈,9,ncl_power_fuse,비한류형 전력퓨즈,10,renamed,전체,가이드 개정 4번: MOF&PT 반 전력퓨즈 -> 비한류형 전력퓨즈
+13,ct_transformer_contact,변류기 접촉부,24,ct_transformer_contact,변류기 접촉부,25,status,전체,가이드 개정 4번: 변류기 접촉부 보류 -> 가공
+14,pt,PT,11,mold_pt,몰드타입 PT,12,renamed,전체,가이드 개정 5번: PT -> 몰드타입 PT
+15,branch_contact,분기 접촉부,13,cable_head,케이블헤드,14,split,P11,가이드 개정 6·7번: 반에 따라 케이블헤드 / 분기 접촉부로 갈림
+15,branch_contact,분기 접촉부,12,branch_contact,분기 접촉부,13,split,P5,가이드 개정 6·7번: 반에 따라 케이블헤드 / 분기 접촉부로 갈림
+15,branch_contact,분기 접촉부,13,cable_head,케이블헤드,14,split,P6,가이드 개정 6·7번: 반에 따라 케이블헤드 / 분기 접촉부로 갈림
+15,branch_contact,분기 접촉부,,,,,split-unresolved,그 밖의 반,가이드에 대응 항목 없음 — 자동 변환하지 않고 사람이 판정
+16,incoming_contact,인입선로 접촉부,19,incoming_contact,인입선로 접촉부,20,same,전체,
+17,vcb_contact,VCB 접촉부,14,vcb_contact,VCB 접촉부,15,same,전체,
+18,ct,CT,15,ct,CT,16,same,전체,
+19,ct_contact,CT 접촉부,25,ct_contact,CT 접촉부,26,same,전체,
+20,capacitor,콘덴서,17,capacitor,콘덴서,18,same,전체,
+21,mccb,MCCB,18,mccb,MCCB,19,same,전체,
+22,mccb_contact,MCCB 접촉부,27,mccb_contact,MCCB 접촉부,28,same,전체,
+23,acb_contact,ACB 접촉부,26,acb_contact,ACB 접촉부,27,same,전체,
+24,busbar,부스바,20,busbar,부스바,21,same,전체,
+25,cable,케이블,21,cable,케이블,22,same,전체,
+,,,16,sa,SA,17,new,P6,"v2 신규 항목 — 구 스키마에 대응 없음, 전량 신규 라벨링"

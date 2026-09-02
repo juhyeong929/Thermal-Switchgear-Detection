@@ -1,0 +1,13 @@
+﻿pair,class_name,images_compared,images_skipped,matched_boxes,mIoU,kappa,count_agreement,skip_a,skip_b
+annotator_A vs annotator_B,(전체),17,13,90,0.758,0.8565,0.5312,12,2
+annotator_A vs annotator_B,철심부,,,0,,,,,
+annotator_A vs annotator_B,에폭시 표면,,,3,0.8712,,,,
+annotator_A vs annotator_B,몰드변압기 접촉부,,,7,0.8185,,,,
+annotator_A vs annotator_B,한류형 전력퓨즈,,,0,,,,,
+annotator_A vs annotator_B,비한류형 전력퓨즈,,,0,,,,,
+annotator_A vs annotator_B,몰드타입 PT,,,3,0.8457,,,,
+annotator_A vs annotator_B,케이블헤드,,,0,,,,,
+annotator_A vs annotator_B,CT,,,0,,,,,
+annotator_A vs annotator_B,SA,,,0,,,,,
+annotator_A vs annotator_B,MCCB,,,28,0.7802,,,,
+annotator_A vs annotator_B,MCCB 접촉부,,,40,0.722,,,,

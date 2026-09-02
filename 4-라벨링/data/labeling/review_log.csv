@@ -1,0 +1,10 @@
+﻿review_id,date,reviewer,role,scope,target,method,n_items,result,artifact,decision,note
+# reviewer 는 **실제 확인한 사람 이름**을 적는다. 비어 있으면 미검수로 센다,,,,,,,,,,,
+# role: 1차검수 / 2차검수 / 교차검수 / 감사 / 승인,,,,,,,,,,,
+# result: PASS / FAIL / PARTIAL / PENDING,,,,,,,,,,,
+# 아래 초안 행은 산출물이 이미 존재하는 검수 행위다. reviewer 칸만 채우면 된다,,,,,,,,,,,
+REV-001,2026-08-27,김주형,감사,기존 라벨 승계,"정본 4,177박스 (P1·P3·P4)",26->28 변환 전후 클래스별 박스 수 대조,11,PASS,reports/data_audit/migration_verification.csv,DEC-003,손실 0 · 보류 0
+REV-002,2026-08-28,김주형,감사,정본 라벨 규격 감사,"정본 4,177박스",좌표 기반 규칙 위반 탐지 + 표본 육안,278,PARTIAL,reports/data_audit/canonical_audit_summary.csv,DEC-016,제외 클래스·후보 위반 0 · 같은 클래스 중복 20쌍 발견
+REV-003,2026-08-28,김주형,감사,정본 위반 박스 격리,중복 20쌍 40행,원본 무수정 + 격리 목록 등재,20,PASS,data/labeling/quarantine/canonical_quarantine.csv,DEC-017 · DEC-022,20쌍 판정 완료 — 큰쪽 11 · 작은쪽 8 · 둘다제외 1 · 오탐 0 (DEC-022)
+REV-004,2026-08-31,김주형,감사,시험 라벨 vs 기존 라벨 차이 판정,A_MISSING 9건,차이를 기하로 분해 후 육안 판정,9,PASS,diff_MCCB접촉부_2026-08-31.csv,-,판정을 가른 축은 잘림이 아니라 면적
+REV-005,2026-09-01,김주형,감사,학습셋 누수 표본 검증,근접 미달 교차 쌍 층화 표본 101쌍,나란히 비교 후 동일 시야 여부 판정,101,PASS,reports/data_audit/oq016/visual_review.csv,DEC-018,101/101 판정 완료 — SAME 20 · NEAR 2 · DIFF 79 · UNCERTAIN 0. CASE C 판정: cluster split 최종 확정 보류 (OQ-016 RESULT.md)

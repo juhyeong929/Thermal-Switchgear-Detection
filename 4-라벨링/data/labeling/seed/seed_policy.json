@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-09-02",
+  "image_id_sha256": "2ed150e38761d881c3fa0de888ec3502a26cea0a8d634738cd5241c8c50999e7",
+  "images": 400,
+  "policy": {
+    "NEED_SEEN": 10,
+    "NEED_UNSEEN": 20,
+    "STRATUM_CAP": 0.35,
+    "TARGET": 400,
+    "deployable": {
+      "P1-TR반": [
+        "core_iron",
+        "epoxy_surface",
+        "mold_tr_contact",
+        "silencer_power_fuse"
+      ],
+      "P10-ACB&MCCB반": [
+        "capacitor",
+        "mccb",
+        "mccb_contact"
+      ],
+      "P2-LBS&LA반": [
+        "cable_head",
+        "cl_power_fuse",
+        "la",
+        "lbs"
+      ],
+      "P3-MOF반": [
+        "ct_transformer",
+        "ct_transformer_contact",
+        "ncl_power_fuse"
+      ],
+      "P4-MOF&PT반": [
+        "ct_transformer",
+        "ct_transformer_contact",
+        "mold_pt",
+        "ncl_power_fuse",
+        "transformer"
+      ],
+      "P5-PF&PT반": [
+        "mold_pt",
+        "silencer_power_fuse"
+      ],
+      "P6-VCB반": [
+        "cable_head",
+        "ct",
+        "sa"
+      ],
+      "P7-VCB&CT반": [
+        "ct"
+      ],
+      "P8-ACB반": [
+        "capacitor",
+        "mccb",
+        "mccb_contact"
+      ],
+      "P9-MCCB반": [
+        "mccb",
+        "mccb_contact"
+      ]
+    },
+    "excluded": [
+      "acb_contact",
+      "busbar",
+      "cable"
+    ],
+    "panel_classes": {
+      "P1-TR반": [
+        "core_iron",
+        "epoxy_surface",
+        "mold_tr_contact",
+        "silencer_power_fuse"
+      ],
+      "P10-ACB&MCCB반": [
+        "acb_contact",
+        "capacitor",
+        "mccb",
+        "mccb_contact"
+      ],
+      "P2-LBS&LA반": [
+        "cable_head",
+        "cl_power_fuse",
+        "la",
+        "lbs",
+        "lbs_primary",
+        "lbs_secondary"
+      ],
+      "P3-MOF반": [
+        "ct_transformer",
+        "ct_transformer_contact",
+        "ncl_power_fuse"
+      ],
+      "P4-MOF&PT반": [
+        "ct_transformer",
+        "ct_transformer_contact",
+        "mold_pt",
+        "ncl_power_fuse",
+        "transformer",
+        "transformer_contact"
+      ],
+      "P5-PF&PT반": [
+        "branch_contact",
+        "incoming_contact",
+        "mold_pt",
+        "silencer_power_fuse"
+      ],
+      "P6-VCB반": [
+        "cable_head",
+        "ct",
+        "sa",
+        "vcb_contact"
+      ],
+      "P7-VCB&CT반": [
+        "ct",
+        "ct_contact",
+        "vcb_contact"
+      ],
+      "P8-ACB반": [
+        "acb_contact",
+        "capacitor",
+        "mccb",
+        "mccb_contact"
+      ],
+      "P9-MCCB반": [
+        "mccb",
+        "mccb_contact"
+      ]
+    },
+    "seen_zero": [
+      "branch_contact",
+      "cable_head",
+      "capacitor",
+      "cl_power_fuse",
+      "ct",
+      "ct_contact",
+      "incoming_contact",
+      "la",
+      "lbs",
+      "lbs_primary",
+      "lbs_secondary",
+      "mccb",
+      "mccb_contact",
+      "mold_pt",
+      "sa",
+      "vcb_contact"
+    ]
+  },
+  "policy_sha256": "6d2651f283001b8c335aaf34a4fb8b500a5930ba8ac2baaca21db425ac61a5cf"
+}

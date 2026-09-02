@@ -1,0 +1,18 @@
+{
+  "cluster_count": 37669,
+  "singleton_count": 13536,
+  "largest_cluster_size": 99,
+  "p95_cluster_size": 8,
+  "p99_cluster_size": 14,
+  "top10_cluster_share": 0.00543,
+  "mean_cluster_size": 2.8322,
+  "median_cluster_size": 2.0,
+  "images": 106685,
+  "cos_min": 0.9175,
+  "ham_max": 22,
+  "edges_kept": 431123,
+  "human_positive_n": 22,
+  "human_positive_capture": 0.1364,
+  "human_negative_n": 79,
+  "human_negative_merge": 0.0886
+}

@@ -1,0 +1,6 @@
+﻿scenario,edge_rule,edges,cross_cluster_edges,components,largest_component,largest_share,p99_component,cross_panel_components,moved_images,moved_ratio,forced_moves,forced_ratio,train_ratio,val_ratio,test_ratio,panel_min_val,panel_min_test,panels_zero_val,panels_zero_test,session_multi_split,feasible
+S0,제약 없음 (현행),0,0,38957,84,0.00079,13,0,0,0.0,0,0.0,0.6991,0.1497,0.1511,218,219,,,174,YES
+S1,REV-005 human SAME/NEAR 22쌍만,22,22,38935,84,0.00079,13,0,30659,0.28738,143,0.00134,0.6995,0.1495,0.151,218,219,,,174,YES
+S2,코사인 >= 0.9155 후보 전체,437671,21294,17663,14830,0.13901,40,0,44021,0.41263,23817,0.22325,0.7904,0.0864,0.1232,305,98,,,164,확인
+S3,코사인 >= 0.920 후보 전체,422537,20821,18136,14418,0.13515,40,0,43662,0.40926,23542,0.22067,0.8065,0.0826,0.1109,135,177,,,163,확인
+S4,코사인 >= 0.925 후보 전체,405433,20194,18763,13160,0.12335,41,0,49818,0.46696,23161,0.2171,0.699,0.1127,0.1883,110,213,,,168,확인

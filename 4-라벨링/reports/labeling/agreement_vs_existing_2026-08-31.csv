@@ -1,0 +1,7 @@
+﻿pair,class_name,images_compared,images_skipped,matched_boxes,mIoU,kappa,count_agreement,skip_a,skip_b
+annotator_A vs _existing,(전체),7,5,65,0.741,1.0,0.3077,12,0
+annotator_A vs _existing,철심부,,,0,,,,,
+annotator_A vs _existing,몰드변압기 접촉부,,,3,0.8416,,,,
+annotator_A vs _existing,케이블헤드,,,2,0.7333,,,,
+annotator_A vs _existing,MCCB,,,24,0.7901,,,,
+annotator_A vs _existing,MCCB 접촉부,,,36,0.7004,,,,

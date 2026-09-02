@@ -1,0 +1,7 @@
+﻿source,panel,old_class_id,old_class_ko,boxes,share,images_with_it,v2_class_id,v2_class_ko,migration_type,in_v2_panel_candidates
+6ban,P6,15,분기 접촉부,387,0.709,177,13,케이블헤드,split,1
+6ban,P6,17,VCB 접촉부,159,0.291,111,14,VCB 접촉부,same,1
+9ban,P9,20,콘덴서,1,0.000,1,17,콘덴서,same,0
+9ban,P9,21,MCCB,994,0.356,311,18,MCCB,same,1
+9ban,P9,22,MCCB 접촉부,1778,0.637,301,27,MCCB 접촉부,same,1
+9ban,P9,23,ACB 접촉부,20,0.007,17,26,ACB 접촉부,same,0

@@ -1,0 +1,12 @@
+﻿source,old_class_id,old_class_ko,boxes_before,new_class_id,new_guide_no,new_class_ko,boxes_after,migration_type,match
+P1_A3검수완료,0,철심부,634,0,1,철심부,634,same,OK
+P1_A3검수완료,1,에폭시 표면,1448,1,2,에폭시 표면,1448,same,OK
+P1_A3검수완료,2,몰드변압기 접촉부,1365,2,3,몰드변압기 접촉부,1365,same,OK
+P1_A3검수완료,3,전력퓨즈,127,10,11,소음기부착형 전력퓨즈,127,renamed,OK
+P3__p3,11,변류기,49,8,9,변류기,49,same,OK
+P3__p3,13,변류기 접촉부,178,24,25,변류기 접촉부,178,status,OK
+P4__p4,9,변압기,1,7,8,변압기,1,same,OK
+P4__p4,10,변압기 접촉부,3,23,24,변압기 접촉부,3,status,OK
+P4__p4,11,변류기,140,8,9,변류기,140,same,OK
+P4__p4,12,MOF 1차측 전력퓨즈,191,9,10,비한류형 전력퓨즈,191,renamed,OK
+P4__p4,13,변류기 접촉부,41,24,25,변류기 접촉부,41,status,OK

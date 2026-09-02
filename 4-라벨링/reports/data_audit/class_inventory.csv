@@ -1,0 +1,29 @@
+﻿class_id,guide_no,class_name,canonical_name,label_status,priority,existing_instance_count,panels_with_instances,candidate_panels,migration_required,notes
+0,1,core_iron,철심부,주의,1,634,P1,P1,1,
+1,2,epoxy_surface,에폭시 표면,가공,1,1448,P1,P1,1,
+2,3,mold_tr_contact,몰드변압기 접촉부,가공,1,1365,P1,P1,1,
+3,4,lbs,LBS,가공,2,0,,P2,0,
+4,5,lbs_primary,LBS 1차측 접촉부,가공,2,0,,P2,0,v1 보류 -> v2 가공대상 전환
+5,6,cl_power_fuse,한류형 전력퓨즈,가공,2,0,,P2,0,LBS&LA 반. 퓨즈 3종은 형태로 구분한다
+6,7,la,LA,가공,2,0,,P2,0,
+7,8,transformer,변압기,가공,3,1,P4,P4,1,
+8,9,ct_transformer,변류기,가공,3,189,P3 P4,P3 P4,1,v1 '분류기' 명칭 정정
+9,10,ncl_power_fuse,비한류형 전력퓨즈,가공,3,191,P4,P3 P4,1,MOF&PT 반
+10,11,silencer_power_fuse,소음기부착형 전력퓨즈,가공,1,127,P1,P1 P5,1,TR 반 · PF&PT 반 공통
+11,12,mold_pt,몰드타입 PT,가공,3,0,,P4 P5,0,
+12,13,branch_contact,분기 접촉부,가공,4,0,,P5,0,PF&PT 반 전용 명칭
+13,14,cable_head,케이블헤드,가공,2,0,,P2 P6,0,VCB·CNCV 반. v1 '분기 접촉부' 를 케이블헤드로 통일
+14,15,vcb_contact,VCB 접촉부,가공,5,0,,P6 P7,0,
+15,16,ct,CT,가공,5,0,,P6 P7,0,v2 에서 VCB 반에 신규 추가. 계기 표시창이 달린 적갈색 몰드형
+16,17,sa,SA,가공,5,0,,P6,0,"v2 신규. 백색 애자형 원통, 대·소 3개 1조 (서지흡수기)"
+17,18,capacitor,콘덴서,가공,9,0,,P8 P10,0,
+18,19,mccb,MCCB,가공,9,0,,P8 P9 P10,0,
+19,20,incoming_contact,인입선로 접촉부,주의,4,0,,P5,0,
+20,21,busbar,부스바,제외,,0,,,0,어떤 반에서도 라벨링하지 않음
+21,22,cable,케이블,제외,,0,,,0,"케이블헤드(#14, 가공대상)와 혼동하지 않는다 / 어떤 반에서도 라벨링하지 않음"
+22,23,lbs_secondary,LBS 2차측 접촉부,가공,2,0,,P2,0,v1 보류 -> v2 가공대상 전환
+23,24,transformer_contact,변압기 접촉부,가공,3,3,P4,P4,1,v1 보류 -> v2 가공대상 전환
+24,25,ct_transformer_contact,변류기 접촉부,가공,3,219,P3 P4,P3 P4,1,v1 보류 -> v2 가공대상 전환
+25,26,ct_contact,CT 접촉부,주의,8,0,,P7,0,
+26,27,acb_contact,ACB 접촉부,제외,9,0,,P8 P10,0,어떤 반에서도 라벨링하지 않음
+27,28,mccb_contact,MCCB 접촉부,주의,9,0,,P8 P9 P10,0,

@@ -1,0 +1,4 @@
+﻿annotator,class_name,n,min,p05,median,p95,below_th,below_th_pct
+annotator_A,MCCB 접촉부,58,0.00257,0.00306,0.00737,0.0203,2,3.4
+annotator_B,MCCB 접촉부,62,0.00227,0.00348,0.00946,0.05144,3,4.8
+_existing(기존),MCCB 접촉부,58,0.00087,0.00148,0.00541,0.02602,10,17.2

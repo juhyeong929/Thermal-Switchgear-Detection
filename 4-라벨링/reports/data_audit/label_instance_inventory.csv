@@ -1,0 +1,77 @@
+﻿source,role,panel_id,old_class_id,old_class_name,old_class_ko,boxes
+IR1_1반_1차,primary,P1,1,epoxy_surface,에폭시 표면,325
+IR1_1반_1차,primary,P1,0,core_iron,철심부,113
+IR1_1반_1차,primary,P1,2,mold_tr_contact,몰드변압기 접촉부,247
+IR1_1반_1차,primary,P1,3,power_fuse,전력퓨즈,65
+IR1_1반_A1검수,primary,P1,0,core_iron,철심부,276
+IR1_1반_A1검수,primary,P1,2,mold_tr_contact,몰드변압기 접촉부,675
+IR1_1반_A1검수,primary,P1,1,epoxy_surface,에폭시 표면,707
+IR1_1반_A1검수,primary,P1,3,power_fuse,전력퓨즈,114
+IR1_1반_A2검수,primary,P1,2,mold_tr_contact,몰드변압기 접촉부,1002
+IR1_1반_A2검수,primary,P1,0,core_iron,철심부,432
+IR1_1반_A2검수,primary,P1,1,epoxy_surface,에폭시 표면,1038
+IR1_1반_A2검수,primary,P1,3,power_fuse,전력퓨즈,114
+A3검수완료,primary,P1,2,mold_tr_contact,몰드변압기 접촉부,1365
+A3검수완료,primary,P1,0,core_iron,철심부,634
+A3검수완료,primary,P1,1,epoxy_surface,에폭시 표면,1448
+A3검수완료,primary,P1,3,power_fuse,전력퓨즈,127
+_p1only,primary,P1,2,mold_tr_contact,몰드변압기 접촉부,1365
+_p1only,primary,P1,0,core_iron,철심부,634
+_p1only,primary,P1,1,epoxy_surface,에폭시 표면,1448
+_p1only,primary,P1,3,power_fuse,전력퓨즈,127
+_p3,primary,P3,13,ct_transformer_contact,변류기 접촉부,178
+_p3,primary,P3,11,ct_transformer,변류기,49
+_p4,primary,P4,12,mof_fuse,MOF 1차측 전력퓨즈,191
+_p4,primary,P4,10,transformer_contact,변압기 접촉부,3
+_p4,primary,P4,9,transformer,변압기,1
+_p4,primary,P4,11,ct_transformer,변류기,140
+_p4,primary,P4,13,ct_transformer_contact,변류기 접촉부,41
+IR1_3반,primary,P3,13,ct_transformer_contact,변류기 접촉부,178
+IR1_3반,primary,P3,11,ct_transformer,변류기,49
+data_labels_ir,derived,P10,21,mccb,MCCB,2
+data_labels_ir,derived,P1,2,mold_tr_contact,몰드변압기 접촉부,1365
+data_labels_ir,derived,P1,0,core_iron,철심부,634
+data_labels_ir,derived,P1,1,epoxy_surface,에폭시 표면,1448
+data_labels_ir,derived,P1,3,power_fuse,전력퓨즈,127
+data_labels_ir,derived,P4,9,transformer,변압기,5
+data_labels_ir,derived,P4,7,cl_power_fuse,한류형 전력퓨즈,2
+data_labels_ir,derived,P4,18,ct,CT,1
+data_labels_ir,derived,P6,15,branch_contact,분기 접촉부,18
+data_labels_ir,derived,P5,14,pt,PT,13
+data_labels_ir,derived,P5,3,power_fuse,전력퓨즈,2
+data_labels_ir,derived,P5,15,branch_contact,분기 접촉부,6
+data_labels_ir,derived,P9,21,mccb,MCCB,15
+data_labels_ir,derived,P2,7,cl_power_fuse,한류형 전력퓨즈,5
+data_labels_ir,derived,P3,13,ct_transformer_contact,변류기 접촉부,178
+data_labels_ir,derived,P3,11,ct_transformer,변류기,49
+data_labels_rgb,derived,P10,21,mccb,MCCB,2
+data_labels_rgb,derived,P1,1,epoxy_surface,에폭시 표면,22
+data_labels_rgb,derived,P1,2,mold_tr_contact,몰드변압기 접촉부,23
+data_labels_rgb,derived,P4,9,transformer,변압기,5
+data_labels_rgb,derived,P4,7,cl_power_fuse,한류형 전력퓨즈,2
+data_labels_rgb,derived,P4,18,ct,CT,1
+data_labels_rgb,derived,P6,15,branch_contact,분기 접촉부,18
+data_labels_rgb,derived,P5,14,pt,PT,13
+data_labels_rgb,derived,P5,3,power_fuse,전력퓨즈,2
+data_labels_rgb,derived,P5,15,branch_contact,분기 접촉부,6
+data_labels_rgb,derived,P9,21,mccb,MCCB,15
+data_labels_rgb,derived,P2,7,cl_power_fuse,한류형 전력퓨즈,5
+data_labels_pred,derived,P10,15,branch_contact,분기 접촉부,11
+data_labels_pred,derived,P10,11,ct_transformer,변류기,2
+data_labels_pred,derived,P11,11,ct_transformer,변류기,1
+data_labels_pred,derived,P1,0,core_iron,철심부,42
+data_labels_pred,derived,P1,1,epoxy_surface,에폭시 표면,27
+data_labels_pred,derived,P4,6,lbs_secondary,LBS 2차측 접촉부,13
+data_labels_pred,derived,P4,10,transformer_contact,변압기 접촉부,1
+data_labels_pred,derived,P6,11,ct_transformer,변류기,31
+data_labels_pred,derived,P9,15,branch_contact,분기 접촉부,16
+data_labels_pred,derived,P5,10,transformer_contact,변압기 접촉부,40
+data_labels_pred,derived,P5,11,ct_transformer,변류기,4
+data_labels_pred,derived,P8,11,ct_transformer,변류기,3
+data_labels_pred,derived,P3,6,lbs_secondary,LBS 2차측 접촉부,6
+data_labels_pred,derived,P13,11,ct_transformer,변류기,2
+data_labels_pred,derived,P9,11,ct_transformer,변류기,2
+dataset_contact1,derived,P3,0,,(단일클래스),178
+dataset_contact1,derived,P4,0,,(단일클래스),44
+dataset_contact2,derived,P4,0,,(단일클래스),44
+dataset_contact2,derived,P3,0,,(단일클래스),178

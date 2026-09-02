@@ -1,0 +1,13 @@
+﻿case_id,grade,panel,camera,boxes_in,boxes_out,source,target_class_for_review
+B01_잘림-2변이상,canonical,P4-MOF&PT반,IR1,7,7,data\labeling\reviewed\P4__p4\A1_B1_P4_2022-05-12_IR1_00001.txt,변압기 / 변압기 접촉부 / 비한류형 전력퓨즈
+B02_잘림-2변이상,canonical,P4-MOF&PT반,IR1,1,1,data\labeling\reviewed\P4__p4\A1_B1_P4_2022-05-12_IR1_00015.txt,변류기
+B03_잘림-2변이상,canonical,P4-MOF&PT반,IR1,2,2,data\labeling\reviewed\P4__p4\A1_B1_P4_2022-05-12_IR1_00021.txt,변류기
+B01_작은객체,reference,P9-MCCB반,IR1,10,10,data\backup\P9_9ban\obj_train_data\A1_B1_P9_2022-05-12_IR1_00002.txt,MCCB / MCCB 접촉부
+B02_작은객체,reference,P9-MCCB반,IR1,13,13,data\backup\P9_9ban\obj_train_data\A1_B1_P9_2022-05-12_IR1_00050.txt,MCCB / MCCB 접촉부
+B03_작은객체,reference,P9-MCCB반,IR1,31,31,data\backup\P9_9ban\obj_train_data\A1_B2_P9_2022-05-12_IR1_00003.txt,MCCB / MCCB 접촉부
+B01_다른클래스겹침,canonical,P4-MOF&PT반,IR1,6,6,data\labeling\reviewed\P4__p4\A1_B1_P4_2022-05-12_IR1_00080.txt,변류기 접촉부 / 비한류형 전력퓨즈
+B02_다른클래스겹침,canonical,P4-MOF&PT반,IR1,5,5,data\labeling\reviewed\P4__p4\A1_B1_P4_2022-05-12_IR1_00088.txt,변류기 접촉부 / 비한류형 전력퓨즈
+B03_다른클래스겹침,reference,P6-VCB반,IR1,3,3,data\backup\P6_6ban\obj_train_data\A1_B1_P6_2022-05-12_IR1_00012.txt,VCB 접촉부 / 케이블헤드
+B01_같은클래스겹침,canonical,P1-TR반,IR1,5,5,data\labeling\reviewed\P1_A3검수완료\A1_B1_P1_2022-05-12_IR1_00090.txt,몰드변압기 접촉부 / 철심부
+B01_같은클래스밀집,reference,P9-MCCB반,IR1,23,23,data\backup\P9_9ban\obj_train_data\A1_B1_P9_2022-05-12_IR1_00003.txt,MCCB / MCCB 접촉부
+B02_같은클래스밀집,reference,P9-MCCB반,IR1,8,8,data\backup\P9_9ban\obj_train_data\A1_B1_P9_2022-05-12_IR1_00030.txt,MCCB / MCCB 접촉부

@@ -1,0 +1,42 @@
+# 원본·대용량 데이터
+1-수집/
+3-가공/
+1-수집.zip
+3-가공.zip
+
+# 이미지·배열·모델 파일
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.tif
+*.tiff
+*.bmp
+*.npy
+*.npz
+*.pt
+*.onnx
+
+# 생성 캐시·학습 결과·임시 산출물
+**/__pycache__/
+**/.pytest_cache/
+pilot/.ultralytics/
+pilot/cache/
+pilot/runs/
+pilot/out/
+pilot/data/
+pilot/dataset/
+pilot/smoke/
+pilot/sample_*/
+pilot/_*/
+4-라벨링/data/backup/
+4-라벨링/data/dedup/
+4-라벨링/data/splits/
+
+# 운영체제·도구 잔재
+.DS_Store
+._*
+Thumbs.db
+
+# 개인 설정
+.claude/settings.local.json

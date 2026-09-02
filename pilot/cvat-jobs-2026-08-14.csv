@@ -1,0 +1,2 @@
+ID,Job URL,Task ID,Task Name,Task URL,Project ID,Project Name,Project URL,Assignee,Stage,State,Type,Start Frame,Stop Frame,Frame Count,Created Date,Updated Date
+11,"http://rm-server.scnu.ac.kr:8080/tasks/18/jobs/11",18,"IR1_3반","http://rm-server.scnu.ac.kr:8080/tasks/18",3,"IR1","http://rm-server.scnu.ac.kr:8080/projects/3","","annotation","in progress","annotation",0,65,66,"2026-08-14T11:07:45.655721Z","2026-08-14T12:29:39.793942Z"
