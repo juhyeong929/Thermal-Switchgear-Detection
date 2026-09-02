@@ -1,6 +1,6 @@
-round,guide_version,status,annotators,agreement_csv,by_panel_csv,panel_disclosed,purpose,note
+﻿round,guide_version,status,annotators,agreement_csv,by_panel_csv,panel_disclosed,purpose,note
 # 시험 회차 등록부. C-2 를 회차별로 분리해 읽기 위한 단일 출처 (A-1 · C-2 결정),,,,,,,,
 # certification_evidence.py 가 이 파일을 읽는다. 회차가 끝날 때마다 한 줄 추가한다,,,,,,,,
 # v2 결과를 v1 행 위에 덮어쓰지 않는다 — 각 회차는 서로 다른 운영조건의 측정이다,,,,,,,,
-1,v1,CLOSED,annotator_A annotator_B annotator_C,agreement_2026-09-01.csv,,NO,v1 규칙의 초기 재현성 검증,"3인 완료 · 반 정보 비공개 조건 · D·E 는 이 회차로 받지 않는다(A-1 결정). NQ-15 가 3/3 재현되어 운영조건 자체를 바꾸기로 했으므로 v1 은 여기서 종료한다"
-2,v2,PENDING,annotator_D annotator_E,,,YES,v2 개선 규칙의 재현성 검증,"반 정보 공개 + 반별 CVAT task. v1 대비 전후 비교로 읽는다. 아직 미착수"
+1,v1,CLOSED,annotator_A annotator_B annotator_C,agreement_2026-09-01.csv,,NO,v1 규칙의 초기 재현성 검증,3인 완료 · 반 정보 비공개 조건 · D·E 는 이 회차로 받지 않는다(A-1 결정). NQ-15 가 3/3 재현되어 운영조건 자체를 바꾸기로 했으므로 v1 은 여기서 종료한다
+2,v2.0,PENDING,annotator_D annotator_E,,,YES,v2 개선 규칙의 재현성 검증,반 정보 공개 + 반별 CVAT task. v1 대비 전후 비교로 읽는다. 입력판을 generated/deploy_manifest_round2.csv 로 고정했다 (28개 항목 SHA-256 · lock_deploy_manifest.py --verify 로 재확인). 대상 반 P1 P3 P4 P6 P9 — P5 가 없으므로 NQ-18(인입선로 접촉부)의 회신 결과가 이 회차의 클래스 목록·task·측정 대상을 바꾸지 않는다. P5 정책 변경은 v2.1 로 분리하고 400장 시드에서 적용한다. 아직 미착수

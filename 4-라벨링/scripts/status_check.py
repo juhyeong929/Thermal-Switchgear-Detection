@@ -16,6 +16,7 @@
 
 import csv
 import json
+import subprocess
 import sys
 from datetime import date
 from pathlib import Path
@@ -290,6 +291,20 @@ def main():
             note("지침서", "v2 §1 표 ↔ 스키마",
                  "일치" if not miss else f"**불일치: {', '.join(miss)}**",
                  "OK" if not miss else "FAIL")
+
+    # 회차 입력판이 잠근 상태 그대로인가. 지침서는 10개 반이 한 문서라 다른 반의
+    # 정책이 바뀌면 파일이 달라진다 — 측정 조건이 아니라 판본 동일성 문제다.
+    lock = paths.REPORTS / "labeling" / "generated" / "deploy_manifest_round2.csv"
+    if lock.exists():
+        r = subprocess.run(
+            [sys.executable, str(paths.SCRIPTS / "lock_deploy_manifest.py"), "--verify"],
+            capture_output=True, text=True, encoding="utf-8", errors="replace")
+        head = [l for l in (r.stdout or "").strip().splitlines() if l.strip()]
+        note("지침서", "round 2 입력판 고정",
+             head[-1] if head else "확인 불가",
+             "OK" if r.returncode == 0 else "FAIL")
+    else:
+        note("지침서", "round 2 입력판 고정", "미고정 — 배포 전 잠근다", "확인")
 
     # ---- 6 미해소 ----
     print("\n[6] 미해소 사항")

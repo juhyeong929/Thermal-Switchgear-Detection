@@ -43,7 +43,7 @@
 | NQ-15 | 시험 설계 | 라벨러에게 반(Panel) 정보를 알려 줄 것인가 | 지침서 v2 · 2차 시험셋 배포 전 | labeling_rules | NO | 열림 |
 | NQ-16 | 라벨링 규칙 | 주의(CAUTION) 등급 클래스의 재량 폭을 좁힐 것인가 | 지침서 v2 | labeling_rules | NO | 열림 |
 | NQ-17 | recall 검증 | 몰드변압기 접촉부의 장당 기대 개수 4개를 recall 검증 근거로 쓸 수 있는가 | BLK-4 blind audit 표본 설계 | label_quality | NO | 열림 |
-| NQ-18 | 발주처 확인 | 인입선로 접촉부의 보류가 해제된 것인가 | 인입선로 접촉부 배포 여부 결정 | labeling_rules | NO | 열림 |
+| NQ-18 | 발주처 확인 | 인입선로 접촉부의 보류가 해제된 것인가 | 400장 시드 라벨링 착수 (D/E 2회차는 해당 없음) | labeling_rules | NO | 열림 |
 
 ## 근거와 배경
 
@@ -290,7 +290,7 @@
 
 **왜 중요한가** 이전 가이드는 PF&PT 반에서 인입선로 접촉부를 "보류" 로 두고 종합표에 ⚠️ "반사 때문에 탐지 정확도가 떨어짐" 이라고 적었다. 새 PDF 는 가공대상 목록에 넣었고 보류 표기가 없다. 상태가 바뀌었다면 배포 클래스와 시드 수요가 달라진다
 
-**근거** `수배전반 라벨링 가이드.pdf p13·p14 · 이전 판 HTML 03 REFERENCE 20번 · schemas/classes_v2.py #20`
+**근거** `수배전반 라벨링 가이드.pdf p13·p14 · 이전 판 HTML 03 REFERENCE 20번 · schemas/classes_v2.py #20 · reports/inquiries/NQ-18-인입선로접촉부-가공정책-문의.md`
 
 
 ## 최초 보고 대비 정정된 수치

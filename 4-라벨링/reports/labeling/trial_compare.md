@@ -3,7 +3,7 @@
 > 자동 생성 · `scripts/trial_compare.py` · 숫자는 전부 파일에서 집계
 > **두 회차의 Kappa 를 합산하지 않는다.** 운영조건이 다르다 (반 정보 공개 여부).
 
-| 항목 | v1 | v2 |
+| 항목 | v1 | v2.0 |
 |---|---|---|
 | 회차 | round 1 · CLOSED | round 2 · PENDING |
 | 반 정보 공개 | NO | YES |
