@@ -23,14 +23,14 @@
 |---|---|---|
 | 이미지 몇 장인가 | IR 106,685 · RGB 2,674 | `reports/data_audit/panel_inventory.csv` |
 | 반은 몇 개인가 | 현존 10개 (+ 삭제 3개, 복구 가능) | 위와 동일 |
-| 클래스는 무엇인가 | 가이드 v2 28개 (가공 21 · 주의 4 · 제외 3) | `schemas/classes_v2.py` |
+| 클래스는 무엇인가 | 28개 (가공 21 · 주의 3 · 제외 3 · **폐지 1**) — 라벨 대상 24종 | `schemas/classes_v2.py` |
 | 기존 라벨은 얼마나 | 4,177 bbox / 1,036 파일 (P1·P3·P4) | `reports/data_audit/migration_verification.csv` |
 | 어떻게 승계했나 | 26→28 변환, 손실 0 · 보류 0 | `schemas/class_migration_26_to_28.csv` |
-| 무엇을 라벨링하지 않나 | 부스바 · 케이블 · ACB 접촉부 | `schemas/labeling_rules.py` |
-| 지금 어디까지 왔나 | STEP 10 완료 · 11~13 진행중 · **1차 시험 회수 3/5명** | `reports/status/progress.csv` · `trial_status.csv` |
-| 무엇이 막혀 있나 | 열린 OPEN QUESTION 21건 · **지금 라벨링을 막는 것 0건** | `open_questions.csv` 의 `blocks_current_labeling` |
-| 결정은 몇 건인가 | DEC-001 ~ DEC-023 (23건) | `reports/decisions/` |
-| 지금 무엇을 기다리나 | **라벨러 D·E 2명** — 나머지 판정은 전부 끝났다 | `deploy_checklist_D_E.md` |
+| 무엇을 라벨링하지 않나 | **제외** 부스바 · 케이블 · ACB 접촉부 / **폐지** 분기 접촉부 / **비배포** 단위 미확정 5종 | `schemas/labeling_rules.py` · `class_reference_table.md` |
+| 지금 어디까지 왔나 | STEP 10 완료 · 11~13 진행중 · 1차(v1) 회수 3인 CLOSED · **2차(v2.0) 배포 대기** | `reports/status/progress.csv` · `trial_status.csv` |
+| 무엇이 막혀 있나 | 열린 OPEN QUESTION 22건 · **지금 라벨링을 막는 것 0건** | `open_questions.csv` 의 `blocks_current_labeling` |
+| 결정은 몇 건인가 | DEC-001 ~ DEC-027 (27건) | `reports/decisions/` |
+| 지금 무엇을 기다리나 | **라벨러 D·E 2명** — 배포 입력판은 v2.0 으로 고정됨 | `deploy_checklist_D_E.md` · `deploy_manifest_round2.csv` |
 | 지금 최대 리스크는 | 데이터 누수가 아니라 **사람이 같은 기준을 재현하는가** | `trial_agreement_2026-09-01.md` |
 
 교수님 보고용 정리본: `reports/professor/00_current_status.md` 부터 순서대로.
@@ -46,7 +46,7 @@
 | | 지표 | 목표치 | 지금 |
 |---|---|---|---|
 | C-1 | 라벨링 오류율 | 종료 시 0 에 수렴 | **0.50%** (확정 19 + 지적 2 / 4,177) |
-| C-2 | **라벨러 간 일치도** | **Kappa 0.8 이상** | **0.902 PASS** — 3쌍 평균 (기반 74%) |
+| C-2 | **라벨러 간 일치도** | **Kappa 0.8 이상** | v1 **0.902 baseline** — 3인·반정보 비공개 (기반 74%) · v2.0 미측정 |
 | C-3 | 클래스 균형 | 시드 기준 클래스당 30~50 | 미측정 — 시드 라벨링 전 |
 | C-4 | **검수 이력** | **전량 추적 가능** | **충족** — 10/10 · 서명 5/5 · 판정 대기 0 |
 | C-5 | 모델 성능 (참고선) | mAP@0.5 ≥ 70% | 미측정 |
@@ -121,11 +121,33 @@ STEP 01~10 완료. 11~13 진행중. 상세는 `reports/status/progress.csv`.
        03 기존 클래스 인벤토리         08 중복·유사도 분석 (106,685 -> 38,957)
        04 v2 28개 스키마               09 실질 라벨링 물량 산정
        05 26→28 변환표                 10 시드 후보 400장 선정
-[진행] 11 시드셋 구성 — 지침서 v1 · 시험셋 30장 배포 완료
-       12 일치도 검증 — A·B·C 회수 · 3자 Kappa 0.902 · 기존 라벨 대조 완료
+[진행] 11 시드셋 구성 — 지침서 v2 · 시험셋 30장 · 반별 CVAT task 준비 완료
+       12 일치도 검증 — 1회차(v1) A·B·C 회수 CLOSED · 3자 Kappa 0.902
+          2회차(v2.0) D·E PENDING — 입력판 고정 완료
           ★ 다음은 D·E 의 독립 라벨링 (사람 작업)
        13 학습셋 분할 정책 — 누수 검증 종결(DEC-023). 최종 고정은 라벨 수집 후
 ```
+
+### 회차를 나눠서 읽는다 (DEC 초안 · `trial_versions.csv`)
+
+v1 3인 결과와 v2 결과를 **합산하지 않는다.** 운영 조건이 다르므로 무엇을 측정한
+값인지 말할 수 없게 된다. 5인 평균이 아니라 **v1 대비 전후 비교**로 읽는다.
+
+| round | guide | 라벨러 | 반 정보 | 상태 | 대상 반 |
+|---:|---|---|---|---|---|
+| 1 | v1 | A · B · C | 비공개 | CLOSED | 전체 목록 배포 |
+| 2 | **v2.0** | D · E | **공개** | PENDING | P1 · P3 · P4 · P6 · P9 |
+
+2회차 입력판은 `generated/deploy_manifest_round2.csv` 에 28개 항목의 SHA-256 으로
+고정돼 있다. 지침서 v2 는 10개 반이 한 문서라 **다른 반의 정책이 바뀌면 파일이
+달라진다** — 측정 조건이 아니라 판본 동일성 문제다.
+
+```bash
+python scripts/lock_deploy_manifest.py --verify   # 배포 직전 필수
+```
+
+`status` 가 `PENDING` 인 동안에만 재잠금할 수 있다. 배포를 시작하면
+`IN_PROGRESS` 로 바꾸고, 그 뒤에는 `--force` 로도 덮어쓸 수 없다.
 
 라벨러에게 보낼 것: `reports/labeling/trial_instructions.md` · 배포 절차 `deploy_checklist_D_E.md`
 
@@ -186,14 +208,20 @@ STEP 01~10 완료. 11~13 진행중. 상세는 `reports/status/progress.csv`.
 | 선언된 OSD 영역 | 후보 영역이지 **가림 증거가 아니다.** 좌표만으로 "OSD 탓" 하면 틀린다 | `OQ-010` 에 정정 기록 |
 | 근접 미달 쌍 42.8% | **누수율이 아니다.** 실측 추정은 20%이며 그것도 전체 데이터가 아니라 **근접 후보쌍이 분모**다 | `KNOWN_LIMITATIONS.md` KL-1 · `DEC-023` |
 | 감사용 임계값 | 분석용 수치가 지침서로 새면 뒤 라벨러가 앞사람과 다른 규칙을 본다 | `labeling_rules.SMALL_OBJECT_SCOPE = "지침서 배포 금지"` |
+| `annotation_unit()` 기본값 | 라벨 대상이 아닌 클래스를 `ANNOTATION_UNIT` 에서 지우면 **기본값 `WHOLE_OBJECT` 로 떨어져 `unit_confirmed()` 가 True** 가 된다. `label_status == EXCLUDE` 로만 거르던 배포 경로에 폐지 클래스가 실린다 | `NOT_LABELED` 면 `UNKNOWN` 반환 + `status_check [2]` 의 `CVAT 라벨 정의 ⊆ 배포 대상` |
+| 제외 ≠ 폐지 | 제외는 "있지만 그리지 않는다", 폐지는 "그 클래스가 없어졌다". 한 집합에 합치면 **제외 3종의 근거를 설명할 수 없게 된다** | `EXCLUDED` · `RETIRED_CLASSES` 를 나누고 판정에만 `NOT_LABELED` 사용 |
+| 판본 동일성 | 지침서는 10개 반이 한 문서다. 회차가 끝난 뒤 다른 반 정책이 바뀌면 "그때 그 v2" 를 재현할 수 없다 | `lock_deploy_manifest.py` 로 회차 입력판 해시 고정 |
 
 ## 시험 라벨링 회수 (DEC-019 · DEC-020)
 
 ```bash
-# 배포 전 1회 — 이걸 빼면 라벨러 화면에 truncated 입력 칸이 없다
-python scripts/cvat_labels_json.py
+# 배포 전 — 반별 라벨 정의·task 이름·obj.names 기대값을 만든다 (2회차부터 반별)
+python scripts/build_cvat_tasks.py
+python scripts/cvat_labels_json.py        # 이걸 빼면 화면에 truncated 입력 칸이 없다
+python scripts/lock_deploy_manifest.py --verify
 
 # 0단계 (필수) — CVAT 은 class_id 를 자기 라벨 순서로 다시 매긴다. obj.names 로 되돌린다
+#   2회차는 반별 task 라 class_id 가 반마다 다르다. obj.names 가 없으면 복원 불가
 python scripts/trial_ingest.py --all
 
 python scripts/agreement.py <라벨러 폴더들>              # 일치도 — 2명 이상

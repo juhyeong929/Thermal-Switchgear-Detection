@@ -8,11 +8,13 @@
 열화상/
 ├─ pilot/                 # 초기 실험 및 열화상 분석 스크립트
 ├─ 4-라벨링/              # 현재 라벨링 파이프라인
-│  ├─ schemas/            # 클래스, 경로, 라벨링 규칙
+│  ├─ schemas/            # 클래스, 경로, 라벨링 규칙 (단일 출처)
 │  ├─ scripts/            # 인벤토리·검수·CVAT·보고서 스크립트
 │  ├─ data/               # 작업 데이터 (일부는 Git 제외)
-│  ├─ reports/            # 분석 및 검수 결과
+│  ├─ reports/            # 분석·검수 결과, 결정 기록(DEC), 라벨러 배포물
+│  ├─ KNOWN_LIMITATIONS.md  # 지표와 함께 읽어야 하는 한계 (KL-1~7)
 │  └─ README.md           # 라벨링 단계별 참고 문서
+├─ reports/audit/         # 외부 관점 독립 감사 + 후속 상태표
 ├─ 1-수집/                # 원본 수집 데이터 (별도 전달)
 ├─ 3-가공/                # 가공 이미지 (별도 전달)
 ├─ requirements.txt
@@ -83,7 +85,16 @@ python 4-라벨링/scripts/status_check.py
 # 라벨 분할 및 검수 예시
 python 4-라벨링/scripts/build_splits.py
 python 4-라벨링/scripts/audit_labels.py
+
+# 가공 대상 종합표 재생성 (클래스 상태와 근거)
+python 4-라벨링/scripts/build_reference_table.py
+
+# 시험 회차 입력판 고정 여부 확인 (배포 직전 필수)
+python 4-라벨링/scripts/lock_deploy_manifest.py --verify
 ```
+
+`status_check.py` 는 문서가 아니라 파일을 읽어 상태를 다시 셉니다.
+`확인이 필요한 항목 0건` 이 아니면 배포하지 않습니다.
 
 중복 이미지 분석까지 포함하려면 실행 시간이 길고 추가 메모리가 필요하므로 다음처럼 실행합니다.
 
@@ -119,11 +130,33 @@ python 4-라벨링/scripts/build_splits.py --help
 
 현재 주요 클래스 정의는 다음 파일에 있습니다.
 
-- `4-라벨링/schemas/classes_v2.py`
+- `4-라벨링/schemas/classes_v2.py` — **단일 출처**
 - `4-라벨링/schemas/classes_v1_26.py`
 - `pilot/classes.py`
 
+사람이 읽을 종합표는 `4-라벨링/reports/labeling/generated/class_reference_table.md`
+에 스키마에서 자동 생성됩니다. 손으로 고치지 않습니다.
+
+클래스 상태는 네 가지이며 서로 다른 뜻입니다.
+
+```
+가공   항상 라벨링
+주의   식별 가능할 때만 라벨. 판별 불가면 미라벨/Ignore
+제외   물체는 있지만 어떤 반에서도 그리지 않는다
+폐지   가이드 개정으로 클래스 자체가 없어졌다. 신규 라벨 금지 (class_id 는 유지)
+```
+
+이와 별개로 **라벨 대상이지만 단위(annotation unit)가 정해지지 않아 배포하지 않는**
+클래스가 있습니다. 제외·폐지와 혼동하지 않습니다 — `KNOWN_LIMITATIONS.md` KL-6.
+
 라벨 클래스나 매핑을 변경할 때는 관련 CSV, 검수 규칙, 안내 문서가 함께 영향을 받으므로 클래스 파일만 단독으로 수정하지 않도록 합니다.
+
+## 발주처 가이드
+
+현행 배포판은 `수배전반 라벨링 가이드.pdf` (2026-09-02) 입니다.
+이 판에는 이전 판에 있던 클래스 번호·가공여부 종합표가 없어, **가공여부와 제외 근거의
+단일 출처는 `schemas/classes_v2.py`** 입니다. 이전 판 HTML 은 워크트리에 두지 않고
+git 이력에 보존합니다. 자세한 것은 `KNOWN_LIMITATIONS.md` KL-7 과 DEC-026 을 보세요.
 
 ## CVAT 작업
 
