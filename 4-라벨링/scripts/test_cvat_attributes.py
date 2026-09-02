@@ -267,7 +267,7 @@ def main():
         names = [n.strip() for n in real.read_text(encoding="utf-8").splitlines()]
         ok_idx, mism = True, []
         for c in v2.CLASSES:
-            if c.label_status == v2.EXCLUDE or not v2.unit_confirmed(c.class_name):
+            if not v2.is_labelable(c.class_name) or not v2.unit_confirmed(c.class_name):
                 continue
             if names[c.class_id] != c.canonical_name:
                 ok_idx = False

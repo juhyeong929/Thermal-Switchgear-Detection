@@ -52,8 +52,9 @@ def checkbox(name, why):
 def build():
     labels = []
     for c in sorted(v2.CLASSES, key=lambda x: x.class_id):
-        # classes.txt 와 같은 조건 — 제외 클래스와 단위 미확정 클래스는 쓰지 않는다
-        if c.label_status == v2.EXCLUDE or not v2.unit_confirmed(c.class_name):
+        # classes.txt 와 같은 조건 — 라벨 대상이 아닌 것(제외·폐지)과
+        # 단위 미확정 클래스는 쓰지 않는다
+        if not v2.is_labelable(c.class_name) or not v2.unit_confirmed(c.class_name):
             continue
         labels.append({
             "name": c.canonical_name,

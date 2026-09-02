@@ -15,6 +15,7 @@
 """
 
 import csv
+import json
 import sys
 from datetime import date
 from pathlib import Path
@@ -67,13 +68,27 @@ def main():
         encoding="utf-8").splitlines()]
     note("스키마", "classes.txt 줄 수", f"{len(names)} (v2 {len(v2.CLASSES)})",
          "OK" if len(names) == len(v2.CLASSES) else "불일치")
-    bad = [c.canonical_name for c in v2.CLASSES
-           if c.label_status != v2.EXCLUDE and v2.unit_confirmed(c.class_name)
+    bad = [c.canonical_name for c in v2.labelable_classes()
+           if v2.unit_confirmed(c.class_name)
            and names[c.class_id] != c.canonical_name]
     note("스키마", "줄 번호 == v2 class_id", "일치" if not bad else f"불일치 {bad}",
          "OK" if not bad else "FAIL")
     ph = sum(1 for n in names if n.startswith("__사용안함"))
     note("스키마", "자리표시자", f"{ph}개 · 사용 {len(names) - ph}종")
+
+    # 배포물이 스키마보다 넓지 않은가. 제외·폐지·단위 미확정이 CVAT 로 새면 여기서 잡힌다.
+    # (폐지 클래스를 ANNOTATION_UNIT 에서 지웠을 때 기본값 WHOLE_OBJECT 로 떨어져
+    #  배포 목록에 실린 적이 있다. 그 재발을 막는 검사다.)
+    want = {v2.BY_NAME[c].canonical_name
+            for p in v2.PANEL_CLASSES for c in v2.deployable(p)}
+    if labels_json.exists():
+        defs = json.loads(labels_json.read_text(encoding="utf-8"))
+        got = {l["name"] for l in defs if l.get("type") == "rectangle"}
+        extra, missing = sorted(got - want), sorted(want - got)
+        bad2 = (f"배포 목록에 없는 것 {extra}" if extra else "") +                (f" 빠진 것 {missing}" if missing else "")
+        note("스키마", "CVAT 라벨 정의 ⊆ 배포 대상",
+             f"{len(got)}종 · 일치" if not bad2 else f"불일치 — {bad2.strip()}",
+             "OK" if not bad2 else "FAIL")
 
     # ---- 3 라벨러 제출 ----
     print("\n[3] 라벨러 제출")

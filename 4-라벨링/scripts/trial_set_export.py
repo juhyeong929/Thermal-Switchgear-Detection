@@ -203,7 +203,7 @@ def main():
     # 라벨링 툴용 클래스 목록 — 단위가 확정된 것만. YOLO id 순서를 지킨다.
     names = []
     for c in sorted(v2.CLASSES, key=lambda x: x.class_id):
-        if c.label_status == v2.EXCLUDE or not v2.unit_confirmed(c.class_name):
+        if not v2.is_labelable(c.class_name) or not v2.unit_confirmed(c.class_name):
             names.append(f"__사용안함_{c.class_id}")
         else:
             names.append(c.canonical_name)

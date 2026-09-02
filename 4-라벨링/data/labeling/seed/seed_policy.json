@@ -38,16 +38,19 @@
         "transformer"
       ],
       "P5-PF&PT반": [
+        "cable_head",
         "mold_pt",
         "silencer_power_fuse"
       ],
       "P6-VCB반": [
         "cable_head",
         "ct",
-        "sa"
+        "sa",
+        "vcb_contact"
       ],
       "P7-VCB&CT반": [
-        "ct"
+        "ct",
+        "vcb_contact"
       ],
       "P8-ACB반": [
         "capacitor",
@@ -99,7 +102,7 @@
         "transformer_contact"
       ],
       "P5-PF&PT반": [
-        "branch_contact",
+        "cable_head",
         "incoming_contact",
         "mold_pt",
         "silencer_power_fuse"
@@ -126,8 +129,10 @@
         "mccb_contact"
       ]
     },
+    "retired": [
+      "branch_contact"
+    ],
     "seen_zero": [
-      "branch_contact",
       "cable_head",
       "capacitor",
       "cl_power_fuse",
@@ -145,5 +150,5 @@
       "vcb_contact"
     ]
   },
-  "policy_sha256": "6d2651f283001b8c335aaf34a4fb8b500a5930ba8ac2baaca21db425ac61a5cf"
+  "policy_sha256": "61b7f76bc2e3537d7d4eb0169a433cc2791f62ecb89268a140896832995155a9"
 }

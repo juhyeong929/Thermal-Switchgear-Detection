@@ -6,9 +6,9 @@
 | P2-LBS&LA반 | LBS · 한류형 전력퓨즈 · LA · 케이블헤드 |
 | P3-MOF반 | 변류기 · 비한류형 전력퓨즈 · 변류기 접촉부 |
 | P4-MOF&PT반 | 변압기 · 변류기 · 비한류형 전력퓨즈 · 변류기 접촉부 · 몰드타입 PT |
-| P5-PF&PT반 | 소음기부착형 전력퓨즈 · 몰드타입 PT |
-| P6-VCB반 | 케이블헤드 · CT · SA |
-| P7-VCB&CT반 | CT |
+| P5-PF&PT반 | 소음기부착형 전력퓨즈 · 몰드타입 PT · 케이블헤드 |
+| P6-VCB반 | VCB 접촉부 · 케이블헤드 · CT · SA |
+| P7-VCB&CT반 | VCB 접촉부 · CT |
 | P8-ACB반 | 콘덴서 · MCCB · MCCB 접촉부 * |
 | P9-MCCB반 | MCCB · MCCB 접촉부 * |
 | P10-ACB&MCCB반 | 콘덴서 · MCCB · MCCB 접촉부 * |
@@ -24,9 +24,8 @@
 |---|---|
 | P2-LBS&LA반 | LBS 1차측 접촉부 · LBS 2차측 접촉부 |
 | P4-MOF&PT반 | 변압기 접촉부 |
-| P5-PF&PT반 | 분기 접촉부 · 인입선로 접촉부 |
-| P6-VCB반 | VCB 접촉부 |
-| P7-VCB&CT반 | VCB 접촉부 · CT 접촉부 |
+| P5-PF&PT반 | 인입선로 접촉부 |
+| P7-VCB&CT반 | CT 접촉부 |
 
 ### 어떤 반에서도 절대 그리지 않는 것
 

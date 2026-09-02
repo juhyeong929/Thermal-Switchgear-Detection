@@ -1,0 +1,29 @@
+﻿guide_no,class_id,class_name,canonical_name,label_status,mark,basis,annotation_unit,unit_confirmed,unit_basis,panels,aliases,notes
+1,0,core_iron,철심부,주의,!,배전반 내 위치때문에 잘 안보임,WHOLE_OBJECT,Y,부품 단위가 자명 — 별도 근거 불요 (DEC-015),P1,,
+2,1,epoxy_surface,에폭시 표면,가공,O,가이드 비고 없음 — 기본 가공대상,WHOLE_OBJECT,Y,부품 단위가 자명 — 별도 근거 불요 (DEC-015),P1,,
+3,2,mold_tr_contact,몰드변압기 접촉부,가공,O,가이드 비고 없음 — 기본 가공대상,CONTACT_POINT,Y,"정본 P1 1,365박스 · 접촉부/본체 세로비 중앙 0.462 (DEC-014)",P1,,
+4,3,lbs,LBS,가공,O,가이드 비고 없음 — 기본 가공대상,WHOLE_OBJECT,Y,부품 단위가 자명 — 별도 근거 불요 (DEC-015),P2,,
+5,4,lbs_primary,LBS 1차측 접촉부,가공,O,가이드 비고 없음 — 기본 가공대상,UNKNOWN,N,정본·참고 모두 라벨 실적 0건 (NQ-13),P2,,v1 보류 -> v2 가공대상 전환
+6,5,cl_power_fuse,한류형 전력퓨즈,가공,O,가이드 비고 없음 — 기본 가공대상,WHOLE_OBJECT,Y,부품 단위가 자명 — 별도 근거 불요 (DEC-015),P2,전력퓨즈,LBS&LA 반. 퓨즈 3종은 형태로 구분한다
+7,6,la,LA,가공,O,가이드 비고 없음 — 기본 가공대상,WHOLE_OBJECT,Y,부품 단위가 자명 — 별도 근거 불요 (DEC-015),P2,,
+8,7,transformer,변압기,가공,O,가이드 비고 없음 — 기본 가공대상,WHOLE_OBJECT,Y,부품 단위가 자명 — 별도 근거 불요 (DEC-015),P4,,
+9,8,ct_transformer,변류기,가공,O,가이드 비고 없음 — 기본 가공대상,WHOLE_OBJECT,Y,부품 단위가 자명 — 별도 근거 불요 (DEC-015),P3 P4,분류기,v1 '분류기' 명칭 정정
+10,9,ncl_power_fuse,비한류형 전력퓨즈,가공,O,가이드 비고 없음 — 기본 가공대상,WHOLE_OBJECT,Y,부품 단위가 자명 — 별도 근거 불요 (DEC-015),P3 P4,전력퓨즈 | MOF 1차측 전력퓨즈,MOF&PT 반
+11,10,silencer_power_fuse,소음기부착형 전력퓨즈,가공,O,가이드 비고 없음 — 기본 가공대상,WHOLE_OBJECT,Y,부품 단위가 자명 — 별도 근거 불요 (DEC-015),P1 P5,전력퓨즈,TR 반 · PF&PT 반 공통
+12,11,mold_pt,몰드타입 PT,가공,O,가이드 비고 없음 — 기본 가공대상,WHOLE_OBJECT,Y,부품 단위가 자명 — 별도 근거 불요 (DEC-015),P4 P5,PT,
+13,12,branch_contact,분기 접촉부,폐지,폐지,[폐지] 새 가이드에서 PF&PT 반도 케이블헤드로 통일. 신규 라벨 금지 · 기존 실적 0건 · 라벨 승계 없음 (DEC-025),UNKNOWN,N,부품 단위가 자명 — 별도 근거 불요 (DEC-015),,,[폐지] 새 가이드에서 PF&PT 반도 케이블헤드로 통일. 신규 라벨 금지 · 기존 실적 0건 · 라벨 승계 없음 (DEC-025)
+14,13,cable_head,케이블헤드,가공,O,가이드 비고 없음 — 기본 가공대상,WHOLE_OBJECT,Y,부품 단위가 자명 — 별도 근거 불요 (DEC-015),P2 P5 P6,분기 접촉부,VCB·CNCV 반. v1 '분기 접촉부' 를 케이블헤드로 통일
+15,14,vcb_contact,VCB 접촉부,가공,O,가이드 비고 없음 — 기본 가공대상,CONTACT_POINT,Y,참고 P6 159박스 · 세로비 중앙 0.246 · 표본 15장 육안 판정 CONTACT_POINT 10 / PARTIAL_LABELING 5 / TERMINAL_GROUP 0 (DEC-024),P6 P7,,
+16,15,ct,CT,가공,O,가이드 비고 없음 — 기본 가공대상,WHOLE_OBJECT,Y,부품 단위가 자명 — 별도 근거 불요 (DEC-015),P6 P7,,v2 에서 VCB 반에 신규 추가. 계기 표시창이 달린 적갈색 몰드형
+17,16,sa,SA,가공,O,가이드 비고 없음 — 기본 가공대상,WHOLE_OBJECT,Y,부품 단위가 자명 — 별도 근거 불요 (DEC-015),P6,,"v2 신규. 백색 애자형 원통, 대·소 3개 1조 (서지흡수기)"
+18,17,capacitor,콘덴서,가공,O,가이드 비고 없음 — 기본 가공대상,WHOLE_OBJECT,Y,부품 단위가 자명 — 별도 근거 불요 (DEC-015),P8 P10,,
+19,18,mccb,MCCB,가공,O,가이드 비고 없음 — 기본 가공대상,WHOLE_OBJECT,Y,부품 단위가 자명 — 별도 근거 불요 (DEC-015),P8 P9 P10,,
+20,19,incoming_contact,인입선로 접촉부,주의,!,반사 때문에 탐지 정확도가 떨어짐,UNKNOWN,N,정본·참고 모두 라벨 실적 0건 (NQ-13),P5,,
+21,20,busbar,부스바,제외,X,일정한 패턴이 없어 탐지 정확도가 떨어짐,UNKNOWN,N,부품 단위가 자명 — 별도 근거 불요 (DEC-015),,,
+22,21,cable,케이블,제외,X,일정한 패턴이 없어 탐지 정확도가 떨어짐,UNKNOWN,N,부품 단위가 자명 — 별도 근거 불요 (DEC-015),,,"케이블헤드(#14, 가공대상)와 혼동하지 않는다"
+23,22,lbs_secondary,LBS 2차측 접촉부,가공,O,가이드 비고 없음 — 기본 가공대상,UNKNOWN,N,정본·참고 모두 라벨 실적 0건 (NQ-13),P2,,v1 보류 -> v2 가공대상 전환
+24,23,transformer_contact,변압기 접촉부,가공,O,가이드 비고 없음 — 기본 가공대상,UNKNOWN,N,정본 3박스뿐 · 단위 판정 표본 부족 (NQ-13),P4,,v1 보류 -> v2 가공대상 전환
+25,24,ct_transformer_contact,변류기 접촉부,가공,O,가이드 비고 없음 — 기본 가공대상,CONTACT_POINT,Y,정본 P3·P4 219박스 · 세로비 중앙 0.379 (DEC-014),P3 P4,,v1 보류 -> v2 가공대상 전환
+26,25,ct_contact,CT 접촉부,주의,!,배전반 내 위치때문에 잘 안보임,UNKNOWN,N,정본·참고 모두 라벨 실적 0건 (NQ-13),P7,,
+27,26,acb_contact,ACB 접촉부,제외,X,배전반 내 위치때문에 잘 안보임,UNKNOWN,N,부품 단위가 자명 — 별도 근거 불요 (DEC-015),P8 P10,,
+28,27,mccb_contact,MCCB 접촉부,주의,!,다른 접촉부와 구분이 안됨,TERMINAL_GROUP,Y,"가이드 ACB&MCCB 반 예시 이미지 + 참고 P9 1,777박스 · 세로비 중앙 0.922 (DEC-015)",P8 P9 P10,,

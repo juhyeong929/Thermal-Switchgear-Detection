@@ -20,7 +20,7 @@ P4,P4-MOF&PT반,3,5,24,25,ct_transformer_contact,변류기 접촉부,가공,0
 P4,P4-MOF&PT반,3,6,11,12,mold_pt,몰드타입 PT,가공,0
 P5,P5-PF&PT반,4,1,10,11,silencer_power_fuse,소음기부착형 전력퓨즈,가공,0
 P5,P5-PF&PT반,4,2,11,12,mold_pt,몰드타입 PT,가공,0
-P5,P5-PF&PT반,4,3,12,13,branch_contact,분기 접촉부,가공,0
+P5,P5-PF&PT반,4,3,13,14,cable_head,케이블헤드,가공,0
 P5,P5-PF&PT반,4,4,19,20,incoming_contact,인입선로 접촉부,주의,0
 P6,P6-VCB반,5,1,14,15,vcb_contact,VCB 접촉부,가공,0
 P6,P6-VCB반,5,2,13,14,cable_head,케이블헤드,가공,0

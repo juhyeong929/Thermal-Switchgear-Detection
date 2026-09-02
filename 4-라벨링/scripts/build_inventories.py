@@ -126,7 +126,9 @@ def main():
         notes = list(filter(None, [c.notes]))
         if c.class_name in v2.EXCLUDED:
             notes.append("어떤 반에서도 라벨링하지 않음")
-        if not cand_panels and c.class_name not in v2.EXCLUDED:
+        if c.class_name in v2.RETIRED_CLASSES:
+            notes.append("폐지된 클래스 — 신규 라벨 금지 (class_id 는 유지)")
+        if not cand_panels and v2.is_labelable(c.class_name):
             notes.append("현존 10개 반의 후보에 없음 — 데이터 출처 확인 필요")
         class_rows.append({
             "class_id": c.class_id,

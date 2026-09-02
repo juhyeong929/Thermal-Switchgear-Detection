@@ -257,8 +257,8 @@ def c3_class_balance():
     per = Counter()
     for r in mig:
         per[r["new_class_ko"]] += int(r["boxes_after"])
-    labelable = [c.canonical_name for c in v2.CLASSES
-                 if c.label_status != v2.EXCLUDE and v2.unit_confirmed(c.class_name)]
+    labelable = [c.canonical_name for c in v2.labelable_classes()
+                 if v2.unit_confirmed(c.class_name)]
     met = [n for n in labelable if per.get(n, 0) >= SEED_CLASS_MIN]
     zero = [n for n in labelable if per.get(n, 0) == 0]
 

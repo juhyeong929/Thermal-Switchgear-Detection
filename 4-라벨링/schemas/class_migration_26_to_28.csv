@@ -15,7 +15,7 @@
 13,ct_transformer_contact,변류기 접촉부,24,ct_transformer_contact,변류기 접촉부,25,status,전체,가이드 개정 4번: 변류기 접촉부 보류 -> 가공
 14,pt,PT,11,mold_pt,몰드타입 PT,12,renamed,전체,가이드 개정 5번: PT -> 몰드타입 PT
 15,branch_contact,분기 접촉부,13,cable_head,케이블헤드,14,split,P11,가이드 개정 6·7번: 반에 따라 케이블헤드 / 분기 접촉부로 갈림
-15,branch_contact,분기 접촉부,12,branch_contact,분기 접촉부,13,split,P5,가이드 개정 6·7번: 반에 따라 케이블헤드 / 분기 접촉부로 갈림
+15,branch_contact,분기 접촉부,13,cable_head,케이블헤드,14,split,P5,가이드 개정 6·7번: 반에 따라 케이블헤드 / 분기 접촉부로 갈림
 15,branch_contact,분기 접촉부,13,cable_head,케이블헤드,14,split,P6,가이드 개정 6·7번: 반에 따라 케이블헤드 / 분기 접촉부로 갈림
 15,branch_contact,분기 접촉부,,,,,split-unresolved,그 밖의 반,가이드에 대응 항목 없음 — 자동 변환하지 않고 사람이 판정
 16,incoming_contact,인입선로 접촉부,19,incoming_contact,인입선로 접촉부,20,same,전체,

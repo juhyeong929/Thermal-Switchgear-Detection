@@ -6,7 +6,7 @@
 문서판: reports/decisions/DEC-004-labeling-exclusion-policy.md
 """
 
-from .classes_v2 import CAUTIONED, EXCLUDED, BY_NAME  # noqa: F401
+from .classes_v2 import CAUTIONED, EXCLUDED, RETIRED_CLASSES, BY_NAME  # noqa: F401
 
 # ---------------------------------------------------------------------------
 # 1. 클래스 자체로 제외되는 것 — 어떤 반에서도 박스를 그리지 않는다.
@@ -14,6 +14,12 @@ from .classes_v2 import CAUTIONED, EXCLUDED, BY_NAME  # noqa: F401
 #    ACB 접촉부   : 배전반 내 위치때문에 잘 안보임
 # ---------------------------------------------------------------------------
 ALWAYS_EXCLUDED = sorted(EXCLUDED)          # {"busbar", "cable", "acb_contact"}
+
+# 1-b. 폐지된 클래스 — 제외와 성격이 다르다.
+#      제외: 물체는 있지만 그리지 않기로 했다 (가이드가 근거를 적어 두었다)
+#      폐지: 가이드 개정으로 그 클래스 자체가 없어졌다 (분기 접촉부 -> 케이블헤드)
+#      둘을 한 목록으로 합치면 제외 3종의 근거를 설명할 수 없게 된다.
+RETIRED_NO_NEW_LABELS = sorted(RETIRED_CLASSES)   # {"branch_contact"}
 
 # ---------------------------------------------------------------------------
 # 2. 식별 가능한 경우에만 라벨하는 것 (가이드 '주의').
@@ -108,6 +114,8 @@ SMALL_OBJECT_UNIT = "정규화 bbox 면적 (w*h, 0~1). 픽셀 수가 아니다"
 
 def status_of(class_name):
     """이 클래스를 어떻게 다뤄야 하는가."""
+    if class_name in RETIRED_CLASSES:
+        return "폐지 — 없어진 클래스다. 신규 라벨을 그리지 않는다"
     if class_name in EXCLUDED:
         return "제외 — 박스를 그리지 않는다"
     if class_name in CAUTIONED:

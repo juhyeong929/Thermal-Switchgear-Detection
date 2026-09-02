@@ -75,12 +75,17 @@ MIGRATION = {
     25: ("cable",                  "same",    ""),
 }
 
-# 구 15 branch_contact 는 v2 에서 반에 따라 이름이 갈린다.
-# 가이드 ⑤ VCB 반 · ⑥ CNCV 반 -> 케이블헤드로 통일 / ④ PF&PT 반 -> 분기 접촉부 유지.
+# 구 15 branch_contact 는 v2 초판에서 반에 따라 이름이 갈렸다.
+# 가이드 ⑤ VCB 반 · ⑥ CNCV 반 -> 케이블헤드 / ④ PF&PT 반 -> 분기 접촉부 유지.
+#
+# [2026-09-02] 새 가이드 PDF p14 가 PF&PT 반도 케이블헤드로 바꾸면서 split 이 없어졌다.
+# 세 반 모두 케이블헤드로 간다. branch_contact 는 폐지됐다 (DEC-025).
+# 승계 대상 라벨은 0건이므로 이 변경으로 바뀌는 기존 라벨은 없다.
+#
 # 그 밖의 반(P8·P9·P10 등)에서 이 클래스가 쓰였다면 가이드에 대응 항목이 없으므로
 # 자동 변환하지 않고 보류한다.
 SPLIT_BY_PANEL = {
-    "P5": "branch_contact",   # PF&PT 반 — 분기 접촉부 (명칭 유지)
+    "P5": "cable_head",       # PF&PT 반 — 케이블헤드로 통일 (DEC-025)
     "P6": "cable_head",       # VCB 반   — 케이블헤드로 통일
     "P11": "cable_head",      # CNCV 반  — 케이블헤드로 통일 (현재 폴더 삭제됨)
 }

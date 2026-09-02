@@ -24,8 +24,8 @@
 | 9 | 10 | 비한류형 전력퓨즈 | 가공 | P3 P4 | 191 |
 | 10 | 11 | 소음기부착형 전력퓨즈 | 가공 | P1 P5 | 127 |
 | 11 | 12 | 몰드타입 PT | 가공 | P4 P5 | 0 |
-| 12 | 13 | 분기 접촉부 | 가공 | P5 | 0 |
-| 13 | 14 | 케이블헤드 | 가공 | P2 P6 | 0 |
+| 12 | 13 | 분기 접촉부 | 폐지 | — | 0 |
+| 13 | 14 | 케이블헤드 | 가공 | P2 P5 P6 | 0 |
 | 14 | 15 | VCB 접촉부 | 가공 | P6 P7 | 0 |
 | 15 | 16 | CT | 가공 | P6 P7 | 0 |
 | 16 | 17 | SA | 가공 | P6 | 0 |
@@ -50,12 +50,12 @@
 
 | 단위 | 뜻 | 클래스 수 | 상태 |
 |---|---|---:|---|
-| `CONTACT_POINT` | 볼트로 조여진 접속 지점 하나하나 | 2종 | **Confirmed** |
+| `CONTACT_POINT` | 볼트로 조여진 접속 지점 하나하나 | 3종 | **Confirmed** |
 | `TERMINAL_GROUP` | 기기 한쪽 단자군 전체를 하나로 | 1종 | **Confirmed** |
 | `WHOLE_OBJECT` | 부품 하나를 통째로 감싼다 | 15종 | **Confirmed** |
-| `UNKNOWN` | 근거 없음 — 확정하지 않는다. 라벨러에게 배포하지 않는다 | 7종 | **UNKNOWN** |
+| `UNKNOWN` | 근거 없음 — 확정하지 않는다. 라벨러에게 배포하지 않는다 | 5종 | **UNKNOWN** |
 
-**확정 18/25 클래스.** 미확정 7종은 라벨러에게 배포하지 않는다 —
+**확정 19/24 클래스.** 미확정 5종은 라벨러에게 배포하지 않는다 —
 라벨링 툴 클래스 목록에서도 막았다 (`trial_set_export.py` 가 `__사용안함_` 으로 표시).
 
 ### 클래스별 annotation unit
@@ -63,6 +63,7 @@
 | 가이드# | 클래스 | annotation_unit | 상태 | 근거 |
 |---:|---|---|---|---|
 | 03 | 몰드변압기 접촉부 | `CONTACT_POINT` | Confirmed | 정본 P1 1,365박스 · 접촉부/본체 세로비 중앙 0.462 (DEC-014) |
+| 15 | VCB 접촉부 | `CONTACT_POINT` | Confirmed | 참고 P6 159박스 · 세로비 중앙 0.246 · 표본 15장 육안 판정 CONTACT_POINT 10 / PARTIAL_LABELING 5 / TERMINAL_GROUP 0 (DEC-024) |
 | 25 | 변류기 접촉부 | `CONTACT_POINT` | Confirmed | 정본 P3·P4 219박스 · 세로비 중앙 0.379 (DEC-014) |
 | 28 | MCCB 접촉부 | `TERMINAL_GROUP` | Confirmed | 가이드 ACB&MCCB 반 예시 이미지 + 참고 P9 1,777박스 · 세로비 중앙 0.922 (DEC-015) |
 | 01 | 철심부 | `WHOLE_OBJECT` | Confirmed | 부품 단위가 자명 — 별도 근거 불요 (DEC-015) |
@@ -81,8 +82,6 @@
 | 18 | 콘덴서 | `WHOLE_OBJECT` | Confirmed | 부품 단위가 자명 — 별도 근거 불요 (DEC-015) |
 | 19 | MCCB | `WHOLE_OBJECT` | Confirmed | 부품 단위가 자명 — 별도 근거 불요 (DEC-015) |
 | 05 | LBS 1차측 접촉부 | `UNKNOWN` | **UNKNOWN** | 정본·참고 모두 라벨 실적 0건 (NQ-13) |
-| 13 | 분기 접촉부 | `UNKNOWN` | **UNKNOWN** | 정본·참고 모두 라벨 실적 0건 (NQ-13) |
-| 15 | VCB 접촉부 | `UNKNOWN` | **UNKNOWN** | 참고 P6 159박스 존재 · 단위 미판정 — 전문가/사람 판정 대기 (NQ-13) |
 | 20 | 인입선로 접촉부 | `UNKNOWN` | **UNKNOWN** | 정본·참고 모두 라벨 실적 0건 (NQ-13) |
 | 23 | LBS 2차측 접촉부 | `UNKNOWN` | **UNKNOWN** | 정본·참고 모두 라벨 실적 0건 (NQ-13) |
 | 24 | 변압기 접촉부 | `UNKNOWN` | **UNKNOWN** | 정본 3박스뿐 · 단위 판정 표본 부족 (NQ-13) |

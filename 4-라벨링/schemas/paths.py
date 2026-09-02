@@ -15,6 +15,14 @@ ROOT    = PROJECT.parent                              # 열화상
 RAW_COLLECT   = ROOT / "1-수집"          # 촬영 원본
 PROCESSED     = ROOT / "3-가공"          # 반별로 정리된 열화상 (라벨링 입력)
 ARCHIVE_ZIP   = ROOT / "3-가공.zip"      # 삭제된 P11~P13 및 미전개분의 복구원
+# 발주처 가이드. 2026-09-02 배포판이 PDF 로 바뀌었다.
+# 새 판에는 03 REFERENCE '가공 대상 종합' 표(클래스 번호 + 가공여부 + 근거)가 없다.
+# 그래서 class_id 체계와 제외 3종의 근거는 **더 이상 배포 가이드에서 재확인할 수 없다.**
+# 그 근거는 classes_v2.py 에 옮겨져 있고, 사람이 읽을 표는
+# scripts/build_reference_table.py 가 스키마에서 재생성한다. -> DEC-026
+GUIDE_PDF     = ROOT / "수배전반 라벨링 가이드.pdf"          # 현행 배포판 (2026-09-02)
+# 이전 판. 종합표의 원문 출처였다. 워크트리에서는 삭제됐고 git 이력에만 있다.
+#   git show <이전커밋>:수배전반_열화상_라벨링_가이드_v2.html
 GUIDE_HTML    = ROOT / "수배전반_열화상_라벨링_가이드_v2.html"
 PIPELINE_HTML = ROOT / "수배전반_열화상_라벨링_파이프라인.html"
 PILOT         = ROOT / "pilot"           # 사전 실험. 참조 전용

@@ -209,9 +209,9 @@ def doc_status(d):
 
     ind = next((r["clusters"] for r in d["dedup"] if r["panel_id"] == "TOTAL"), "")
     ref_box = sum(int(r["boxes"]) for r in d["refsrc"]) if d["refsrc"] else 0
-    unit_ok = sum(1 for c in v2.CLASSES
-                  if c.label_status != v2.EXCLUDE and v2.unit_confirmed(c.class_name))
-    unit_all = sum(1 for c in v2.CLASSES if c.label_status != v2.EXCLUDE)
+    unit_ok = sum(1 for c in v2.labelable_classes()
+                  if v2.unit_confirmed(c.class_name))
+    unit_all = len(v2.labelable_classes())
     span = f"{done[0]['step']}~{done[-1]['step']}" if done else "—"
 
     return f"""# 00. 현재 상황

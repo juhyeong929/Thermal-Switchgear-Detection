@@ -1,5 +1,34 @@
 [
   {
+    "name": "VCB 접촉부",
+    "color": "#ffee33",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
     "name": "CT",
     "color": "#66dd44",
     "type": "rectangle",

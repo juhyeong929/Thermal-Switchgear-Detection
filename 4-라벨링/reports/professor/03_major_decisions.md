@@ -40,6 +40,9 @@ canonical 승격은 보류**하였다. 라벨을 `canonical`(P1/P3/P4)과 `refer
 | [DEC-021](DEC-021-p3-mof-candidate-policy.md) | P3-MOF반 후보 클래스 정책 (OQ-001 종결) | **P3-MOF반에서 변압기 계열(변압기 #8 · 변압기 접촉부 #24)을 독립 라벨링 대상으로 강제하지 않는다.** 열화상 영상에서 신뢰성 있게 식별 가능한 변류기 계열만 라벨링한다. ``` P3-MOF반 ├─ 변류기 -> 라벨링 ├─ 변류기 접촉부 -> 라벨링 ├─ 비한류형 전력퓨즈 |
 | [DEC-022](DEC-022-quarantine-resolution.md) | 정본 격리 20쌍 판정 (OQ-013 · REV-003 종결) | DEC-017 이 격리해 둔 **같은 클래스 중복 20쌍**을 육안 판정했다. ``` 큰쪽_유지 11쌍 작은쪽_유지 8쌍 둘다_제외 1쌍 둘다_유효 0쌍 <- 감사 오탐이 한 건도 없었다 판단불가 0쌍 ``` **정본 라벨 파일은 수정하지 않았다.** 판정 결과는 격리 목록의 `stat |
 | [DEC-023](DEC-023-oq016-closure.md) | OQ-016 종결: 현행 cluster split 유지 + 잔여 위험 문서화 | ``` decision = KEEP_CURRENT_CLUSTER_SPLIT threshold = 0.93 (변경 없음) 분할 단위 = cluster (변경 없음) 비율 = 70/15/15 (변경 없음 · 근거는 여전히 OQ-015) residual_risk = 근접 후보군 내 동일 시야 |
+| [DEC-024](DEC-024-vcb-contact-annotation-unit.md) | VCB 접촉부(#14) 의 annotation unit = CONTACT_POINT | ``` class #14 vcb_contact · VCB 접촉부 annotation_unit CONTACT_POINT # 볼트로 조여진 접속 지점 하나하나 배포 P6-VCB반 · P7-VCB&CT반 에 배포한다 (v2 회차부터) NQ-13 잔여 6종 (LBS 1·2차측 · 변압기 · 분 |
+| [DEC-025](DEC-025-branch-contact-retired.md) | 분기 접촉부(#13) 폐지, 케이블헤드로 명칭 통일 | ``` branch_contact (#13 / class_id 12) label_status 가공 -> 폐지(RETIRED) 신규 라벨링 금지 기존 실적 0건 (정본·참고 통틀어) 라벨 승계 하지 않는다 — cable_head 의 동의어로 두지 않는다 class_id 12 비우지 않고  |
+| [DEC-026](DEC-026-reference-table-source.md) | 가공여부·제외 근거의 단일 출처를 `classes_v2.py` 로 확정하고 종합표를 재생성한다 | ``` decision = SCHEMA_IS_SOURCE_OF_TRUTH_REGENERATE_REFERENCE_TABLE 1. 가공여부·제외 근거의 단일 출처는 schemas/classes_v2.py 다 - ThermalClass.description 이 이전 판 종합표의 '비고' 열  |
 
 ## 변경 전 → 변경 후
 

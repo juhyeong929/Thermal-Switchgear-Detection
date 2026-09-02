@@ -1,0 +1,2 @@
+﻿pair,panel_id,deployable_classes,images_compared,images_skipped,skip_a,skip_b,boxes_a,boxes_b,matched_boxes,paired_coverage,mIoU,kappa,count_agreement,interpretation_warning
+annotator_C vs annotator_D,P1,4,2,0,0,0,2,2,2,1.0,1.0,1.0,1.0,비교 2장 — 표본 부족

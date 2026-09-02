@@ -63,8 +63,10 @@ MIN_COVERAGE = 0.70  # paired coverage 가 이 미만이면 기반이 좁다
 # 단위 미확정 클래스 — 이번 시험 대상이 아니므로 채점에서 뺀다
 NOT_SCORED = {c.class_id for c in v2.CLASSES
               if not v2.unit_confirmed(c.class_name)}
-# 어떤 반에서도 그리지 않기로 한 클래스. 그려져 있으면 채점 제외가 아니라 **규칙 위반**이다
-FORBIDDEN = {c.class_id for c in v2.CLASSES if c.label_status == v2.EXCLUDE}
+# 어떤 반에서도 그리지 않기로 한 클래스. 그려져 있으면 채점 제외가 아니라 **규칙 위반**이다.
+# 폐지(RETIRED) 도 여기 넣는다 — 없어진 클래스를 그린 것도 규칙 위반이다.
+FORBIDDEN = {c.class_id for c in v2.CLASSES
+             if c.label_status in (v2.EXCLUDE, v2.RETIRED)}
 SKIP = {"train.txt", "classes.txt", "obj.names"}
 SEED_TARGET = 400        # 본 seed 라벨링 물량 (STEP 11) — 소요 추정의 분자
 

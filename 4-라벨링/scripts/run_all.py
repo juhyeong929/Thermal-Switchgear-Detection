@@ -23,6 +23,7 @@ STEPS = [
     # 클래스 정책에서 파생되는 것은 전부 여기서 다시 만든다.
     ("STEP 10  시드 후보 선정",      "seed_select.py"),
     ("클래스 존재 근거 집계",        "build_class_evidence.py"),
+    ("가공 대상 종합표 재생성",      "build_reference_table.py"),
     ("지침서 클래스 표 생성",        "build_guide_tables.py"),
     ("반별 CVAT task 정의",          "build_cvat_tasks.py"),
     # ----------------------------------------------------------------------

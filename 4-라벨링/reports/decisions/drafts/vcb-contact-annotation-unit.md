@@ -1,8 +1,11 @@
 # [초안] VCB 접촉부(#15) 의 annotation unit
 
 ```
-상태        DRAFT — 승인 대기
-승인란      결정자: __________   날짜: __________   DEC 번호: __________
+상태        판정 완료 — reports/decisions/DEC-024-vcb-contact-annotation-unit.md 로 이관
+            (이 문서는 판정 이전의 근거·선택지를 남기기 위해 보존한다)
+결과        선택지 (4) 수행 -> (1) CONTACT_POINT 확정
+            표본 15장: CONTACT_POINT 10 / PARTIAL_LABELING 5 / TERMINAL_GROUP 0
+승인란      결정자: __________   날짜: __________   DEC 번호: DEC-024
 대상        NQ-13 의 7종 중 1종. 나머지 6종은 계속 열림
 작성        2026-09-02
 ```

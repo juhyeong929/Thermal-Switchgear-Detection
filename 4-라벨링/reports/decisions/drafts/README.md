@@ -29,6 +29,7 @@
 | `NQ-15-panel-disclosure.md` | 반 정보 공개 | 반별 CVAT task · 반별 지표 산출 | DEC 번호 부여 · OQ 닫기 |
 | `NQ-13-unit-unknown-seed-policy.md` | UNKNOWN 7종 시드 수요 유지 | 시드 수요 유지 · 존재 근거 집계 | DEC 번호 부여 · OQ 상태 갱신 |
 | `C2-trial-round-separation.md` | v1/v2 회차 분리 | `trial_versions.csv` · 회차별 C-2 | DEC 번호 부여 |
+| `vcb-contact-annotation-unit.md` | VCB 접촉부 단위 | **표본 15장 육안 판정 완료 · 전 산출물 반영** → `DEC-024` 로 이관 | **승인란 서명만 남음** |
 
 **코드에 이미 반영됐다는 것과 결정이 승인됐다는 것은 다르다.**
 반영은 되돌릴 수 있고, 되돌릴 때 근거가 필요하다. 그 근거가 이 초안이다.

@@ -61,6 +61,7 @@ def policy_signature(seen):
         "panel_classes": {p: sorted(cs) for p, cs in v2.PANEL_CLASSES.items()},
         "deployable": {p: sorted(v2.deployable(p)) for p in v2.PANEL_CLASSES},
         "excluded": sorted(v2.EXCLUDED),
+        "retired": sorted(v2.RETIRED_CLASSES),
         "seen_zero": sorted(c.class_name for c in v2.labelable_classes()
                             if seen.get(c.class_name, 0) == 0),
     }
@@ -153,8 +154,8 @@ def panel_quota(seen):
     """클래스 수요에서 반별 할당량을 역산한다."""
     need = {}
     for c in v2.CLASSES:
-        if c.class_name in v2.EXCLUDED:
-            continue                       # 어떤 반에서도 라벨링하지 않는다
+        if not v2.is_labelable(c.class_name):
+            continue                       # 제외 3종 · 폐지 클래스
         panels = v2.panels_of(c.class_name)
         if not panels:
             continue                       # 현존 10개 반의 후보에 없는 클래스
