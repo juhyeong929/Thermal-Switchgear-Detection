@@ -43,6 +43,7 @@ canonical 승격은 보류**하였다. 라벨을 `canonical`(P1/P3/P4)과 `refer
 | [DEC-024](DEC-024-vcb-contact-annotation-unit.md) | VCB 접촉부(#14) 의 annotation unit = CONTACT_POINT | ``` class #14 vcb_contact · VCB 접촉부 annotation_unit CONTACT_POINT # 볼트로 조여진 접속 지점 하나하나 배포 P6-VCB반 · P7-VCB&CT반 에 배포한다 (v2 회차부터) NQ-13 잔여 6종 (LBS 1·2차측 · 변압기 · 분 |
 | [DEC-025](DEC-025-branch-contact-retired.md) | 분기 접촉부(#13) 폐지, 케이블헤드로 명칭 통일 | ``` branch_contact (#13 / class_id 12) label_status 가공 -> 폐지(RETIRED) 신규 라벨링 금지 기존 실적 0건 (정본·참고 통틀어) 라벨 승계 하지 않는다 — cable_head 의 동의어로 두지 않는다 class_id 12 비우지 않고  |
 | [DEC-026](DEC-026-reference-table-source.md) | 가공여부·제외 근거의 단일 출처를 `classes_v2.py` 로 확정하고 종합표를 재생성한다 | ``` decision = SCHEMA_IS_SOURCE_OF_TRUTH_REGENERATE_REFERENCE_TABLE 1. 가공여부·제외 근거의 단일 출처는 schemas/classes_v2.py 다 - ThermalClass.description 이 이전 판 종합표의 '비고' 열  |
+| [DEC-027](DEC-027-incoming-contact-label-status.md) | 인입선로 접촉부(#20) 를 주의에서 가공으로 상향한다 | ``` incoming_contact (#20 / class_id 19) label_status 주의(CAUTION) -> 가공(LABEL) annotation_unit UNKNOWN 유지 <- 함께 바꾸지 않는다 P5-PF&PT반 labelable 3종 -> 4종 deployable  |
 
 ## 변경 전 → 변경 후
 

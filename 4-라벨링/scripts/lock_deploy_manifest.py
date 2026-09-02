@@ -10,9 +10,8 @@
 `--verify` 로 "그때 그 파일이었는가" 를 다시 확인할 수 있다.
 
   round 2 (D/E) — guide v2.0   P1 · P3 · P4 · P6 · P9
-    NQ-18(인입선로 접촉부)은 P5 전용이고 이 회차에 P5 가 없다. 회신 결과가
-    이 회차의 클래스 목록·task·측정 대상을 바꾸지 않는다. 그래서 회신을 기다리지
-    않고 여기서 잠근다. 회신 뒤의 P5 변경은 v2.1 로 간다.
+    이 회차에 P5 는 없다. P5 전용 클래스의 정책이 나중에 바뀌어도 이 회차의
+    클래스 목록·task·측정 대상은 달라지지 않는다.
 
 사용
     python scripts/lock_deploy_manifest.py            잠근다 (덮어쓰기 전 확인)
@@ -193,7 +192,7 @@ def main():
         "".join(f"{r['path']}:{r['sha256']}" for r in rows).encode("utf-8")).hexdigest()
     head = [
         {"role": f"# round {ROUND} 배포 입력판 고정 — guide {GUIDE_VERSION}", "path": "", "bytes": "", "sha256": ""},
-        {"role": f"# 대상 반: {' '.join(PANELS)} (P5 없음 — NQ-18 무관)", "path": "", "bytes": "", "sha256": ""},
+        {"role": f"# 대상 반: {' '.join(PANELS)} (P5 없음)", "path": "", "bytes": "", "sha256": ""},
         {"role": "# 검증: python scripts/lock_deploy_manifest.py --verify", "path": "", "bytes": "", "sha256": ""},
         {"role": "# manifest_sha256", "path": "", "bytes": "", "sha256": total},
     ]

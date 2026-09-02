@@ -98,8 +98,15 @@ CLASSES = [
                  notes="v2 신규. 백색 애자형 원통, 대·소 3개 1조 (서지흡수기)"),
     ThermalClass(18, "capacitor", "콘덴서", LABEL, ""),
     ThermalClass(19, "mccb", "MCCB", LABEL, ""),
-    ThermalClass(20, "incoming_contact", "인입선로 접촉부", CAUTION,
-                 "반사 때문에 탐지 정확도가 떨어짐"),
+    # [2026-09-02] 개정 PDF p13·p14 가 PF&PT 반 가공대상 목록에 넣었고 보류 표기가
+    # 없다. 주의 -> 가공으로 상향한다 (DEC-027).
+    # 단 annotation unit 은 아직 UNKNOWN 이라 deployable() 에서는 빠진다.
+    # 정본·참고 통틀어 라벨 실적 0건이라 단위 판정 근거가 없다 (NQ-13).
+    ThermalClass(20, "incoming_contact", "인입선로 접촉부", LABEL, "",
+                 notes="[2026-09-02] 개정 PDF 가공대상 포함 · 보류 표기 없음 -> "
+                       "주의에서 가공으로 상향 (DEC-027). "
+                       "이전 판 비고 '반사 때문에 탐지 정확도가 떨어짐' 은 "
+                       "개정 판에서 사라졌다. 단위 미확정이라 아직 비배포 (NQ-13)"),
     ThermalClass(21, "busbar", "부스바", EXCLUDE,
                  "일정한 패턴이 없어 탐지 정확도가 떨어짐"),
     ThermalClass(22, "cable", "케이블", EXCLUDE,
