@@ -1,6 +1,6 @@
 # 시험 30장은 어떻게 골랐나
 
-> 자동 생성 · 2026-09-02
+> 자동 생성 · 2026-09-03
 > 원자료: `reports/data_audit/selection_funnel.csv` · `trial_provenance.csv`
 >
 > **뽑힌 이유만이 아니라 탈락 이유도 적는다.**

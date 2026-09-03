@@ -58,7 +58,19 @@ def load_classes(trial_root):
     if not f.exists():
         return {}, []
     names = f.read_text(encoding="utf-8").splitlines()
-    return {n.strip(): i for i, n in enumerate(names) if n.strip()}, names
+    idx = {n.strip(): i for i, n in enumerate(names) if n.strip()}
+    # 공백만 다른 이름도 잇는다. 라벨러가 CVAT 에 손으로 클래스를 추가하면서
+    # 'VCB 접촉부' 를 'VCB접촉부' 로 적은 사례가 실제로 있었다 (trial_ingest 와 같은 규칙).
+    loose = {}
+    for n, i in idx.items():
+        k = "".join(n.split())
+        if k in loose:
+            loose = {}
+            break
+        loose[k] = i
+    for k, i in loose.items():
+        idx.setdefault(k, i)
+    return idx, names
 
 
 def load_yolo(folder):

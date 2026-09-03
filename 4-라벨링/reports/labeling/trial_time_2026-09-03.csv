@@ -1,0 +1,5 @@
+﻿annotator,total_minutes,images,min_per_image,spans,est_minutes_for_400
+annotator_A,22.0,30,0.73,1,293
+annotator_B,60.0,30,2.0,1,800
+annotator_C,44.0,30,1.47,1,587
+annotator_D,38.0,30,1.27,1,507

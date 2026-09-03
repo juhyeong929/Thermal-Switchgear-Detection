@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>70</id>
+      <size>30</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-08-28 07:18:46.199317+00:00</created>
+      <updated>2026-09-03 05:56:55.713046+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>29</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>70</id>
+          <start>0</start>
+          <stop>29</stop>
+          <url>http://rm-server.scnu.ac.kr:8080/api/jobs/70/dataset/export/api/jobs/70</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>juh09290929</username>
+        <email>juh09290929@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>철심부</name>
+          <color>#ff5555</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>에폭시 표면</name>
+          <color>#ffaa00</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>몰드변압기 접촉부</name>
+          <color>#ffee33</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>LBS</name>
+          <color>#66dd44</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>한류형 전력퓨즈</name>
+          <color>#33aaff</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>LA</name>
+          <color>#5566ff</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>변압기</name>
+          <color>#aa66ff</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>변류기</name>
+          <color>#ff66cc</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>비한류형 전력퓨즈</name>
+          <color>#cc8855</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>소음기부착형 전력퓨즈</name>
+          <color>#88aa99</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>몰드타입 PT</name>
+          <color>#dd4477</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>케이블헤드</name>
+          <color>#ffaa00</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>CT</name>
+          <color>#66dd44</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>SA</name>
+          <color>#33ccaa</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>콘덴서</name>
+          <color>#33aaff</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>MCCB</name>
+          <color>#5566ff</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>변류기 접촉부</name>
+          <color>#ff5555</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>MCCB 접촉부</name>
+          <color>#66dd44</color>
+          <type>rectangle</type>
+          <attributes>
+            <attribute>
+              <name>truncated</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>ignore</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>촬영유형</name>
+          <color>#999999</color>
+          <type>tag</type>
+          <attributes>
+            <attribute>
+              <name>shot_type</name>
+              <mutable>True</mutable>
+              <input_type>select</input_type>
+              <default_value>클로즈업</default_value>
+              <values>클로즈업
+중거리
+전체</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>VCB접촉부</name>
+          <color>#ffcc33</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2026-09-03 05:57:09.103710+00:00</dumped>
+  </meta>
+  <image id="0" name="data/images/A01.jpg" width="320" height="240">
+    <box label="에폭시 표면" source="manual" occluded="0" xtl="210.80" ytl="98.62" xbr="253.60" ybr="203.27" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="철심부" source="manual" occluded="0" xtl="107.56" ytl="210.34" xbr="253.69" ybr="230.42" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="에폭시 표면" source="manual" occluded="0" xtl="156.46" ytl="100.88" xbr="210.33" ybr="205.53" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="철심부" source="manual" occluded="1" xtl="101.90" ytl="70.36" xbr="248.03" ybr="90.44" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="에폭시 표면" source="manual" occluded="0" xtl="101.13" ytl="102.57" xbr="155.00" ybr="207.22" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">중거리</attribute>
+    </tag>
+  </image>
+  <image id="1" name="data/images/A02.jpg" width="320" height="240">
+    <box label="몰드변압기 접촉부" source="manual" occluded="0" xtl="82.26" ytl="37.74" xbr="121.01" ybr="159.50" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="몰드변압기 접촉부" source="manual" occluded="1" xtl="263.65" ytl="34.21" xbr="302.39" ybr="159.50" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="철심부" source="manual" occluded="0" xtl="37.48" ytl="167.04" xbr="277.74" ybr="205.53" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="2" name="data/images/A03.jpg" width="320" height="240">
+    <box label="철심부" source="manual" occluded="1" xtl="2.26" ytl="159.20" xbr="318.49" ybr="215.85" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="3" name="data/images/A04.jpg" width="320" height="240">
+    <box label="에폭시 표면" source="manual" occluded="0" xtl="210.06" ytl="26.90" xbr="279.70" ybr="148.68" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="철심부" source="manual" occluded="0" xtl="147.17" ytl="158.74" xbr="320.00" ybr="191.95" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="철심부" source="manual" occluded="0" xtl="147.00" ytl="2.01" xbr="318.40" ybr="26.10" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="에폭시 표면" source="manual" occluded="0" xtl="144.65" ytl="42.77" xbr="209.06" ybr="149.94" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="에폭시 표면" source="manual" occluded="0" xtl="282.92" ytl="25.40" xbr="320.00" ybr="147.18" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">중거리</attribute>
+    </tag>
+  </image>
+  <image id="4" name="data/images/A05.jpg" width="320" height="240">
+    <box label="변압기" source="manual" occluded="1" xtl="119.24" ytl="108.68" xbr="190.19" ybr="204.53" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">중거리</attribute>
+    </tag>
+  </image>
+  <image id="5" name="data/images/A06.jpg" width="320" height="240">
+    <box label="변압기" source="manual" occluded="1" xtl="76.23" ytl="9.06" xbr="253.08" ybr="216.60" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="6" name="data/images/A07.jpg" width="320" height="240">
+    <box label="몰드타입 PT" source="manual" occluded="1" xtl="15.85" ytl="67.67" xbr="94.84" ybr="225.16" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="몰드타입 PT" source="manual" occluded="1" xtl="118.99" ytl="67.67" xbr="197.99" ybr="225.16" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="몰드타입 PT" source="manual" occluded="1" xtl="217.86" ytl="47.50" xbr="296.86" ybr="225.91" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="7" name="data/images/A08.jpg" width="320" height="240">
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="8" name="data/images/A09.jpg" width="320" height="240">
+    <box label="비한류형 전력퓨즈" source="manual" occluded="0" xtl="89.31" ytl="89.56" xbr="112.20" ybr="166.04" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="비한류형 전력퓨즈" source="manual" occluded="0" xtl="148.80" ytl="89.81" xbr="171.70" ybr="166.29" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="비한류형 전력퓨즈" source="manual" occluded="0" xtl="205.66" ytl="91.07" xbr="228.55" ybr="167.55" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">중거리</attribute>
+    </tag>
+  </image>
+  <image id="9" name="data/images/A10.jpg" width="320" height="240">
+    <box label="변압기" source="manual" occluded="1" xtl="81.26" ytl="37.99" xbr="224.40" ybr="226.41" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="10" name="data/images/A11.jpg" width="320" height="240">
+    <box label="케이블헤드" source="manual" occluded="0" xtl="204.91" ytl="201.28" xbr="222.77" ybr="238.47" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="케이블헤드" source="manual" occluded="0" xtl="86.29" ytl="201.80" xbr="104.15" ybr="238.99" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="케이블헤드" source="manual" occluded="0" xtl="145.79" ytl="201.78" xbr="163.65" ybr="238.97" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">중거리</attribute>
+    </tag>
+  </image>
+  <image id="11" name="data/images/A12.jpg" width="320" height="240">
+    <box label="몰드타입 PT" source="manual" occluded="1" xtl="142.39" ytl="79.75" xbr="190.94" ybr="129.31" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="몰드타입 PT" source="manual" occluded="1" xtl="246.90" ytl="80.63" xbr="270.31" ybr="130.19" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="12" name="data/images/A13.jpg" width="320" height="240">
+    <box label="VCB접촉부" source="manual" occluded="0" xtl="56.10" ytl="107.92" xbr="77.23" ybr="122.52" z_order="0">
+    </box>
+    <box label="VCB접촉부" source="manual" occluded="0" xtl="198.49" ytl="112.20" xbr="219.62" ybr="126.79" z_order="0">
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="13" name="data/images/A14.jpg" width="320" height="240">
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="14" name="data/images/A15.jpg" width="320" height="240">
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="62.49" ytl="139.80" xbr="75.57" ybr="196.40" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="125.90" ytl="140.17" xbr="138.98" ybr="196.77" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="178.48" ytl="122.56" xbr="191.56" ybr="179.16" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="243.63" ytl="121.55" xbr="256.72" ybr="178.16" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="243.63" ytl="198.03" xbr="256.72" ybr="240.00" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="180.74" ytl="199.79" xbr="193.82" ybr="240.00" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="61.48" ytl="137.53" xbr="139.50" ybr="196.91" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="179.22" ytl="120.67" xbr="257.23" ybr="180.04" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="179.72" ytl="196.65" xbr="257.73" ybr="240.00" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="15" name="data/images/A16.jpg" width="320" height="240">
+    <box label="MCCB" source="manual" occluded="0" xtl="102.49" ytl="103.07" xbr="208.15" ybr="185.08" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="103.77" ytl="110.87" xbr="123.37" ybr="180.30" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="189.56" ytl="110.86" xbr="209.16" ybr="180.30" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="16" name="data/images/A17.jpg" width="320" height="240">
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="17" name="data/images/A18.jpg" width="320" height="240">
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="91.10" ytl="93.31" xbr="110.02" ybr="168.41" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="192.83" ytl="94.77" xbr="211.75" ybr="169.87" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="196.32" ytl="184.42" xbr="215.24" ybr="240.00" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="88.04" ytl="184.42" xbr="106.96" ybr="240.00" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="91.68" ytl="93.02" xbr="212.18" ybr="171.61" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="92.55" ytl="183.55" xbr="213.06" ybr="240.00" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="18" name="data/images/B01_같은클래스겹침.jpg" width="320" height="240">
+    <box label="몰드변압기 접촉부" source="manual" occluded="0" xtl="0.00" ytl="24.32" xbr="58.49" ybr="219.34" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="몰드변압기 접촉부" source="manual" occluded="1" xtl="129.38" ytl="47.03" xbr="187.87" ybr="228.10" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="몰드변압기 접촉부" source="manual" occluded="0" xtl="227.20" ytl="61.58" xbr="274.61" ybr="213.80" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="19" name="data/images/B01_같은클래스밀집.jpg" width="320" height="240">
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="102.14" ytl="179.31" xbr="113.20" ybr="230.25" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="45.11" ytl="40.91" xbr="114.38" ybr="95.64" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="44.23" ytl="111.94" xbr="113.51" ybr="166.67" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="1" xtl="40.74" ytl="175.98" xbr="110.02" ybr="230.70" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="164.74" ytl="172.78" xbr="234.02" ybr="227.50" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="167.65" ytl="106.41" xbr="236.93" ybr="161.14" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="171.72" ytl="34.81" xbr="247.10" ybr="89.53" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="43.94" ytl="42.37" xbr="55.00" ybr="93.31" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="104.15" ytl="46.23" xbr="115.22" ybr="97.17" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="170.07" ytl="36.67" xbr="181.13" ybr="87.61" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="234.97" ytl="37.68" xbr="246.03" ybr="88.61" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="228.43" ytl="109.37" xbr="239.49" ybr="160.31" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="167.80" ytl="107.36" xbr="178.86" ybr="158.30" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="164.53" ytl="174.03" xbr="175.59" ybr="224.97" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="225.16" ytl="174.28" xbr="236.22" ybr="225.22" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="101.89" ytl="111.89" xbr="112.95" ybr="162.83" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="45.29" ytl="109.88" xbr="56.35" ybr="160.81" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="1" xtl="44.53" ytl="177.30" xbr="55.59" ybr="228.24" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="20" name="data/images/B01_다른클래스겹침.jpg" width="320" height="240">
+    <box label="변류기 접촉부" source="manual" occluded="0" xtl="36.48" ytl="83.27" xbr="60.38" ybr="123.02" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="변류기 접촉부" source="manual" occluded="0" xtl="158.36" ytl="92.08" xbr="182.26" ybr="131.82" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="변류기 접촉부" source="manual" occluded="0" xtl="260.75" ytl="97.61" xbr="284.65" ybr="137.36" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="21" name="data/images/B01_작은객체.jpg" width="320" height="240">
+    <box label="MCCB" source="manual" occluded="0" xtl="121.76" ytl="2.05" xbr="226.45" ybr="83.02" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="127.02" ytl="100.65" xbr="230.20" ybr="169.80" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="137.09" ytl="185.05" xbr="232.76" ybr="240.00" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="121.01" ytl="14.84" xbr="142.89" ybr="86.54" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="205.91" ytl="3.14" xbr="227.80" ybr="74.84" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="207.92" ytl="100.25" xbr="229.81" ybr="171.95" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="131.95" ytl="107.80" xbr="153.84" ybr="179.50" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="138.24" ytl="189.31" xbr="160.13" ybr="240.00" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="213.21" ytl="183.77" xbr="234.10" ybr="240.00" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="22" name="data/images/B01_잘림-2변이상.jpg" width="320" height="240">
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="23" name="data/images/B02_같은클래스밀집.jpg" width="320" height="240">
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="87.30" ytl="60.13" xbr="102.14" ybr="140.88" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="184.53" ytl="55.47" xbr="199.37" ybr="136.23" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="184.28" ytl="171.70" xbr="199.12" ybr="240.00" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="76.60" ytl="174.21" xbr="91.45" ybr="240.00" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="91.07" ytl="54.84" xbr="200.00" ybr="140.13" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="80.90" ytl="167.92" xbr="194.59" ybr="240.00" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="277.36" ytl="24.72" xbr="296.50" ybr="101.60" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="284.77" ytl="138.16" xbr="303.91" ybr="215.05" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="24" name="data/images/B02_다른클래스겹침.jpg" width="320" height="240">
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="25" name="data/images/B02_작은객체.jpg" width="320" height="240">
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="103.27" ytl="214.72" xbr="113.08" ybr="240.00" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="104.65" ytl="176.85" xbr="114.46" ybr="205.79" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="133.96" ytl="215.72" xbr="143.77" ybr="240.00" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="134.97" ytl="177.74" xbr="144.78" ybr="206.67" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="165.41" ytl="172.45" xbr="175.22" ybr="201.38" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="196.86" ytl="171.45" xbr="206.67" ybr="200.38" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="197.36" ytl="214.21" xbr="207.17" ybr="240.00" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="163.65" ytl="215.22" xbr="173.46" ybr="240.00" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="104.65" ytl="176.86" xbr="144.90" ybr="206.29" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="166.04" ytl="171.45" xbr="206.29" ybr="200.88" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="166.04" ytl="213.96" xbr="206.29" ybr="240.00" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="102.89" ytl="215.22" xbr="143.14" ybr="240.00" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="26" name="data/images/B02_잘림-2변이상.jpg" width="320" height="240">
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="27" name="data/images/B03_다른클래스겹침.jpg" width="320" height="240">
+    <box label="VCB접촉부" source="manual" occluded="0" xtl="233.21" ytl="172.33" xbr="259.87" ybr="189.43" z_order="0">
+    </box>
+    <box label="케이블헤드" source="manual" occluded="0" xtl="127.55" ytl="169.06" xbr="159.00" ybr="240.00" z_order="0">
+      <attribute name="truncated">true</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+  <image id="28" name="data/images/B03_작은객체.jpg" width="320" height="240">
+    <box label="MCCB" source="manual" occluded="0" xtl="83.77" ytl="24.91" xbr="129.81" ybr="62.39" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="157.86" ytl="19.75" xbr="203.90" ybr="57.23" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="156.35" ytl="68.55" xbr="202.39" ybr="101.50" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="82.64" ytl="74.34" xbr="128.68" ybr="107.29" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="81.89" ytl="117.87" xbr="127.92" ybr="145.80" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="152.83" ytl="112.57" xbr="198.87" ybr="146.50" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="151.82" ytl="151.09" xbr="197.86" ybr="185.01" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="1" xtl="80.88" ytl="147.82" xbr="126.92" ybr="173.40" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB" source="manual" occluded="0" xtl="81.63" ytl="177.65" xbr="127.67" ybr="203.23" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="84.53" ytl="27.17" xbr="95.60" ybr="59.12" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="119.50" ytl="28.30" xbr="130.57" ybr="60.25" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="158.24" ytl="22.26" xbr="169.31" ybr="54.21" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="191.95" ytl="22.77" xbr="203.02" ybr="54.72" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="190.44" ytl="69.56" xbr="201.51" ybr="101.51" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="155.72" ytl="69.06" xbr="166.79" ybr="101.01" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="118.99" ytl="75.09" xbr="130.06" ybr="107.04" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="85.03" ytl="74.59" xbr="96.10" ybr="106.54" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="82.26" ytl="116.35" xbr="93.33" ybr="148.30" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="116.98" ytl="118.36" xbr="128.05" ybr="146.30" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="153.96" ytl="112.33" xbr="165.03" ybr="144.28" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="187.17" ytl="113.33" xbr="198.24" ybr="145.28" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="187.42" ytl="152.07" xbr="198.49" ybr="184.02" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="150.94" ytl="151.32" xbr="162.01" ybr="183.27" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="116.48" ytl="177.74" xbr="127.55" ybr="203.10" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="82.77" ytl="148.32" xbr="93.84" ybr="173.69" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="0" xtl="81.76" ytl="177.51" xbr="92.83" ybr="202.87" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <box label="MCCB 접촉부" source="manual" occluded="1" xtl="117.23" ytl="148.07" xbr="128.30" ybr="173.44" z_order="0">
+      <attribute name="truncated">false</attribute>
+      <attribute name="ignore">false</attribute>
+    </box>
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">중거리</attribute>
+    </tag>
+  </image>
+  <image id="29" name="data/images/B03_잘림-2변이상.jpg" width="320" height="240">
+    <tag label="촬영유형" source="manual">
+      <attribute name="shot_type">클로즈업</attribute>
+    </tag>
+  </image>
+</annotations>

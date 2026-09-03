@@ -4,3 +4,10 @@
 # scope       image = 이 장 전체를 못 하겠다 / object = 일부만 못 하겠다,,,,,
 # skip_reason rule_unclear · not_visible · unknown_part · other,,,,,
 # 예시,annotator_D,object,unknown_part,,왼쪽 원통이 변압기인지 PT인지 모르겠음
+annotator_D,A08,image,other,,"라벨링이 필요한 부품이 잘려서 안보임"
+annotator_D,A14,image,other,,"라벨링이 필요한 부품이 잘려서 안보임"
+annotator_D,A17,image,other,,"사진의 화질이 안좋아서 라벨링이 어려움"
+annotator_D,B01_잘림-2변이상,image,other,,"라벨링이 필요한 부품이 잘려서 안보임"
+annotator_D,B02_다른클래스겹침,image,other,,"무슨 부품인지 모르겠음"
+annotator_D,B02_잘림-2변이상,image,other,,"라벨링이 필요한 부품이 잘려서 안보임"
+annotator_D,B03_잘림-2변이상,image,other,,"변류기,변압기의 구분이 모호함."

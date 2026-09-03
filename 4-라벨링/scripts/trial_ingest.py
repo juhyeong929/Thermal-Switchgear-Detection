@@ -62,13 +62,19 @@ def find_export(d):
 
 
 def stray_labels(d):
-    """`yolo/` 밖에 남은 txt. 있으면 agreement.py 가 같은 stem 을 덮어쓴다."""
+    """`yolo/` **바로 아래**가 아닌 곳에 남은 txt.
+
+    agreement.py 는 작업 폴더를 rglob 하므로 같은 stem 이 둘이면 정규화본을 덮어쓴다.
+    `yolo/` 밖뿐 아니라 **`yolo/` 안에 중첩된 원본도 같은 사고를 낸다** —
+    annotator_D 가 export 를 `yolo/annotator_D/obj_train_data/...` 로 풀어 넣어
+    실제로 확인됐다. 그래서 부모가 정확히 `yolo/` 인 것만 정상으로 본다.
+    """
     ydir = (d / "yolo").resolve()
     out = []
     for p in sorted(d.rglob("*.txt")):
         if p.name in NOT_LABEL:
             continue
-        if ydir not in p.resolve().parents:
+        if p.resolve().parent != ydir:
             out.append(p)
     return out
 
@@ -78,17 +84,35 @@ def load_names(export_root):
         encoding="utf-8").splitlines() if l.strip()]
 
 
+def nospace(s):
+    """공백을 모두 뺀 이름. 라벨러가 CVAT 에 손으로 클래스를 추가할 때
+    'VCB 접촉부' 를 'VCB접촉부' 로 적는 일이 실제로 있었다."""
+    return "".join(s.split())
+
+
 def load_class_index():
     """classes.txt: 줄 번호가 곧 class_id. 자리표시자도 한 줄로 센다."""
     lines = (TRIAL / "classes.txt").read_text(encoding="utf-8").splitlines()
-    return {n.strip(): i for i, n in enumerate(lines) if n.strip()}, lines
+    name2id = {n.strip(): i for i, n in enumerate(lines) if n.strip()}
+    return name2id, lines
+
+
+def loose_index(name2id):
+    """공백을 뺀 이름 -> class_id. 공백만 빼서 겹치는 이름이 있으면 쓰지 않는다."""
+    loose = {}
+    for n, i in name2id.items():
+        k = nospace(n)
+        if k in loose:
+            return {}                     # 모호하면 느슨한 대조를 포기한다
+        loose[k] = i
+    return loose
 
 
 def ingest(d, dry_run=False):
     """돌려주는 것: (성공 여부, 요약 dict)."""
     d = Path(d)
     info = {"annotator": d.name, "remapped": [], "images": 0, "boxes": 0,
-            "empty": 0, "problems": []}
+            "empty": 0, "problems": [], "whitespace_matched": []}
 
     export = find_export(d)
     if export is None:
@@ -97,6 +121,13 @@ def ingest(d, dry_run=False):
 
     names = load_names(export)
     name2id, class_lines = load_class_index()
+
+    # 공백만 다른 이름은 이어 준다. 다만 **조용히 넘기지 않고** 보고에 남긴다.
+    loose = loose_index(name2id)
+    for n in names:
+        if n not in name2id and nospace(n) in loose:
+            name2id[n] = loose[nospace(n)]
+            info["whitespace_matched"].append((n, class_lines[loose[nospace(n)]].strip()))
 
     # 이름이 하나라도 모르면 **아무것도 쓰지 않는다**
     unknown = [n for n in names if n not in name2id]
@@ -205,6 +236,10 @@ def report(info):
             print(f"    {src:>9}  {name:<18}{dst:>11}")
     else:
         print("  class_id 복원: 없음 (이미 classes.txt 와 같다)")
+    if info.get("whitespace_matched"):
+        for got, want in info["whitespace_matched"]:
+            print(f"  [주의] 공백만 다른 라벨명을 이어 붙였다: "
+                  f"'{got}' -> '{want}' (라벨러가 CVAT 에 손으로 추가한 것)")
     if info.get("unused_unknown"):
         print(f"  classes.txt 에 없지만 그려지지 않은 라벨: "
               f"{', '.join(info['unused_unknown'])} (태그 전용이면 정상)")

@@ -301,7 +301,7 @@ def render_guide(rs, changelog):
     table = table.split("### 어떤 반에서도")[0].rstrip()
     excluded = "\n".join(f"- **{v2.BY_NAME[c].canonical_name}**"
                          for c in sorted(v2.EXCLUDED))
-    out = (t.replace("{{GUIDE_DATE}}", date.today().isoformat())
+    out = (t.replace("{{GUIDE_DATE}}", GUIDE_DATE)
             .replace("{{PANEL_CLASS_TABLE}}", table)
             .replace("{{EXCLUDED_LIST}}", excluded)
             .replace("{{UNIT_TABLE}}", unit_table_md())
@@ -313,6 +313,12 @@ def render_guide(rs, changelog):
     GUIDE_V2.write_text(out, encoding="utf-8")
     return out
 
+
+# 지침서 판본 날짜. **오늘 날짜를 찍지 않는다.**
+# date.today() 를 쓰면 내용이 그대로여도 날짜 줄이 매일 바뀌고, 그때마다 회차 입력판
+# 지문(deploy_manifest_round2.csv)이 깨져 "무엇이 달라졌는가" 를 알 수 없게 된다.
+# 지침서 내용을 실제로 고칠 때만 이 값을 올린다.
+GUIDE_DATE = "2026-09-02"
 
 CHANGELOG = """\
 | # | 바뀐 것 | 왜 | 근거 |

@@ -1,6 +1,6 @@
 # 05. 미해소 사항과 조치
 
-> 자동 생성 · 2026-09-02 · 원본 `reports/data_audit/open_questions.csv`
+> 자동 생성 · 2026-09-03 · 원본 `reports/data_audit/open_questions.csv`
 
 코드에 몰래 결정하지 않고 남겨 둔 항목이다. 각 항목은 어느 단계를 막고 있는지 명시한다.
 
