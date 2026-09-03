@@ -1,0 +1,79 @@
+[
+  {
+    "name": "VCB 접촉부",
+    "color": "#ffee33",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "CT",
+    "color": "#66dd44",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "truncated",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "프레임 밖으로 잘렸으나 식별 가능 — 보이는 영역만 박스"
+      },
+      {
+        "name": "ignore",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false",
+          "true"
+        ],
+        "description": "판별 불가 또는 경계 구분 불가 — 학습에서 제외"
+      }
+    ]
+  },
+  {
+    "name": "촬영유형",
+    "color": "#888888",
+    "type": "tag",
+    "attributes": [
+      {
+        "name": "shot_type",
+        "mutable": false,
+        "input_type": "select",
+        "default_value": "클로즈업",
+        "values": [
+          "클로즈업",
+          "중거리",
+          "전체"
+        ],
+        "description": "이미지 단위 메타데이터"
+      }
+    ]
+  }
+]

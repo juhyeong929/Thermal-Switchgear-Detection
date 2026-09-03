@@ -5,9 +5,9 @@
 
 | 항목 | v1 | v2.0 | v1+vcb |
 |---|---|---|---|
-| 회차 | round 1 · CLOSED | round 2 · PENDING | round 3 · CLOSED |
+| 회차 | round 1 · CLOSED | round 2 · CANCELLED | round 3 · CLOSED |
 | 반 정보 공개 | NO | YES | NO |
-| 라벨러 | A/B/C (제출 3) | E (제출 0) | D (제출 1) |
+| 라벨러 | A/B/C (제출 3) |  (제출 0) | D (제출 1) |
 | pooled Kappa | 0.902 (3쌍) | 미측정 | 0.920 (6쌍) |
 | panel별 Kappa | P1 1.00 · P3 1.00 · P4 0.00~0.42 · P6 0.00~1.00 · P9 1.00 | — | P1 1.00 · P3 0.38~1.00 · P4 0.00~1.00 · P6 0.00~1.00 · P9 1.00 |
 | count agreement | 57.6% | 미측정 | 58.3% |

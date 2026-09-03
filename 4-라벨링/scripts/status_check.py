@@ -327,6 +327,39 @@ def main():
     else:
         note("지침서", "round 2 입력판 고정", "미고정 — 배포 전 잠근다", "확인")
 
+    # ---- 5-4 시드 배포본 ----
+    print(f"{chr(10)}[5-4] 400장 시드 배포본")
+    sdep = paths.LABELING / "seed" / "deploy"
+    if not sdep.is_dir():
+        note("시드배포", "생성", "없음 — seed_set_export.py 로 만든다", "확인")
+    else:
+        imgs = list((sdep / "images").rglob("*.jpg"))
+        note("시드배포", "이미지", f"{len(imgs)}장",
+             "OK" if len(imgs) == 400 else "불일치")
+        mrows = data_rows(sdep / "manifest.csv", "panel") or []
+        note("시드배포", "manifest 행", f"{len(mrows)}행",
+             "OK" if len(mrows) == len(imgs) else "불일치")
+        # 라벨이 섞여 나가면 라벨러가 그대로 따라 그린다 — 측정이 무의미해진다
+        stray = [q.name for q in (sdep / "images").rglob("*")
+                 if q.is_file() and q.suffix.lower() in {".txt", ".xml", ".json"}]
+        note("시드배포", "라벨 파일 혼입", "없음" if not stray else f"**{stray[:3]}**",
+             "OK" if not stray else "FAIL")
+        # 반별 라벨 정의가 현재 배포 대상과 같은가
+        bad = []
+        for panel in v2.PANEL_CLASSES:
+            f = sdep / "cvat_labels" / f"{v2.panel_id(panel)}.json"
+            if not f.exists():
+                bad.append(f"{v2.panel_id(panel)} 없음")
+                continue
+            got = {l["name"] for l in json.loads(f.read_text(encoding="utf-8"))
+                   if l.get("type") == "rectangle"}
+            want = {v2.BY_NAME[c].canonical_name for c in v2.deployable(panel)}
+            if got != want:
+                bad.append(f"{v2.panel_id(panel)} {sorted(got ^ want)}")
+        note("시드배포", "반별 라벨 정의 == 배포 대상",
+             f"{len(v2.PANEL_CLASSES)}개 반 일치" if not bad else f"**{bad}**",
+             "OK" if not bad else "FAIL")
+
     # ---- 6 미해소 ----
     print("\n[6] 미해소 사항")
     with (paths.AUDIT / "open_questions.csv").open(encoding="utf-8-sig") as fh:
