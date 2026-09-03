@@ -77,9 +77,15 @@ python scripts/build_reference_table.py  # 가공 대상 종합표
 **자동 검사가 닿지 않는 곳은 화면이다.** 아래는 CVAT 를 실제로 띄워야 확인된다.
 
 ```
-[ ] CVAT 프로젝트·task 를 실제로 만들었는가
-       task 이름 = generated/cvat_tasks.csv 의 cvat_task_name 그대로
-       예) "P6 · P6-VCB반"
+[ ] CVAT task 를 **10개** 만들었는가 (5개 반 x 라벨러 2명)
+       D 와 E 가 같은 이미지를 독립적으로 그려야 일치도가 나온다.
+       CVAT 의 job 은 프레임을 나눠 갖는 구조라 한 task 를 둘이 쓸 수 없다.
+       라벨러마다 task 를 따로 만든다.
+       이름 = generated/cvat_tasks.csv 의 cvat_task_name + " · <라벨러>"
+       예) "P6 · P6-VCB반 · annotator_D"   "P6 · P6-VCB반 · annotator_E"
+[ ] 각 task 에 그 반의 이미지만 넣었는가 (manifest.csv 의 panel 열 기준)
+       P1 5장 · P3 3장 · P4 8장 · P6 5장 · P9 9장 = 30장
+       파일명은 case_id 그대로 둔다 — 회수 시 대조 키다
 [ ] 각 task 의 Raw 탭에 **그 반의** 라벨 정의를 넣었는가
        generated/cvat_labels/<PID>.json — 반마다 다르다. 한 파일을 돌려쓰지 않는다
 [ ] 라벨러 화면에 **반 이름이 실제로 보이는가**  (A-1 · NQ-15 의 핵심)
