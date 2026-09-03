@@ -40,3 +40,6 @@ Thumbs.db
 
 # 개인 설정
 .claude/settings.local.json
+
+# CVAT 업로드용으로 묶은 zip. 같은 폴더의 jpg 가 원본이므로 다시 만들 수 있다.
+4-라벨링/data/labeling/seed/deploy/**/*.zip

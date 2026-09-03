@@ -5,7 +5,7 @@
 
 | 항목 | v1 | v2.0 | v1+vcb | v2.0 |
 |---|---|---|---|---|
-| 회차 | round 1 · CLOSED | round 4 · PENDING | round 3 · CLOSED | round 4 · PENDING |
+| 회차 | round 1 · CLOSED | round 4 · IN_PROGRESS | round 3 · CLOSED | round 4 · IN_PROGRESS |
 | 반 정보 공개 | NO | YES | NO | YES |
 | 라벨러 | A/B/C (제출 3) | 김주형/+/검증자_미정 (제출 0) | D (제출 1) | 김주형/+/검증자_미정 (제출 0) |
 | pooled Kappa | 0.902 (3쌍) | 미측정 | 0.920 (6쌍) | 미측정 |
