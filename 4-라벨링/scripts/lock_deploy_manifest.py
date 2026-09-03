@@ -28,23 +28,34 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from schemas import paths  # noqa: E402
 from schemas import classes_v2 as v2  # noqa: E402
 
-ROUND = 2
-GUIDE_VERSION = "v2.0"
-PANELS = ["P1-TR반", "P3-MOF반", "P4-MOF&PT반", "P6-VCB반", "P9-MCCB반"]
-
 TRIAL = paths.LABELING / "draft" / "trial"
+SEED = paths.LABELING / "seed" / "deploy"
 LAB = paths.REPORTS / "labeling"
 GEN = LAB / "generated"
-OUT = GEN / f"deploy_manifest_round{ROUND}.csv"
+
+# 잠글 대상. 시험 회차와 본작업 배포본은 파일 목록이 다르다.
+TARGETS = {
+    "round2": {                      # 2차 시험 회차 (DEC-028 로 취소됨 — 기록만 유지)
+        "round": 2, "guide": "v2.0",
+        "panels": ["P1-TR반", "P3-MOF반", "P4-MOF&PT반", "P6-VCB반", "P9-MCCB반"],
+        "out": GEN / "deploy_manifest_round2.csv",
+    },
+    "seed": {                        # 400장 본 시드 라벨링
+        "round": 4, "guide": "v2.0",
+        "panels": list(paths.PANELS),
+        "out": GEN / "deploy_manifest_seed.csv",
+    },
+}
+TARGET = TARGETS["round2"]
+ROUND, GUIDE_VERSION, PANELS, OUT = 2, "v2.0", TARGET["panels"], TARGET["out"]
 
 
 def files():
-    """이 회차의 입력이 되는 파일. 역할별로 묶어 둔다."""
+    """이 배포의 입력이 되는 파일. 역할별로 묶어 둔다."""
     yield "정책 원본", paths.SCHEMAS / "classes_v2.py"
     yield "정책 원본", paths.SCHEMAS / "labeling_rules.py"
 
     yield "라벨러 배포", LAB / "annotator_guide_v2.md"
-    yield "라벨러 배포", LAB / "trial_instructions.md"
     yield "라벨러 배포", LAB / "bounding_box_boundary_spec.md"
     yield "라벨러 배포", GEN / "panel_class_table.md"
     for p in PANELS:
@@ -54,12 +65,22 @@ def files():
         pid = v2.panel_id(p)
         yield "CVAT 설정", GEN / "cvat_labels" / f"{pid}.json"
         yield "CVAT 설정", GEN / "cvat_labels" / f"{pid}.names"
-    yield "CVAT 설정", TRIAL / "cvat_labels.json"
-    yield "CVAT 설정", TRIAL / "classes.txt"
 
-    yield "배포본", TRIAL / "manifest.csv"
+    if TARGET["round"] == 2:
+        yield "라벨러 배포", LAB / "trial_instructions.md"
+        yield "CVAT 설정", TRIAL / "cvat_labels.json"
+        yield "CVAT 설정", TRIAL / "classes.txt"
+        yield "배포본", TRIAL / "manifest.csv"
+        yield "검수자", LAB / "deploy_checklist_D_E.md"
+    else:
+        yield "CVAT 설정", SEED / "classes.txt"
+        for p in PANELS:
+            yield "CVAT 설정", SEED / "cvat_labels" / f"{v2.panel_id(p)}.json"
+        yield "배포본", SEED / "manifest.csv"
+        yield "배포본", SEED / "panels.csv"
+        # 중복 배정 50장이 바뀌면 C-2 의 근거가 달라진다. 반드시 지문에 넣는다.
+        yield "배포본", SEED / "agreement_subset.csv"
 
-    yield "검수자", LAB / "deploy_checklist_D_E.md"
     yield "검수자", LAB / "escalation.txt"
 
 
@@ -93,8 +114,13 @@ def collect():
             "bytes": path.stat().st_size,
             "sha256": sha(path),
         })
-    for role, folder, pat in [("배포본", TRIAL / "images", "*.jpg"),
-                              ("배포본", TRIAL / "reference_rgb", "*.jpg")]:
+    folders = ([("배포본", TRIAL / "images", "*.jpg"),
+                ("배포본", TRIAL / "reference_rgb", "*.jpg")]
+               if TARGET["round"] == 2 else
+               [("배포본", SEED / "images" / v2.panel_id(p), "*.jpg") for p in PANELS]
+               + [("배포본", SEED / "reference_rgb" / v2.panel_id(p), "*.jpg")
+                  for p in PANELS])
+    for role, folder, pat in folders:
         digest, n = dir_sha(folder, pat)
         rows.append({
             "role": role,
@@ -158,12 +184,20 @@ def started():
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--target", choices=sorted(TARGETS), default="seed",
+                    help="무엇을 잠글 것인가. seed=400장 본작업(기본) · "
+                         "round2=2차 시험 회차(DEC-028 로 취소됨)")
     ap.add_argument("--verify", action="store_true",
                     help="잠근 manifest 와 현재 파일이 같은지만 확인한다 (쓰기 없음)")
     ap.add_argument("--force", action="store_true",
                     help="이미 잠긴 manifest 를 덮어쓴다")
     a = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
+
+    global TARGET, ROUND, GUIDE_VERSION, PANELS, OUT
+    TARGET = TARGETS[a.target]
+    ROUND, GUIDE_VERSION = TARGET["round"], TARGET["guide"]
+    PANELS, OUT = TARGET["panels"], TARGET["out"]
 
     rows, missing = collect()
     if missing:

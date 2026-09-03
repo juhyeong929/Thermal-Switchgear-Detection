@@ -46,6 +46,40 @@ OUT = SEED / "deploy"
 GEN = paths.REPORTS / "labeling" / "generated"
 LABEL_EXT = {".txt", ".xml", ".json"}
 
+# ---------------------------------------------------------------------------
+# 일치도 중복 배정 (agreement overlap subset)
+#
+# 2차 시험 회차를 취소했으므로(DEC-028) v2 운영조건의 C-2 를 낼 경로가 없어졌다.
+# 별도 회차를 되살리는 대신 **본작업 400장 안에 50장을 두 사람에게 겹쳐 배정**해
+# 실제 배포 조건 그대로 일치도를 측정한다 (DEC-029).
+#
+#   · 같은 사람이 두 번 그리는 것이 아니다. 두 사람이 **서로 모르게 처음부터** 그린다
+#   · 단순 비례가 아니라 **반별 최소 표본 + P9 보강**으로 나눈다.
+#     P3(15장)·P9(21장)은 모집단이 작아 비례로 뽑으면 2장 안팎이 되어
+#     agreement 계산에 들어가지 못한다
+#   · 이 50장은 별도 작업이 아니다. 400장 배포 안에 들어 있고 manifest 로만 구분된다
+# ---------------------------------------------------------------------------
+OVERLAP_QUOTA = {
+    "P1-TR반": 5, "P2-LBS&LA반": 5, "P3-MOF반": 4, "P4-MOF&PT반": 5,
+    "P5-PF&PT반": 5, "P6-VCB반": 5, "P7-VCB&CT반": 5, "P8-ACB반": 5,
+    "P9-MCCB반": 6, "P10-ACB&MCCB반": 5,
+}
+OVERLAP_TOTAL = sum(OVERLAP_QUOTA.values())          # 50
+
+
+def pick_overlap(rs, n):
+    """한 반에서 겹쳐 배정할 n장을 고른다. **무작위가 아니라 재현 가능하게** 뽑는다.
+
+    세션(촬영 회차)이 한쪽에 몰리면 같은 장면만 두 번 보게 되어 일치도가 부풀려진다.
+    세션·이미지 순으로 정렬한 뒤 균등 간격으로 집어 세션을 가로지르게 한다.
+    같은 입력이면 언제 돌려도 같은 50장이 나온다.
+    """
+    ordered = sorted(rs, key=lambda r: (r["session"], r["image_id"]))
+    if n >= len(ordered):
+        return {r["image_id"] for r in ordered}
+    step = len(ordered) / n
+    return {ordered[int(i * step)]["image_id"] for i in range(n)}
+
 
 def rgb_index():
     """pair_id -> 실화상 경로. 열화상만으로 부품을 못 알아볼 때 참고용이다."""
@@ -60,6 +94,11 @@ def rgb_index():
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--dry-run", action="store_true", help="복사하지 않고 계획만 본다")
+    ap.add_argument("--pair", default="seed_A,seed_B",
+                    help="중복 배정 50장을 맡을 두 라벨러 (쉼표로 둘). "
+                         "실제 이름으로 바꿔서 배포한다")
+    ap.add_argument("--no-overlap", action="store_true",
+                    help="중복 배정 없이 내보낸다 (C-2 v2 근거를 포기하는 선택)")
     a = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
 
@@ -67,10 +106,20 @@ def main():
         rows = list(csv.DictReader(fh))
     print(f"시드 후보 {len(rows)}장")
 
+    pair = [x.strip() for x in a.pair.split(",") if x.strip()]
+    if not a.no_overlap and len(pair) != 2:
+        print("--pair 는 라벨러 두 명이어야 한다. 예: --pair 홍길동,김철수")
+        return 1
+
     rgb_of = rgb_index()
     by_panel = defaultdict(list)
     for r in rows:
         by_panel[r["panel"]].append(r)
+
+    overlap = set()
+    if not a.no_overlap:
+        for panel, rs in by_panel.items():
+            overlap |= pick_overlap(rs, OVERLAP_QUOTA.get(panel, 0))
 
     manifest, missing, n_rgb = [], [], 0
     for panel, rs in sorted(by_panel.items()):
@@ -96,6 +145,7 @@ def main():
                     shutil.copy2(rgb_src, rgb_dir / rgb_name)
                 n_rgb += 1
 
+            is_ov = r["image_id"] in overlap
             manifest.append({
                 "panel": panel, "panel_id": pid,
                 "delivered_as": f"images/{pid}/{name}",
@@ -105,6 +155,10 @@ def main():
                 "reference_rgb": f"reference_rgb/{pid}/{rgb_name}" if rgb_name else "없음",
                 "selection_reason": r["reason"], "priority": r["priority"],
                 "panel_provisional": r["panel_provisional"],
+                # --- 일치도 중복 배정 (DEC-029) ---
+                "agreement_subset": OVERLAP_TOTAL if is_ov else 0,
+                "overlap": "true" if is_ov else "false",
+                "annotator_pair": "/".join(pair) if is_ov else "",
             })
 
     if missing:
@@ -124,6 +178,8 @@ def main():
             "deployable_n": len(dep),
             "deployable": " · ".join(v2.KOREAN[c] for c in dep),
             "unit_unknown_not_deployed": " · ".join(v2.KOREAN[c] for c in hold),
+            "overlap_images": sum(1 for m in manifest
+                                  if m["panel"] == panel and m["overlap"] == "true"),
             "labels_json": f"cvat_labels/{pid}.json",
             "provisional_panel": "Y" if panel in v2.PANEL_CLASSES_PROVISIONAL else "",
         })
@@ -137,7 +193,11 @@ def main():
                          OUT / "cvat_labels" / f"{p['panel_id']}.json")
         shutil.copy2(paths.LABELING / "draft" / "trial" / "classes.txt",
                      OUT / "classes.txt")
-        for name, data in (("manifest.csv", manifest), ("panels.csv", panels)):
+        subset = [m for m in manifest if m["overlap"] == "true"]
+        for name, data in (("manifest.csv", manifest), ("panels.csv", panels),
+                           ("agreement_subset.csv", subset)):
+            if not data:
+                continue
             with (OUT / name).open("w", newline="", encoding="utf-8-sig") as fh:
                 w = csv.DictWriter(fh, fieldnames=list(data[0]))
                 w.writeheader()
@@ -161,6 +221,14 @@ def main():
             print(f"{'':<16}{'':>17}  (단위 미확정 비배포: "
                   f"{p['unit_unknown_not_deployed']})")
     print(f"\n합계 {len(manifest)}장 · 실화상 {n_rgb}장 · 반 {len(panels)}개")
+    n_ov = sum(1 for m in manifest if m["overlap"] == "true")
+    if n_ov:
+        print(f"일치도 중복 배정 {n_ov}장 -> {pair[0]} 와 {pair[1]} 가 "
+              f"**서로 모르게** 처음부터 각자 그린다 (DEC-029)")
+        per = " · ".join(f"{q['panel_id']} {q['overlap_images']}" for q in panels)
+        print(f"  반별: {per}")
+    else:
+        print("일치도 중복 배정 없음 — C-2 의 v2 조건 근거를 만들지 않는 선택이다")
     if not a.dry_run:
         print(f"-> {OUT}")
     return 0

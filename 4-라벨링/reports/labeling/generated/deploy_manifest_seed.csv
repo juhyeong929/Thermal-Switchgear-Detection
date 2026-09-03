@@ -1,0 +1,75 @@
+﻿role,path,bytes,sha256
+# round 4 배포 입력판 고정 — guide v2.0,,,
+# 대상 반: P1-TR반 P2-LBS&LA반 P3-MOF반 P4-MOF&PT반 P5-PF&PT반 P6-VCB반 P7-VCB&CT반 P8-ACB반 P9-MCCB반 P10-ACB&MCCB반 (P5 없음),,,
+# 검증: python scripts/lock_deploy_manifest.py --verify,,,
+# manifest_sha256,,,52fe342eff5b30e7ef11ae38eb31e9f23483ee5a2d6f4286ff1b136825b20b42
+정책 원본,schemas/classes_v2.py,23309,4ee231e035b7fd5da3c1eb3a3d6451cc072ecf52dbf3240a0099dd18b5416646
+정책 원본,schemas/labeling_rules.py,8348,bb05103dba77ed2aaeaffacaf642991c2e57f08cc19b1fd6aeb888baf6bad6b7
+라벨러 배포,reports/labeling/annotator_guide_v2.md,21558,2ba5bf36037d434533695cb483a0c8434d2b231c26e7aa6b77ae88ba6ddfa47c
+라벨러 배포,reports/labeling/bounding_box_boundary_spec.md,13702,6babf190791e1a919d9275e52c443466c6bb2dc8adbf0ae61ed4030c5684b729
+라벨러 배포,reports/labeling/generated/panel_class_table.md,1532,45418708ba42c4883150072b2273324d43b5d8d0bbfff71b9d603b8e0f69e523
+라벨러 배포,reports/labeling/class_reference/P1-TR반.md,1923,ca782ad762dc59ce52f8255294d254f84a9b3df47be1b9efefd7d1cf4eb312e6
+라벨러 배포,reports/labeling/class_reference/P2-LBS&LA반.md,2022,610163678f40699e2728725e23dc5a9763a21abe7ced1460ba7daec874656717
+라벨러 배포,reports/labeling/class_reference/P3-MOF반.md,1798,946771b9f7bb3c720881532195dc693dce13436b0c12ea861b7669884c17ad19
+라벨러 배포,reports/labeling/class_reference/P4-MOF&PT반.md,1886,9b9ecef4fc1c46d8581f323fe83b6bc7b9e8477ef56b4afa31bcc17240cf5959
+라벨러 배포,reports/labeling/class_reference/P5-PF&PT반.md,1840,56fce6edd4d5cd5857e3a0f4d48b219d5f9a1ce1065f59332a0d560fbab3d855
+라벨러 배포,reports/labeling/class_reference/P6-VCB반.md,2374,37188ccb28901d674f45380803fce95a8f78a124920f4ce5d04d107c206aa188
+라벨러 배포,reports/labeling/class_reference/P7-VCB&CT반.md,1766,9c5a3621aa95616ef21b9c0438a326c8167239077a8d328fc9aee50a042d8030
+라벨러 배포,reports/labeling/class_reference/P8-ACB반.md,1554,c3c73f436b7c4dd082750673d3a9e1f2c4b7449756fed40abaebe767d8b80065
+라벨러 배포,reports/labeling/class_reference/P9-MCCB반.md,1476,4ea32735a62589c8f3ed27c31dbefadf97505fa640329a51481d51c13a8c10b8
+라벨러 배포,reports/labeling/class_reference/P10-ACB&MCCB반.md,1562,06f2054d1fa798e022bf66ca647eef9d86616bec9f4a71fc54a5806add39885c
+CVAT 설정,reports/labeling/generated/cvat_labels/P1.json,3436,0e29012a1464018ad0aebeee13c090b48bd10551cc72aab87699340ecb84098c
+CVAT 설정,reports/labeling/generated/cvat_labels/P1.names,89,b650637ccf64bd7a681099ce4f6e897eb337cc7ae113408e79b7af2d74648a20
+CVAT 설정,reports/labeling/generated/cvat_labels/P2.json,3397,849c63a198daeade5977866a174e19a5f1a4bfb7c091c90e5bab6771b7d0474e
+CVAT 설정,reports/labeling/generated/cvat_labels/P2.names,50,23353bd8aea4cf2d15c7e091e5ac5df6dfdf0815ce827a91a096b22a1fc28e63
+CVAT 설정,reports/labeling/generated/cvat_labels/P3.json,2677,37948023a16fb57ffd5fea849c4510ffbd967bd27c5bb33a0c80943d5e422eab
+CVAT 설정,reports/labeling/generated/cvat_labels/P3.names,59,f26db3b1ac7a6ff7b8628b55dcea1ee3b88f1aa29011328c38aec893e07a7f17
+CVAT 설정,reports/labeling/generated/cvat_labels/P4.json,4163,1f6022150154fcaa5784adea4579c28da06bafca7e32ae8d4b8cc2fd4c21723b
+CVAT 설정,reports/labeling/generated/cvat_labels/P4.names,87,84680a7f3f7fe6fdc06d26645f8cf9b5930803280dff7fba76ef118d25529288
+CVAT 설정,reports/labeling/generated/cvat_labels/P5.json,2685,1feada37dbcc487aae20c94ccd76c24e647c92d89925f9fbed0593f32718d3a6
+CVAT 설정,reports/labeling/generated/cvat_labels/P5.names,67,f0802520312dbd18fcf3b5104dd0d8baae7603dac140c27cdd39a923b2ad15ab
+CVAT 설정,reports/labeling/generated/cvat_labels/P6.json,3387,f0d19f077be44f23ed982abe5f765f5a2a1403f2ba2598f0d6fff52dadfc64b8
+CVAT 설정,reports/labeling/generated/cvat_labels/P6.names,40,6414c3fd166251d2eee9f231c0d4897a649419dfeacdb8d2992488d38fc490a1
+CVAT 설정,reports/labeling/generated/cvat_labels/P7.json,1908,a0d55dfafd2bf9286d30e1a7d3c833bb4af3a3839cb7d2c36f97d38c2cde061e
+CVAT 설정,reports/labeling/generated/cvat_labels/P7.names,19,5134e15b77bd9ef7a7938fb34380f3353c2aadd9f25872ab6f15af44dd10015a
+CVAT 설정,reports/labeling/generated/cvat_labels/P8.json,2651,870dbb94c935c2ef3be3249474a77a9c92f60c9cb011f8dc3b2fa0ec86907c10
+CVAT 설정,reports/labeling/generated/cvat_labels/P8.names,33,f3a87d87f98a7620208729e2fb1adbac081480828895a438cfabb699252418d9
+CVAT 설정,reports/labeling/generated/cvat_labels/P9.json,1911,a69e5a155a937ad159a170a1f03040a1bdd225e00b8d1bcef76729f8c05e1c04
+CVAT 설정,reports/labeling/generated/cvat_labels/P9.names,22,5ffe982c617e8cfb5889e65261b9d0ae08cdda530f5bcf047d8b02f25372d510
+CVAT 설정,reports/labeling/generated/cvat_labels/P10.json,2651,870dbb94c935c2ef3be3249474a77a9c92f60c9cb011f8dc3b2fa0ec86907c10
+CVAT 설정,reports/labeling/generated/cvat_labels/P10.names,33,f3a87d87f98a7620208729e2fb1adbac081480828895a438cfabb699252418d9
+CVAT 설정,data/labeling/seed/deploy/classes.txt,452,23d763eb98be61df95a6935500e21ca465d3dd37c11dc48fdf96952917ef9f15
+CVAT 설정,data/labeling/seed/deploy/cvat_labels/P1.json,3436,0e29012a1464018ad0aebeee13c090b48bd10551cc72aab87699340ecb84098c
+CVAT 설정,data/labeling/seed/deploy/cvat_labels/P2.json,3397,849c63a198daeade5977866a174e19a5f1a4bfb7c091c90e5bab6771b7d0474e
+CVAT 설정,data/labeling/seed/deploy/cvat_labels/P3.json,2677,37948023a16fb57ffd5fea849c4510ffbd967bd27c5bb33a0c80943d5e422eab
+CVAT 설정,data/labeling/seed/deploy/cvat_labels/P4.json,4163,1f6022150154fcaa5784adea4579c28da06bafca7e32ae8d4b8cc2fd4c21723b
+CVAT 설정,data/labeling/seed/deploy/cvat_labels/P5.json,2685,1feada37dbcc487aae20c94ccd76c24e647c92d89925f9fbed0593f32718d3a6
+CVAT 설정,data/labeling/seed/deploy/cvat_labels/P6.json,3387,f0d19f077be44f23ed982abe5f765f5a2a1403f2ba2598f0d6fff52dadfc64b8
+CVAT 설정,data/labeling/seed/deploy/cvat_labels/P7.json,1908,a0d55dfafd2bf9286d30e1a7d3c833bb4af3a3839cb7d2c36f97d38c2cde061e
+CVAT 설정,data/labeling/seed/deploy/cvat_labels/P8.json,2651,870dbb94c935c2ef3be3249474a77a9c92f60c9cb011f8dc3b2fa0ec86907c10
+CVAT 설정,data/labeling/seed/deploy/cvat_labels/P9.json,1911,a69e5a155a937ad159a170a1f03040a1bdd225e00b8d1bcef76729f8c05e1c04
+CVAT 설정,data/labeling/seed/deploy/cvat_labels/P10.json,2651,870dbb94c935c2ef3be3249474a77a9c92f60c9cb011f8dc3b2fa0ec86907c10
+배포본,data/labeling/seed/deploy/manifest.csv,100276,deb55c48df16b244f6ae7604ee4beb3d4208c10cc6137eeee35f2a7cbf6a3c45
+배포본,data/labeling/seed/deploy/panels.csv,1399,f19b2479af69536fcd774e9c362726bf6c8e77bb38e71352546b9a2fd4e25b96
+배포본,data/labeling/seed/deploy/agreement_subset.csv,13419,e3870b7dfae1362588e6ad9d205291baa23a8475fce8cd10c6ed7a578fe5a36c
+검수자,reports/labeling/escalation.txt,533,f0cd7abc82df627f7972815bd9a28a25bef505d7276a005b64539024835cc42a
+배포본,data/labeling/seed/deploy/images/P1/ (30개),642006,babebc5dc613f541c5d01a8ce0c6b82774d6c7441e94106821c425d602644bea
+배포본,data/labeling/seed/deploy/images/P2/ (61개),2229902,537a862c9ca2566a7c2fbbe9e3384c341004d5bc55db1e295763a46b9c623475
+배포본,data/labeling/seed/deploy/images/P3/ (15개),750447,bf242161bbd9da1d4de9383dba3605598a280f9c05cea314963db97e3c641853
+배포본,data/labeling/seed/deploy/images/P4/ (30개),1087796,c2c6d3e00907f08404dd9c8fae57d10deb29eaca774ffc8c833749b4fbc4048a
+배포본,data/labeling/seed/deploy/images/P5/ (61개),2107990,8ec186b1d05cbdff06559735a617a6d976daee54af9f2d96b40bc0919b09ac9f
+배포본,data/labeling/seed/deploy/images/P6/ (61개),2135515,aebd0526d89155134aa7da56859007be3d1afa458875070fe2b5b7c465ac1a1a
+배포본,data/labeling/seed/deploy/images/P7/ (61개),2709119,374a17e3f91c8a0b2a12c5deb038af9e2d8d3e7b252b648a0a1c9da100e56b01
+배포본,data/labeling/seed/deploy/images/P8/ (30개),1085145,1cf846a5defd637b2bdc925c98dfa0d1e1a41d22f649bd2f3f09bdd2e6ed3885
+배포본,data/labeling/seed/deploy/images/P9/ (21개),492815,41f0f1609eb1a5b305714e773bc62db73297c7013d3e3b4ec253a8f84ba17886
+배포본,data/labeling/seed/deploy/images/P10/ (30개),807619,a3d22bf984d51b7705125b86446ef96f4d6f21385ffd6cc50b2b0ca04f838f7d
+배포본,data/labeling/seed/deploy/reference_rgb/P1/ (0개),0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+배포본,data/labeling/seed/deploy/reference_rgb/P2/ (8개),486345,aea6c914a4d2150d989c9bc33abe812bdcd38bc97fd14177ddb3df92e8190e10
+배포본,data/labeling/seed/deploy/reference_rgb/P3/ (3개),499578,e91acc17c5a96aea5d429690b269cb951c0cb92cd0cdb9fb5b7dc4390a47050c
+배포본,data/labeling/seed/deploy/reference_rgb/P4/ (6개),122447,7b7bb5fe419b9371533205875fb8384028d4c1c66cca611f7ae5eaf021b42f15
+배포본,data/labeling/seed/deploy/reference_rgb/P5/ (5개),417666,fa76b4d20f29168bfd25922479734f428a65a9c6a9685a02bec938cb1e28c5a0
+배포본,data/labeling/seed/deploy/reference_rgb/P6/ (7개),597508,27c827b12c78758e9047ef1b7195727be41f94bb7d32f69a0325f4909c1bd415
+배포본,data/labeling/seed/deploy/reference_rgb/P7/ (10개),938606,4dbc3580cc188b28aabfd85ad70ef3f8aa2b79b81610c20ae853450559074f9e
+배포본,data/labeling/seed/deploy/reference_rgb/P8/ (4개),142736,5adf38cadc65a1ffcc1340dc1d99ce3d112a063114288075a0c9269f4d05fb62
+배포본,data/labeling/seed/deploy/reference_rgb/P9/ (0개),0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+배포본,data/labeling/seed/deploy/reference_rgb/P10/ (1개),36473,f429f7950729806885f72a46e793085f60c490a0f4b7aa95ba083261a90cc5c9

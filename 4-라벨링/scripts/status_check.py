@@ -360,6 +360,23 @@ def main():
              f"{len(v2.PANEL_CLASSES)}개 반 일치" if not bad else f"**{bad}**",
              "OK" if not bad else "FAIL")
 
+        # 일치도 중복 배정 — 이게 없으면 v2 조건의 C-2 근거가 영영 생기지 않는다
+        ov = [r for r in mrows if (r.get("overlap") or "") == "true"]
+        sub = data_rows(sdep / "agreement_subset.csv", "panel") or []
+        note("시드배포", "중복 배정 50장", f"manifest {len(ov)}장 · subset {len(sub)}장",
+             "OK" if len(ov) == len(sub) == 50 else "확인")
+        pairs = {r.get("annotator_pair") for r in ov}
+        note("시드배포", "중복 배정 라벨러", ", ".join(sorted(p for p in pairs if p)) or "미지정",
+             "OK" if len(pairs) == 1 and all(pairs) else "확인")
+
+        r = subprocess.run(
+            [sys.executable, str(paths.SCRIPTS / "lock_deploy_manifest.py"),
+             "--target", "seed", "--verify"],
+            capture_output=True, text=True, encoding="utf-8", errors="replace")
+        head = [l for l in (r.stdout or "").strip().splitlines() if l.strip()]
+        note("시드배포", "입력판 고정", head[-1] if head else "확인 불가",
+             "OK" if r.returncode == 0 else "FAIL")
+
     # ---- 6 미해소 ----
     print("\n[6] 미해소 사항")
     with (paths.AUDIT / "open_questions.csv").open(encoding="utf-8-sig") as fh:
