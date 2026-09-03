@@ -382,9 +382,18 @@ def main():
         sub = data_rows(sdep / "agreement_subset.csv", "panel") or []
         note("시드배포", "중복 배정 50장", f"manifest {len(ov)}장 · subset {len(sub)}장",
              "OK" if len(ov) == len(sub) == 50 else "확인")
+        who = {r.get("assignee") for r in mrows}
+        note("시드배포", "400장 담당", ", ".join(sorted(w for w in who if w)) or "미지정",
+             "OK" if all(who) else "확인")
         pairs = {r.get("annotator_pair") for r in ov}
-        note("시드배포", "중복 배정 라벨러", ", ".join(sorted(p for p in pairs if p)) or "미지정",
-             "OK" if len(pairs) == 1 and all(pairs) else "확인")
+        # 두 사람이 같으면 자기 결과와 비교하는 셈이라 일치도가 의미를 잃는다.
+        same = any("/" in q and len(set(q.split("/"))) == 1 for q in pairs if q)
+        todo = any("미정" in (q or "") for q in pairs)
+        note("시드배포", "중복 배정 라벨러",
+             (", ".join(sorted(q for q in pairs if q)) or "미지정")
+             + (" — 검증자 확정 전" if todo else ""),
+             "OK" if len(pairs) == 1 and all(pairs) and not same and not todo
+             else ("FAIL" if same else "확인"))
 
         r = subprocess.run(
             [sys.executable, str(paths.SCRIPTS / "lock_deploy_manifest.py"),

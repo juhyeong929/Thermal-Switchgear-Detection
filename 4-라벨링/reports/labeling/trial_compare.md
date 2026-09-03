@@ -7,7 +7,7 @@
 |---|---|---|---|---|
 | 회차 | round 1 · CLOSED | round 4 · PENDING | round 3 · CLOSED | round 4 · PENDING |
 | 반 정보 공개 | NO | YES | NO | YES |
-| 라벨러 | A/B/C (제출 3) | seed_A/seed_B (제출 0) | D (제출 1) | seed_A/seed_B (제출 0) |
+| 라벨러 | A/B/C (제출 3) | 김주형/+/검증자_미정 (제출 0) | D (제출 1) | 김주형/+/검증자_미정 (제출 0) |
 | pooled Kappa | 0.902 (3쌍) | 미측정 | 0.920 (6쌍) | 미측정 |
 | panel별 Kappa | P1 1.00 · P3 1.00 · P4 0.00~0.42 · P6 0.00~1.00 · P9 1.00 | — | P1 1.00 · P3 0.38~1.00 · P4 0.00~1.00 · P6 0.00~1.00 · P9 1.00 | — |
 | count agreement | 57.6% | 미측정 | 58.3% | 미측정 |

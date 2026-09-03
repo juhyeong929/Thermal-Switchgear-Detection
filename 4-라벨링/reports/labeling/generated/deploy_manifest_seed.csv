@@ -2,7 +2,7 @@
 # round 4 배포 입력판 고정 — guide v2.0,,,
 # 대상 반: P1-TR반 P2-LBS&LA반 P3-MOF반 P4-MOF&PT반 P5-PF&PT반 P6-VCB반 P7-VCB&CT반 P8-ACB반 P9-MCCB반 P10-ACB&MCCB반 (P5 없음),,,
 # 검증: python scripts/lock_deploy_manifest.py --verify,,,
-# manifest_sha256,,,baff6d575759176f33f67504757466b1fb5393c5be9633d6bc4edb7c94c383ba
+# manifest_sha256,,,6d388f05df7340bf6aee430340d00dd075f2fdab934351922885446541506df8
 정책 원본,schemas/classes_v2.py,24879,bfc604b38097552e4419b80fdacd286b6350c8e1e9b4a7f9f5ea3c8d9cba10c9
 정책 원본,schemas/labeling_rules.py,8476,cd66d9f744a05d55957f5ce9ca5566d56ec7ba43a02311b94efedace9ecf71c3
 라벨러 배포,reports/labeling/annotator_guide_v2.md,21622,ec616d286facdd95947384bba11ae1fdea0926714a1bca47ec12ceb3580aaadd
@@ -49,9 +49,9 @@ CVAT 설정,data/labeling/seed/deploy/cvat_labels/P7.json,1908,a0d55dfafd2bf9286
 CVAT 설정,data/labeling/seed/deploy/cvat_labels/P8.json,2651,870dbb94c935c2ef3be3249474a77a9c92f60c9cb011f8dc3b2fa0ec86907c10
 CVAT 설정,data/labeling/seed/deploy/cvat_labels/P9.json,1911,a69e5a155a937ad159a170a1f03040a1bdd225e00b8d1bcef76729f8c05e1c04
 CVAT 설정,data/labeling/seed/deploy/cvat_labels/P10.json,2651,870dbb94c935c2ef3be3249474a77a9c92f60c9cb011f8dc3b2fa0ec86907c10
-배포본,data/labeling/seed/deploy/manifest.csv,101116,c1237811884c608c80a9ca1d14cb9fe8be261d37eec908a659517b810631c359
+배포본,data/labeling/seed/deploy/manifest.csv,105775,c85dab8a04b8a931e26a0411e68c49c0660818a67ee342545e40bddf06ea1d08
 배포본,data/labeling/seed/deploy/panels.csv,1425,6c933bbd32c2a791f0f10fb69c2ddada4b5d03c9320926347d57c99e575605b3
-배포본,data/labeling/seed/deploy/agreement_subset.csv,13559,066df6287c8cba7fad53c2bbd5085b20cfc3b204b9719792d7ebab9318f8261d
+배포본,data/labeling/seed/deploy/agreement_subset.csv,14718,4cf10943bd210ba55d3c2bb9f7202fbc176b8d24b26fdf454a83135aded2c566
 검수자,reports/labeling/escalation.txt,533,f0cd7abc82df627f7972815bd9a28a25bef505d7276a005b64539024835cc42a
 배포본,data/labeling/seed/deploy/images/P1/ (30개),642006,babebc5dc613f541c5d01a8ce0c6b82774d6c7441e94106821c425d602644bea
 배포본,data/labeling/seed/deploy/images/P2/ (61개),2229902,537a862c9ca2566a7c2fbbe9e3384c341004d5bc55db1e295763a46b9c623475

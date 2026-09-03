@@ -94,9 +94,14 @@ def rgb_index():
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--dry-run", action="store_true", help="복사하지 않고 계획만 본다")
+    ap.add_argument("--assignee", default="",
+                    help="400장 전체를 맡을 주 라벨러. 여러 명이면 쉼표로 적고 "
+                         "반별로 나눠 배정한다. 비우면 --pair 의 첫 사람")
     ap.add_argument("--pair", default="seed_A,seed_B",
-                    help="중복 배정 50장을 맡을 두 라벨러 (쉼표로 둘). "
-                         "실제 이름으로 바꿔서 배포한다")
+                    help="중복 배정 50장을 맡을 두 사람 (쉼표로 둘). "
+                         "주 라벨러와 **다른 사람**이 하나 있어야 일치도가 나온다. "
+                         "검증자가 아직 정해지지 않았으면 자리표시자로 두고 "
+                         "확정되면 trial_versions.csv 에 적는다")
     ap.add_argument("--no-overlap", action="store_true",
                     help="중복 배정 없이 내보낸다 (C-2 v2 근거를 포기하는 선택)")
     a = ap.parse_args()
@@ -108,8 +113,15 @@ def main():
 
     pair = [x.strip() for x in a.pair.split(",") if x.strip()]
     if not a.no_overlap and len(pair) != 2:
-        print("--pair 는 라벨러 두 명이어야 한다. 예: --pair 홍길동,김철수")
+        print("--pair 는 두 사람이어야 한다. 예: --pair 홍길동,김철수")
         return 1
+    if not a.no_overlap and pair[0] == pair[1]:
+        print("--pair 의 두 사람이 같다. 자기 결과와 비교하면 일치도가 항상 1.0 에 "
+              "가깝게 나와 아무것도 잡지 못한다.")
+        return 1
+
+    # 400장 전체 담당. 여러 명이면 반 우선순위 순으로 돌아가며 배정한다.
+    assignees = [x.strip() for x in a.assignee.split(",") if x.strip()] or pair[:1]
 
     rgb_of = rgb_index()
     by_panel = defaultdict(list)
@@ -146,6 +158,7 @@ def main():
                 n_rgb += 1
 
             is_ov = r["image_id"] in overlap
+            who = assignees[sorted(by_panel).index(panel) % len(assignees)]
             manifest.append({
                 "panel": panel, "panel_id": pid,
                 "delivered_as": f"images/{pid}/{name}",
@@ -155,6 +168,8 @@ def main():
                 "reference_rgb": f"reference_rgb/{pid}/{rgb_name}" if rgb_name else "없음",
                 "selection_reason": r["reason"], "priority": r["priority"],
                 "panel_provisional": r["panel_provisional"],
+                # --- 배정 ---
+                "assignee": who,
                 # --- 일치도 중복 배정 (DEC-029) ---
                 "agreement_subset": OVERLAP_TOTAL if is_ov else 0,
                 "overlap": "true" if is_ov else "false",
