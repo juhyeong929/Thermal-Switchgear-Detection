@@ -46,6 +46,7 @@ canonical 승격은 보류**하였다. 라벨을 `canonical`(P1/P3/P4)과 `refer
 | [DEC-027](DEC-027-incoming-contact-label-status.md) | 인입선로 접촉부(#20) 를 주의에서 가공으로 상향한다 | ``` incoming_contact (#20 / class_id 19) label_status 주의(CAUTION) -> 가공(LABEL) annotation_unit UNKNOWN 유지 <- 함께 바꾸지 않는다 P5-PF&PT반 labelable 3종 -> 4종 deployable  |
 | [DEC-028](DEC-028-skip-round2-go-seed.md) | 2차 시험 회차를 취소하고 400장 시드 라벨링으로 넘어간다 | ``` round 2 (v2.0 · annotator_D · annotator_E) PENDING -> CANCELLED annotator_E 회수 받지 않는다 다음 단계 400장 시드 본 라벨링 ``` |
 | [DEC-029](DEC-029-seed-embedded-agreement-overlap.md) | 400장 본작업 안에 중복 배정 50장을 심어 v2 조건 C-2 를 측정한다 | ``` decision = EMBED_AGREEMENT_OVERLAP_IN_SEED 400장 본작업 안에서 50장을 두 사람에게 중복 배정한다. 별도 회차를 되살리지 않는다. ``` **같은 사람이 두 번 그리는 것이 아니다.** 두 사람이 **서로 모르게 처음부터** 각자 그린다. 한 |
+| [DEC-030](DEC-030-acb-contact-label-status.md) | ACB 접촉부(#27) 를 제외에서 주의로 승격한다 | ``` acb_contact (#27 / class_id 26) label_status 제외(EXCLUDE) -> 주의(CAUTION) annotation_unit UNKNOWN 유지 <- 함께 바꾸지 않는다 배포 하지 않는다 (unit_confirmed = false) class_id |
 
 ## 변경 전 → 변경 후
 

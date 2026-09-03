@@ -6,6 +6,6 @@ P4-MOF&PT반,P4,6,5,1,변압기 변류기 비한류형 전력퓨즈 변류기 �
 P5-PF&PT반,P5,4,3,1,소음기부착형 전력퓨즈 몰드타입 PT 케이블헤드,인입선로 접촉부,0
 P6-VCB반,P6,4,4,0,VCB 접촉부 케이블헤드 CT SA,,0
 P7-VCB&CT반,P7,3,2,1,VCB 접촉부 CT,CT 접촉부,0
-P8-ACB반,P8,3,3,0,콘덴서 MCCB MCCB 접촉부 *,,0
+P8-ACB반,P8,4,3,1,콘덴서 MCCB MCCB 접촉부 *,ACB 접촉부,0
 P9-MCCB반,P9,2,2,0,MCCB MCCB 접촉부 *,,1
-P10-ACB&MCCB반,P10,3,3,0,콘덴서 MCCB MCCB 접촉부 *,,0
+P10-ACB&MCCB반,P10,4,3,1,콘덴서 MCCB MCCB 접촉부 *,ACB 접촉부,0

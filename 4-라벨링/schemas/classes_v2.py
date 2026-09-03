@@ -120,8 +120,20 @@ CLASSES = [
                  notes="v1 보류 -> v2 가공대상 전환"),
     ThermalClass(26, "ct_contact", "CT 접촉부", CAUTION,
                  "배전반 내 위치때문에 잘 안보임"),
-    ThermalClass(27, "acb_contact", "ACB 접촉부", EXCLUDE,
-                 "배전반 내 위치때문에 잘 안보임"),
+    # [2026-09-03] 개정 PDF p18(ACB&MCCB반)이 가공대상 목록에 넣었다. 제외 -> 주의 (DEC-030).
+    # 인입선로 접촉부(DEC-027)와 같은 증거 구조다 — 이전 판은 제외/보류, 개정 판은
+    # 가공대상 목록에 포함, 가공여부 기호 체계 자체는 사라졌다.
+    #
+    # 왜 '가공' 이 아니라 '주의' 인가 — 비고 원문이 "배전반 내 위치때문에 잘 안보임" 이고,
+    # **같은 문구를 가진 철심부(#1) · CT 접촉부(#26)가 둘 다 주의**다. 가이드 안에서
+    # 이 사유는 주의로 대응돼 왔다. 없던 등급을 새로 만들지 않고 그 대응을 따른다.
+    #
+    # annotation_unit 은 UNKNOWN 유지 — 정본·참고 통틀어 라벨 실적 0건이라 단위 근거가
+    # 없다. deployable() 이 unit_confirmed() 로 한 번 더 거르므로 라벨러에게는 나가지 않는다.
+    ThermalClass(27, "acb_contact", "ACB 접촉부", CAUTION,
+                 "배전반 내 위치때문에 잘 안보임",
+                 notes="[2026-09-03] 개정 PDF p18 가공대상 포함 -> 제외에서 주의로 승격 "
+                       "(DEC-030). 단위 미확정이라 아직 비배포 (NQ-13)"),
     ThermalClass(28, "mccb_contact", "MCCB 접촉부", CAUTION,
                  "다른 접촉부와 구분이 안됨"),
 ]
@@ -232,6 +244,7 @@ ANNOTATION_UNIT = {
     "transformer_contact":    UNIT_UNKNOWN,
     "incoming_contact":       UNIT_UNKNOWN,
     "ct_contact":             UNIT_UNKNOWN,
+    "acb_contact":            UNIT_UNKNOWN,
 }
 
 # 단위를 그렇게 정한 근거. 위 값과 1:1 로 붙어 있어야 보고서에 근거가 실린다.
@@ -256,6 +269,10 @@ ANNOTATION_UNIT_BASIS = {
                               "(DEC-024)",
     "incoming_contact":       "정본·참고 모두 라벨 실적 0건 (NQ-13)",
     "ct_contact":             "정본·참고 모두 라벨 실적 0건 (NQ-13)",
+    # 제외에서 주의로 승격되면서 라벨 대상이 됐다(DEC-030). **여기 적지 않으면**
+    # annotation_unit() 의 기본값 WHOLE_OBJECT 로 떨어져 unit_confirmed() 가 True 가 되고
+    # 곧바로 배포 목록에 실린다. 접촉부 계열은 근거 없이 WHOLE_OBJECT 로 두지 않는다.
+    "acb_contact":            "정본·참고 모두 라벨 실적 0건 (NQ-13 · DEC-030)",
 }
 DEFAULT_UNIT_BASIS = "부품 단위가 자명 — 별도 근거 불요 (DEC-015)"
 

@@ -63,7 +63,6 @@
       ]
     },
     "excluded": [
-      "acb_contact",
       "busbar",
       "cable"
     ],
@@ -133,6 +132,7 @@
       "branch_contact"
     ],
     "seen_zero": [
+      "acb_contact",
       "cable_head",
       "capacitor",
       "cl_power_fuse",
@@ -150,5 +150,5 @@
       "vcb_contact"
     ]
   },
-  "policy_sha256": "61b7f76bc2e3537d7d4eb0169a433cc2791f62ecb89268a140896832995155a9"
+  "policy_sha256": "e37e64627e712039909b429b841f43857dc5728d31cc6a2b679da21f42a4bb1b"
 }

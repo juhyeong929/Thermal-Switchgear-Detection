@@ -32,10 +32,10 @@ P7,P7-VCB&CT반,8,3,25,26,ct_contact,CT 접촉부,주의,0
 P8,P8-ACB반,9,1,17,18,capacitor,콘덴서,가공,0
 P8,P8-ACB반,9,2,18,19,mccb,MCCB,가공,0
 P8,P8-ACB반,9,3,27,28,mccb_contact,MCCB 접촉부,주의,0
-P8,P8-ACB반,9,4,26,27,acb_contact,ACB 접촉부,제외,0
+P8,P8-ACB반,9,4,26,27,acb_contact,ACB 접촉부,주의,0
 P9,P9-MCCB반,10,1,18,19,mccb,MCCB,가공,1
 P9,P9-MCCB반,10,2,27,28,mccb_contact,MCCB 접촉부,주의,1
 P10,P10-ACB&MCCB반,9,1,17,18,capacitor,콘덴서,가공,0
 P10,P10-ACB&MCCB반,9,2,18,19,mccb,MCCB,가공,0
 P10,P10-ACB&MCCB반,9,3,27,28,mccb_contact,MCCB 접촉부,주의,0
-P10,P10-ACB&MCCB반,9,4,26,27,acb_contact,ACB 접촉부,제외,0
+P10,P10-ACB&MCCB반,9,4,26,27,acb_contact,ACB 접촉부,주의,0

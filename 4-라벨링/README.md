@@ -23,10 +23,10 @@
 |---|---|---|
 | 이미지 몇 장인가 | IR 106,685 · RGB 2,674 | `reports/data_audit/panel_inventory.csv` |
 | 반은 몇 개인가 | 현존 10개 (+ 삭제 3개, 복구 가능) | 위와 동일 |
-| 클래스는 무엇인가 | 28개 (가공 21 · 주의 3 · 제외 3 · **폐지 1**) — 라벨 대상 24종 | `schemas/classes_v2.py` |
+| 클래스는 무엇인가 | 28개 (가공 21 · 주의 4 · 제외 2 · **폐지 1**) — 라벨 대상 25종 | `schemas/classes_v2.py` |
 | 기존 라벨은 얼마나 | 4,177 bbox / 1,036 파일 (P1·P3·P4) | `reports/data_audit/migration_verification.csv` |
 | 어떻게 승계했나 | 26→28 변환, 손실 0 · 보류 0 | `schemas/class_migration_26_to_28.csv` |
-| 무엇을 라벨링하지 않나 | **제외** 부스바 · 케이블 · ACB 접촉부 / **폐지** 분기 접촉부 / **비배포** 단위 미확정 5종 | `schemas/labeling_rules.py` · `class_reference_table.md` |
+| 무엇을 라벨링하지 않나 | **제외** 부스바 · 케이블 / **폐지** 분기 접촉부 / **비배포** 단위 미확정 6종 | `schemas/labeling_rules.py` · `class_reference_table.md` |
 | 지금 어디까지 왔나 | STEP 10 완료 · 11~13 진행중 · 1차(v1) 회수 3인 CLOSED · **2차(v2.0) 배포 대기** | `reports/status/progress.csv` · `trial_status.csv` |
 | 무엇이 막혀 있나 | 열린 OPEN QUESTION 22건 · **지금 라벨링을 막는 것 0건** | `open_questions.csv` 의 `blocks_current_labeling` |
 | 결정은 몇 건인가 | DEC-001 ~ DEC-027 (27건) | `reports/decisions/` |
@@ -209,7 +209,7 @@ python scripts/lock_deploy_manifest.py --verify   # 배포 직전 필수
 | 근접 미달 쌍 42.8% | **누수율이 아니다.** 실측 추정은 20%이며 그것도 전체 데이터가 아니라 **근접 후보쌍이 분모**다 | `KNOWN_LIMITATIONS.md` KL-1 · `DEC-023` |
 | 감사용 임계값 | 분석용 수치가 지침서로 새면 뒤 라벨러가 앞사람과 다른 규칙을 본다 | `labeling_rules.SMALL_OBJECT_SCOPE = "지침서 배포 금지"` |
 | `annotation_unit()` 기본값 | 라벨 대상이 아닌 클래스를 `ANNOTATION_UNIT` 에서 지우면 **기본값 `WHOLE_OBJECT` 로 떨어져 `unit_confirmed()` 가 True** 가 된다. `label_status == EXCLUDE` 로만 거르던 배포 경로에 폐지 클래스가 실린다 | `NOT_LABELED` 면 `UNKNOWN` 반환 + `status_check [2]` 의 `CVAT 라벨 정의 ⊆ 배포 대상` |
-| 제외 ≠ 폐지 | 제외는 "있지만 그리지 않는다", 폐지는 "그 클래스가 없어졌다". 한 집합에 합치면 **제외 3종의 근거를 설명할 수 없게 된다** | `EXCLUDED` · `RETIRED_CLASSES` 를 나누고 판정에만 `NOT_LABELED` 사용 |
+| 제외 ≠ 폐지 | 제외는 "있지만 그리지 않는다", 폐지는 "그 클래스가 없어졌다". 한 집합에 합치면 **제외 클래스의 근거를 설명할 수 없게 된다** | `EXCLUDED` · `RETIRED_CLASSES` 를 나누고 판정에만 `NOT_LABELED` 사용 |
 | 판본 동일성 | 지침서는 10개 반이 한 문서다. 회차가 끝난 뒤 다른 반 정책이 바뀌면 "그때 그 v2" 를 재현할 수 없다 | `lock_deploy_manifest.py` 로 회차 입력판 해시 고정 |
 
 ## 시험 라벨링 회수 (DEC-019 · DEC-020)

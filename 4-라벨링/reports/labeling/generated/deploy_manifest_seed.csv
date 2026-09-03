@@ -2,12 +2,12 @@
 # round 4 배포 입력판 고정 — guide v2.0,,,
 # 대상 반: P1-TR반 P2-LBS&LA반 P3-MOF반 P4-MOF&PT반 P5-PF&PT반 P6-VCB반 P7-VCB&CT반 P8-ACB반 P9-MCCB반 P10-ACB&MCCB반 (P5 없음),,,
 # 검증: python scripts/lock_deploy_manifest.py --verify,,,
-# manifest_sha256,,,52fe342eff5b30e7ef11ae38eb31e9f23483ee5a2d6f4286ff1b136825b20b42
-정책 원본,schemas/classes_v2.py,23309,4ee231e035b7fd5da3c1eb3a3d6451cc072ecf52dbf3240a0099dd18b5416646
-정책 원본,schemas/labeling_rules.py,8348,bb05103dba77ed2aaeaffacaf642991c2e57f08cc19b1fd6aeb888baf6bad6b7
-라벨러 배포,reports/labeling/annotator_guide_v2.md,21558,2ba5bf36037d434533695cb483a0c8434d2b231c26e7aa6b77ae88ba6ddfa47c
+# manifest_sha256,,,baff6d575759176f33f67504757466b1fb5393c5be9633d6bc4edb7c94c383ba
+정책 원본,schemas/classes_v2.py,24879,bfc604b38097552e4419b80fdacd286b6350c8e1e9b4a7f9f5ea3c8d9cba10c9
+정책 원본,schemas/labeling_rules.py,8476,cd66d9f744a05d55957f5ce9ca5566d56ec7ba43a02311b94efedace9ecf71c3
+라벨러 배포,reports/labeling/annotator_guide_v2.md,21622,ec616d286facdd95947384bba11ae1fdea0926714a1bca47ec12ceb3580aaadd
 라벨러 배포,reports/labeling/bounding_box_boundary_spec.md,13702,6babf190791e1a919d9275e52c443466c6bb2dc8adbf0ae61ed4030c5684b729
-라벨러 배포,reports/labeling/generated/panel_class_table.md,1532,45418708ba42c4883150072b2273324d43b5d8d0bbfff71b9d603b8e0f69e523
+라벨러 배포,reports/labeling/generated/panel_class_table.md,1583,29273e288d9b45389eb7514f0b7fd938c290215c6734ebf2f7ddc0c7520013a4
 라벨러 배포,reports/labeling/class_reference/P1-TR반.md,1923,ca782ad762dc59ce52f8255294d254f84a9b3df47be1b9efefd7d1cf4eb312e6
 라벨러 배포,reports/labeling/class_reference/P2-LBS&LA반.md,2022,610163678f40699e2728725e23dc5a9763a21abe7ced1460ba7daec874656717
 라벨러 배포,reports/labeling/class_reference/P3-MOF반.md,1798,946771b9f7bb3c720881532195dc693dce13436b0c12ea861b7669884c17ad19
@@ -49,9 +49,9 @@ CVAT 설정,data/labeling/seed/deploy/cvat_labels/P7.json,1908,a0d55dfafd2bf9286
 CVAT 설정,data/labeling/seed/deploy/cvat_labels/P8.json,2651,870dbb94c935c2ef3be3249474a77a9c92f60c9cb011f8dc3b2fa0ec86907c10
 CVAT 설정,data/labeling/seed/deploy/cvat_labels/P9.json,1911,a69e5a155a937ad159a170a1f03040a1bdd225e00b8d1bcef76729f8c05e1c04
 CVAT 설정,data/labeling/seed/deploy/cvat_labels/P10.json,2651,870dbb94c935c2ef3be3249474a77a9c92f60c9cb011f8dc3b2fa0ec86907c10
-배포본,data/labeling/seed/deploy/manifest.csv,100276,deb55c48df16b244f6ae7604ee4beb3d4208c10cc6137eeee35f2a7cbf6a3c45
-배포본,data/labeling/seed/deploy/panels.csv,1399,f19b2479af69536fcd774e9c362726bf6c8e77bb38e71352546b9a2fd4e25b96
-배포본,data/labeling/seed/deploy/agreement_subset.csv,13419,e3870b7dfae1362588e6ad9d205291baa23a8475fce8cd10c6ed7a578fe5a36c
+배포본,data/labeling/seed/deploy/manifest.csv,101116,c1237811884c608c80a9ca1d14cb9fe8be261d37eec908a659517b810631c359
+배포본,data/labeling/seed/deploy/panels.csv,1425,6c933bbd32c2a791f0f10fb69c2ddada4b5d03c9320926347d57c99e575605b3
+배포본,data/labeling/seed/deploy/agreement_subset.csv,13559,066df6287c8cba7fad53c2bbd5085b20cfc3b204b9719792d7ebab9318f8261d
 검수자,reports/labeling/escalation.txt,533,f0cd7abc82df627f7972815bd9a28a25bef505d7276a005b64539024835cc42a
 배포본,data/labeling/seed/deploy/images/P1/ (30개),642006,babebc5dc613f541c5d01a8ce0c6b82774d6c7441e94106821c425d602644bea
 배포본,data/labeling/seed/deploy/images/P2/ (61개),2229902,537a862c9ca2566a7c2fbbe9e3384c341004d5bc55db1e295763a46b9c623475

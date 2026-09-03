@@ -6,6 +6,6 @@ P4,P4-MOF&PT반,P4 · P4-MOF&PT반,30,5,변압기 · 변류기 · 비한류형 �
 P5,P5-PF&PT반,P5 · P5-PF&PT반,61,3,소음기부착형 전력퓨즈 · 몰드타입 PT · 케이블헤드,인입선로 접촉부,5,cvat_labels/P5.json,
 P6,P6-VCB반,P6 · P6-VCB반,61,4,VCB 접촉부 · 케이블헤드 · CT · SA,,5,cvat_labels/P6.json,
 P7,P7-VCB&CT반,P7 · P7-VCB&CT반,61,2,VCB 접촉부 · CT,CT 접촉부,5,cvat_labels/P7.json,
-P10,P10-ACB&MCCB반,P10 · P10-ACB&MCCB반,30,3,콘덴서 · MCCB · MCCB 접촉부,,5,cvat_labels/P10.json,
-P8,P8-ACB반,P8 · P8-ACB반,30,3,콘덴서 · MCCB · MCCB 접촉부,,5,cvat_labels/P8.json,
+P10,P10-ACB&MCCB반,P10 · P10-ACB&MCCB반,30,3,콘덴서 · MCCB · MCCB 접촉부,ACB 접촉부,5,cvat_labels/P10.json,
+P8,P8-ACB반,P8 · P8-ACB반,30,3,콘덴서 · MCCB · MCCB 접촉부,ACB 접촉부,5,cvat_labels/P8.json,
 P9,P9-MCCB반,P9 · P9-MCCB반,21,2,MCCB · MCCB 접촉부,,6,cvat_labels/P9.json,Y

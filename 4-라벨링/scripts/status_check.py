@@ -98,6 +98,17 @@ def main():
     ph = sum(1 for n in names if n.startswith("__사용안함"))
     note("스키마", "자리표시자", f"{ph}개 · 사용 {len(names) - ph}종")
 
+    # 접촉부 계열은 근거 없이 WHOLE_OBJECT 로 떨어지면 안 된다.
+    # annotation_unit() 의 기본값이 WHOLE_OBJECT 라, 라벨 대상이 된 접촉부 클래스를
+    # ANNOTATION_UNIT 에 적지 않으면 **단위 확정으로 오인돼 그대로 배포된다.**
+    # branch_contact(폐지 시) · acb_contact(승격 시) 두 번 실제로 났다.
+    unlisted = [c.canonical_name for c in v2.labelable_classes()
+                if c.canonical_name.endswith("접촉부")
+                and c.class_name not in v2.ANNOTATION_UNIT]
+    note("스키마", "접촉부 단위가 전부 명시됐는가",
+         "명시 완료" if not unlisted else f"**미명시 {unlisted} — 기본값 WHOLE_OBJECT 로 배포된다**",
+         "OK" if not unlisted else "FAIL")
+
     # 배포물이 스키마보다 넓지 않은가. 제외·폐지·단위 미확정이 CVAT 로 새면 여기서 잡힌다.
     # (폐지 클래스를 ANNOTATION_UNIT 에서 지웠을 때 기본값 WHOLE_OBJECT 로 떨어져
     #  배포 목록에 실린 적이 있다. 그 재발을 막는 검사다.)
@@ -316,9 +327,15 @@ def main():
     # 회차 입력판이 잠근 상태 그대로인가. 지침서는 10개 반이 한 문서라 다른 반의
     # 정책이 바뀌면 파일이 달라진다 — 측정 조건이 아니라 판본 동일성 문제다.
     lock = paths.REPORTS / "labeling" / "generated" / "deploy_manifest_round2.csv"
-    if lock.exists():
+    r2 = next((x for x in (data_rows(TRIAL / "trial_versions.csv", "round") or [])
+               if (x.get("round") or "").strip() == "2"), {})
+    if (r2.get("status") or "").strip() == "CANCELLED":
+        # 취소된 회차의 입력판은 그때 상태의 기록이다. 지금 스키마와 달라지는 것이 정상이다.
+        note("지침서", "round 2 입력판 고정", "회차 취소됨 (DEC-028) — 기록만 유지", "OK")
+    elif lock.exists():
         r = subprocess.run(
-            [sys.executable, str(paths.SCRIPTS / "lock_deploy_manifest.py"), "--verify"],
+            [sys.executable, str(paths.SCRIPTS / "lock_deploy_manifest.py"),
+             "--target", "round2", "--verify"],
             capture_output=True, text=True, encoding="utf-8", errors="replace")
         head = [l for l in (r.stdout or "").strip().splitlines() if l.strip()]
         note("지침서", "round 2 입력판 고정",
